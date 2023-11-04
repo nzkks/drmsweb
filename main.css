@@ -1348,9 +1348,9 @@ div[class^='section--'] {
 
 .section--bio-info .txt-row {
   padding: 20px 20px 0;
-  -webkit-columns: 2 200px;
-  -moz-columns: 2 200px;
-  columns: 2 200px;
+  -webkit-columns: 3 200px;
+  -moz-columns: 3 200px;
+  columns: 3 200px;
   -webkit-column-gap: 40px;
   -moz-column-gap: 40px;
   column-gap: 40px;
