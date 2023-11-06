@@ -208,12 +208,16 @@ $(document).ready(function () {
   // END: Skills Accordion
 
   // BEGIN: Fancybox for portfolio
-  $('.fancybox').fancybox({
-    padding: 0,
-    openEffect: 'none',
-    closeEffect: 'none',
-    margin: [20, 40, 20, 40]
+  Fancybox.bind('[data-fancybox]', {
+    // Your custom options
   });
+
+  // $('.fancybox').fancybox({
+  //   padding: 0,
+  //   openEffect: 'none',
+  //   closeEffect: 'none',
+  //   margin: [20, 40, 20, 40]
+  // });
   // END: Fancybox for portfolio
 
   // BEGIN: Scroll to top
