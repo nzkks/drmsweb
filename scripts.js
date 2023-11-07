@@ -340,8 +340,12 @@ function validEmail(email) {
   return re.test(email);
 }
 
-function validateHuman(honeypot, email2) {
-  if (honeypot && email2 !== 'your@email.com') {
+function validateHuman(emptyField, nonEmptyField) {
+  if (
+    (emptyField !== '' && nonEmptyField !== 'your@email.com') ||
+    emptyField !== '' ||
+    nonEmptyField !== 'your@email.com'
+  ) {
     //if hidden honeypot field filled up
     console.log('Robot Detected!');
     return true;
@@ -389,7 +393,7 @@ function handleFormSubmit(event) {
   var data = getFormData(); // get the values submitted in the form
 
   /* This check is to enable SPAM prevention */
-  if (validateHuman(data.honeypot, data.email2)) {
+  if (validateHuman(data.firstName, data.email)) {
     //if honeypot field is filled, form will not be submitted
     return false;
   }
@@ -414,7 +418,7 @@ function handleFormSubmit(event) {
     // url encode form data for sending as post data
     var encoded = Object.keys(data)
       .map(function (k) {
-        if (k !== 'honeypot' && k !== 'email2') return encodeURIComponent(k) + '=' + encodeURIComponent(data[k]);
+        if (k !== 'firstName' && k !== 'email') return encodeURIComponent(k) + '=' + encodeURIComponent(data[k]);
       })
       .join('&');
     xhr.send(encoded);

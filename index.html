@@ -2092,27 +2092,29 @@
           <form
             id="gform"
             method="POST"
-            action="https://script.google.com/macros/s/AKfycbydWVCci72icBF_TzQKYRtH1unY0fpI1f2PqtZrrM1djM6JZ0c/exec"
+            action="https://script.google.com/macros/s/AKfycby7jrLGs2XxPIXvBYsM0eOU9O6rsjJDkkDwtQjXi-LkG0Wp2eVBJjJeN1YwOfWSGDtH/exec"
           >
             <input
               id="gform-name"
-              name="name"
+              name="Name"
               type="text"
               placeholder="Your Full Name"
               required
               title="Enter your full name"
             />
             <input
-              name="email"
+              name="Email"
               type="email"
               placeholder="Your Email Address"
               required
               title="Enter your email address"
             />
-            <input name="phone" type="tel" placeholder="Your Phone Number" title="Enter your phone number" />
-            <textarea name="message" rows="5" placeholder="Your Message" required title="Enter the message"></textarea>
-            <input name="honeypot" class="d-none" type="text" value="" />
-            <input id="honeypotEmail" name="email2" type="email" value="your@email.com" />
+            <input name="Phone" type="tel" placeholder="Your Phone Number" title="Enter your phone number" />
+            <textarea name="Message" rows="5" placeholder="Your Message" required title="Enter the message"></textarea>
+            <!-- BEGIN: Honeypot fields -->
+            <input name="firstName" class="d-none" type="text" value="" />
+            <input id="honeypotEmail" name="email" type="email" value="your@email.com" />
+            <!-- End: Honeypot fields-->
             <div class="button-group">
               <button class="btn" type="submit">Send</button>
               <button class="btn" type="reset">Reset</button>
