@@ -374,15 +374,15 @@ function getFormData() {
   return data;
 }
 
-function validateHuman(emptyFieldValue, nonEmptyFieldValue) {
-  if (emptyFieldValue !== '' || nonEmptyFieldValue !== 'your@email.com') {
-    //if hidden honeypot fields filled up
-    console.log('Robot Detected!');
-    return true;
-  } else {
-    console.log('Welcome Human!');
-  }
-}
+// function validateHuman(emptyFieldValue, nonEmptyFieldValue) {
+//   if (emptyFieldValue !== '' || nonEmptyFieldValue !== 'your@email.com') {
+//     //if hidden honeypot fields filled up
+//     console.log('Robot Detected!');
+//     return true;
+//   } else {
+//     console.log('Welcome Human!');
+//   }
+// }
 
 function handleFormSubmit(event) {
   // handles form submit withtout any jquery
@@ -390,10 +390,10 @@ function handleFormSubmit(event) {
   var data = getFormData(); // get the values submitted in the form
 
   /* This check is to enable SPAM prevention */
-  if (validateHuman(data.firstName, data.email)) {
-    //if honeypot field is filled, form will not be submitted
-    return false;
-  }
+  // if (validateHuman(data.firstName, data.email)) {
+  //   //if honeypot field is filled, form will not be submitted
+  //   return false;
+  // }
 
   if (!validEmail(data.Email)) {
     // if email is not valid show error
@@ -415,15 +415,20 @@ function handleFormSubmit(event) {
     // url encode form data for sending as post data
     var encoded = Object.keys(data)
       .map(function (k) {
-        if (k !== 'firstName' || k !== 'email') return encodeURIComponent(k) + '=' + encodeURIComponent(data[k]);
+        return encodeURIComponent(k) + '=' + encodeURIComponent(data[k]);
+        // if (k !== 'firstName' || k !== 'email') return encodeURIComponent(k) + '=' + encodeURIComponent(data[k]);
       })
       .join('&');
     xhr.send(encoded);
   }
 }
 
+function onSubmit(token) {
+  document.getElementById('gform').submit();
+}
+
 function loaded() {
-  document.getElementById('honeypotEmail').style.display = 'none';
+  // document.getElementById('honeypotEmail').style.display = 'none';
   //console.log('contact form submission handler loaded successfully');
   // bind to the submit event of our form
   var form = document.getElementById('gform');

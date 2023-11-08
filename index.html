@@ -71,6 +71,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <script src="https://www.google.com/recaptcha/api.js?trustedtypes=true"></script>
   </head>
   <body id="top">
     <!--[if lt IE 9]>
@@ -2112,11 +2113,20 @@
             <input name="Phone" type="tel" placeholder="Your Phone Number" title="Enter your phone number" />
             <textarea name="Message" rows="5" placeholder="Your Message" required title="Enter the message"></textarea>
             <!-- BEGIN: Honeypot fields -->
-            <input name="firstName" class="d-none" type="text" value="" />
-            <input id="honeypotEmail" name="email" type="email" value="your@email.com" />
+            <!-- <input name="firstName" class="d-none" type="text" value="" />
+            <input id="honeypotEmail" name="email" type="email" value="your@email.com" />-->
             <!-- End: Honeypot fields-->
+
             <div class="button-group">
-              <button class="btn" type="submit">Send</button>
+              <button
+                class="btn g-recaptcha"
+                type="submit"
+                data-sitekey="6Lcg9wcpAAAAAAWWA-LvlWt9XSfWYCu5rECFgBJh"
+                data-callback="onSubmit"
+                data-action="submit"
+              >
+                Send
+              </button>
               <button class="btn" type="reset">Reset</button>
             </div>
           </form>
