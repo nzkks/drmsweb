@@ -340,20 +340,6 @@ function validEmail(email) {
   return re.test(email);
 }
 
-function validateHuman(emptyField, nonEmptyField) {
-  if (
-    (emptyField !== '' && nonEmptyField !== 'your@email.com') ||
-    emptyField !== '' ||
-    nonEmptyField !== 'your@email.com'
-  ) {
-    //if hidden honeypot field filled up
-    console.log('Robot Detected!');
-    return true;
-  } else {
-    console.log('Welcome Human!');
-  }
-}
-
 // get all data in form and return object
 function getFormData() {
   var elements = document.getElementById('gform').elements; // all form elements
@@ -369,6 +355,7 @@ function getFormData() {
     .filter(function (item, pos, self) {
       return self.indexOf(item) == pos && item;
     });
+
   var data = {};
   fields.forEach(function (k) {
     data[k] = elements[k].value;
@@ -387,6 +374,16 @@ function getFormData() {
   return data;
 }
 
+function validateHuman(emptyFieldValue, nonEmptyFieldValue) {
+  if (emptyFieldValue !== '' || nonEmptyFieldValue !== 'your@email.com') {
+    //if hidden honeypot fields filled up
+    console.log('Robot Detected!');
+    return true;
+  } else {
+    console.log('Welcome Human!');
+  }
+}
+
 function handleFormSubmit(event) {
   // handles form submit withtout any jquery
   event.preventDefault(); // we are submitting via xhr below
@@ -398,7 +395,7 @@ function handleFormSubmit(event) {
     return false;
   }
 
-  if (!validEmail(data.email)) {
+  if (!validEmail(data.Email)) {
     // if email is not valid show error
     //document.getElementById('email-invalid').style.display = 'block';
     return false;
@@ -418,7 +415,7 @@ function handleFormSubmit(event) {
     // url encode form data for sending as post data
     var encoded = Object.keys(data)
       .map(function (k) {
-        if (k !== 'firstName' && k !== 'email') return encodeURIComponent(k) + '=' + encodeURIComponent(data[k]);
+        if (k !== 'firstName' || k !== 'email') return encodeURIComponent(k) + '=' + encodeURIComponent(data[k]);
       })
       .join('&');
     xhr.send(encoded);
