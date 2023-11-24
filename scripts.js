@@ -387,44 +387,46 @@ function getFormData() {
 function handleFormSubmit(event) {
   // handles form submit withtout any jquery
   event.preventDefault(); // we are submitting via xhr below
-  var data = getFormData(); // get the values submitted in the form
 
-  /* This check is to enable SPAM prevention */
-  // if (validateHuman(data.firstName, data.email)) {
-  //   //if honeypot field is filled, form will not be submitted
-  //   return false;
-  // }
+  grecaptcha.ready(function () {
+    grecaptcha.execute('6Lcg9wcpAAAAAAWWA-LvlWt9XSfWYCu5rECFgBJh', { action: 'submit' }).then(function (token) {
+      // Add your logic to submit to your backend server here.
+      var data = getFormData(); // get the values submitted in the form
 
-  if (!validEmail(data.Email)) {
-    // if email is not valid show error
-    //document.getElementById('email-invalid').style.display = 'block';
-    return false;
-  } else {
-    var url = event.target.action;
-    var xhr = new XMLHttpRequest();
-    xhr.open('POST', url);
-    // xhr.withCredentials = true;
-    xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
-    xhr.onreadystatechange = function () {
-      //console.log( xhr.status, xhr.statusText );
-      //console.log(xhr.responseText);
-      document.getElementById('gform').style.display = 'none'; // hide form
-      document.getElementById('thankyou_message').style.display = 'block';
-      return;
-    };
-    // url encode form data for sending as post data
-    var encoded = Object.keys(data)
-      .map(function (k) {
-        return encodeURIComponent(k) + '=' + encodeURIComponent(data[k]);
-        // if (k !== 'firstName' || k !== 'email') return encodeURIComponent(k) + '=' + encodeURIComponent(data[k]);
-      })
-      .join('&');
-    xhr.send(encoded);
-  }
-}
+      /* This check is to enable SPAM prevention */
+      // if (validateHuman(data.firstName, data.email)) {
+      //   //if honeypot field is filled, form will not be submitted
+      //   return false;
+      // }
 
-function onSubmit(token) {
-  document.getElementById('gform').submit();
+      if (!validEmail(data.Email)) {
+        // if email is not valid show error
+        //document.getElementById('email-invalid').style.display = 'block';
+        return false;
+      } else {
+        var url = event.target.action;
+        var xhr = new XMLHttpRequest();
+        xhr.open('POST', url);
+        // xhr.withCredentials = true;
+        xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+        xhr.onreadystatechange = function () {
+          //console.log( xhr.status, xhr.statusText );
+          //console.log(xhr.responseText);
+          document.getElementById('gform').style.display = 'none'; // hide form
+          document.getElementById('thankyou_message').style.display = 'block';
+          return;
+        };
+        // url encode form data for sending as post data
+        var encoded = Object.keys(data)
+          .map(function (k) {
+            return encodeURIComponent(k) + '=' + encodeURIComponent(data[k]);
+            // if (k !== 'firstName' || k !== 'email') return encodeURIComponent(k) + '=' + encodeURIComponent(data[k]);
+          })
+          .join('&');
+        xhr.send(encoded);
+      }
+    });
+  });
 }
 
 function loaded() {
