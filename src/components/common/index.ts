@@ -6,3 +6,6 @@ export * from './themeProvider';
 
 export { default as ThemeSwitch } from './themeSwitch';
 export * from './themeSwitch';
+
+export { default as Container } from './container';
+export * from './container';
