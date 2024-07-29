@@ -14,6 +14,7 @@ import {
   NavbarMenuItem,
 } from '@nextui-org/react';
 import clsx from 'clsx';
+import { ThemeSwitch } from '@/components/common';
 
 const mainMenuItems = [
   { href: '#skills', label: 'Skills' },
@@ -78,6 +79,9 @@ const Header = () => {
           >
             Contact
           </Button>
+        </NavbarItem>
+        <NavbarItem>
+          <ThemeSwitch />
         </NavbarItem>
       </NavbarContent>
 

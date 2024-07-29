@@ -1,10 +1,6 @@
-import { ThemeSwitch } from '@/components';
-
 const Home = () => {
   return (
     <main>
-      <ThemeSwitch />
-
       <section className="h-48">Hero</section>
       <section className="h-48" id="skills">
         Skills
