@@ -46,7 +46,9 @@ const Header = () => {
           className="sm:hidden"
         />
         <NavbarBrand>
-          <p className="font-bold text-inherit">SK</p>
+          <Link href="/">
+            <div className="font-bold text-inherit">SK</div>
+          </Link>
         </NavbarBrand>
       </NavbarContent>
 
