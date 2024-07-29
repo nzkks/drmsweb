@@ -1,5 +1,3 @@
-import { Button } from '@nextui-org/react';
-
 import { ThemeSwitch } from '@/components';
 
 const Home = () => {
@@ -7,10 +5,22 @@ const Home = () => {
     <main>
       <ThemeSwitch />
 
-      <p className="text-primary">Hello</p>
-      <Button color="primary" className="font-bold text-white">
-        Button
-      </Button>
+      <section className="h-48">Hero</section>
+      <section className="h-48" id="skills">
+        Skills
+      </section>
+      <section className="h-48" id="about">
+        About
+      </section>
+      <section className="h-48" id="experience">
+        Experience
+      </section>
+      <section className="h-48" id="recommendations">
+        Recommendations
+      </section>
+      <section className="h-48" id="certifications">
+        Certifications
+      </section>
     </main>
   );
 };
