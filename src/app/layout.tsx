@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 import { Inter as FontSans } from 'next/font/google';
 
 import './globals.css';
-import { Providers } from '@/components';
+import { Header, Providers } from '@/components';
 import { cn } from '@/lib/utils';
 
 const fontSans = FontSans({
@@ -32,7 +32,10 @@ const RootLayout = ({
           fontSans.variable,
         )}
       >
-        <Providers>{children}</Providers>
+        <Providers>
+          <Header />
+          {children}
+        </Providers>
       </body>
     </html>
   );
