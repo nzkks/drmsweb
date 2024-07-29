@@ -62,6 +62,10 @@ const config: Config = {
           DEFAULT: 'hsl(var(--accent))',
           foreground: 'hsl(var(--accent-foreground))',
         },
+        accent2: {
+          DEFAULT: 'hsl(var(--accent2))',
+          foreground: 'hsl(var(--accent2-foreground))',
+        },
         popover: {
           DEFAULT: 'hsl(var(--popover))',
           foreground: 'hsl(var(--popover-foreground))',
@@ -111,48 +115,27 @@ const config: Config = {
       );
     }),
     nextui({
-      addCommonColors: true,
+      addCommonColors: false,
       themes: {
         light: {
           colors: {
-            background: '#fafafa',
-            foreground: '#18181b',
+            background: 'hsl(var(--background))',
+            foreground: 'hsl(var(--foreground))',
             primary: {
-              '50': '#eef5ff',
-              '100': '#e1ecfe',
-              '200': '#c8dcfd',
-              '300': '#a7c4fa',
-              '400': '#7f9ff5',
-              '500': '#6681ee',
-              '600': '#4a5de1',
-              '700': '#3b49c7',
-              '800': '#3340a0',
-              '900': '#303b7f',
-              DEFAULT: '#6681ee',
-              foreground: '#eef5ff',
+              DEFAULT: 'hsl(var(--primary))',
+              foreground: 'hsl(var(--primary-foreground))',
             },
-            focus: '#c8dcfd',
+            secondary: {
+              DEFAULT: 'hsl(var(--secondary))',
+              foreground: 'hsl(var(--secondary-foreground))',
+            },
+            focus: 'hsl(var(--primary))',
           },
         },
         dark: {
           colors: {
-            background: '#18181b',
-            foreground: '#f4f4f5',
-            primary: {
-              '50': '#303b7f',
-              '100': '#3340a0',
-              '200': '#3b49c7',
-              '300': '#4a5de1',
-              '400': '#6681ee',
-              '500': '#7f9ff5',
-              '600': '#a7c4fa',
-              '700': '#c8dcfd',
-              '800': '#e1ecfe',
-              '900': '#eef5ff',
-              DEFAULT: '#6681ee',
-              foreground: '#eef5ff',
-            },
-            focus: '#3b49c7',
+            background: 'hsl(var(--foreground))',
+            foreground: 'hsl(var(--background))',
           },
         },
       },
