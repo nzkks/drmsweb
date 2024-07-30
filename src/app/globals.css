@@ -52,18 +52,18 @@
   }
 
   :root[class~='dark'] {
-    --background: 234 22.51% 11.05%;
+    --background: 234 32.51% 5.05%;
     --foreground: 0 0% 100%;
     --card: 234 22.51% 11.05%;
     --card-foreground: 0 0% 100%;
     --popover: 234 22.51% 11.05%;
     --popover-foreground: 0 0% 100%;
     --primary: 223 70% 67%;
-    --primary-foreground: 0 0% 100%;
+    --primary-foreground: 234 32.51% 5.05%;
     --secondary: 221 38% 77%;
     --secondary-foreground: 0 0% 100%;
     --muted: 221 38% 77%;
-    --muted-foreground: 0 0% 80%;
+    --muted-foreground: 0 0% 50%;
     --accent: 227 45% 43%;
     --accent-foreground: 0 0% 100%;
     --accent2: 224 34% 65%;
