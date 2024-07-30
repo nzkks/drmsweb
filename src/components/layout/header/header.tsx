@@ -74,8 +74,7 @@ const Header = () => {
             as={Link}
             href="#"
             variant="flat"
-            color="primary"
-            className="text-primary"
+            className="bg-primary-900 text-primary-foreground"
           >
             Contact
           </Button>
