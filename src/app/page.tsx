@@ -1,13 +1,11 @@
-import { Container, Hero } from '@/components';
+import { Container, Hero, Skills } from '@/components';
 
 const Home = () => {
   return (
     <main>
       <Hero />
+      <Skills />
 
-      <section className="h-48 py-16" id="skills">
-        <Container>Skills</Container>
-      </section>
       <section className="h-48 py-16" id="about">
         <Container>About</Container>
       </section>

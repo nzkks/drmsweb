@@ -1,0 +1,188 @@
+[
+  {
+    "name": "React.js",
+    "logo": "",
+    "level": 7,
+    "category": "A"
+  },
+  {
+    "name": "Next.js",
+    "logo": "",
+    "level": 7,
+    "category": "A"
+  },
+  {
+    "name": "Vite.js",
+    "logo": "",
+    "level": 7,
+    "category": "A"
+  },
+  {
+    "name": "Typescript",
+    "logo": "",
+    "level": 7,
+    "category": "A"
+  },
+  {
+    "name": "HTML5",
+    "logo": "",
+    "level": 7,
+    "category": "A"
+  },
+  {
+    "name": "CSS3",
+    "logo": "",
+    "level": 7,
+    "category": "A"
+  },
+  {
+    "name": "JavaScript",
+    "logo": "",
+    "level": 7,
+    "category": "A"
+  },
+  {
+    "name": "Styled Components",
+    "logo": "",
+    "level": 7,
+    "category": "A"
+  },
+  {
+    "name": "Emotion/css",
+    "logo": "",
+    "level": 7,
+    "category": "B"
+  },
+  {
+    "name": "React Storybook",
+    "logo": "",
+    "level": 7,
+    "category": "B"
+  },
+  {
+    "name": "Chromatic",
+    "logo": "",
+    "level": 7,
+    "category": "B"
+  },
+  {
+    "name": "Redux Toolkit",
+    "logo": "",
+    "level": 7,
+    "category": "B"
+  },
+  {
+    "name": "TanStack React Query",
+    "logo": "",
+    "level": 7,
+    "category": "B"
+  },
+  {
+    "name": "React Hook Form",
+    "logo": "",
+    "level": 7,
+    "category": "B"
+  },
+  {
+    "name": "GSAP",
+    "logo": "",
+    "level": 7,
+    "category": "B"
+  },
+  {
+    "name": "Three.js",
+    "logo": "",
+    "level": 7,
+    "category": "B"
+  },
+  {
+    "name": "React Testing Library",
+    "logo": "",
+    "level": 7,
+    "category": "C"
+  },
+  {
+    "name": "Vitest",
+    "logo": "",
+    "level": 7,
+    "category": "C"
+  },
+  {
+    "name": "Jest",
+    "logo": "",
+    "level": 7,
+    "category": "C"
+  },
+  {
+    "name": "Material-UI",
+    "logo": "",
+    "level": 7,
+    "category": "C"
+  },
+  {
+    "name": "Astro.js",
+    "logo": "",
+    "level": 7,
+    "category": "C"
+  },
+  {
+    "name": "Bootstrap",
+    "logo": "",
+    "level": 7,
+    "category": "C"
+  },
+  {
+    "name": "REST API",
+    "logo": "",
+    "level": 7,
+    "category": "C"
+  },
+  {
+    "name": "GraphQL",
+    "logo": "",
+    "level": 7,
+    "category": "C"
+  },
+  {
+    "name": "CLI",
+    "logo": "",
+    "level": 7,
+    "category": "D"
+  },
+  {
+    "name": "Git",
+    "logo": "",
+    "level": 7,
+    "category": "D"
+  },
+  {
+    "name": "Sanity headless CMS",
+    "logo": "",
+    "level": 7,
+    "category": "D"
+  },
+  {
+    "name": "Stripe integration",
+    "logo": "",
+    "level": 7,
+    "category": "D"
+  },
+  {
+    "name": "WordPress CMS",
+    "logo": "",
+    "level": 7,
+    "category": "D"
+  },
+  {
+    "name": "Azure DevOps",
+    "logo": "",
+    "level": 7,
+    "category": "D"
+  },
+  {
+    "name": "GitHub Actions",
+    "logo": "",
+    "level": 7,
+    "category": "D"
+  }
+]
