@@ -6,3 +6,6 @@ export * from './skills';
 
 export { default as About } from './about';
 export * from './about';
+
+export { default as Experience } from './experience';
+export * from './experience';
