@@ -1,4 +1,5 @@
 import { Container, Timeline } from '@/components';
+import experienceData from '@/data/experience.json';
 
 const Experience = () => {
   return (
@@ -6,13 +7,19 @@ const Experience = () => {
       <Container>
         <h2 className="text-center text-xl">Experience</h2>
 
-        <div className="-my-6">
-          <Timeline
-            title="Title"
-            subTitle="SubTitle"
-            dates="Dates"
-            content="Content"
-          />
+        <div className="mt-6">
+          {experienceData.map((job, index) => (
+            <Timeline
+              key={`${job.company}-${index}`}
+              jobTitle={job.jobTitle}
+              company={job.company}
+              industry={job.industry}
+              location={job.location}
+              period={job.period}
+              jobType={job.jobType}
+              details={job.details}
+            />
+          ))}
         </div>
       </Container>
     </section>
