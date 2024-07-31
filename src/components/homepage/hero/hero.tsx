@@ -21,7 +21,7 @@ const Hero = () => {
             Typescript
           </Chip>
         </div>
-        <h1 className="mt-6 text-4xl leading-tight">
+        <h1 className="mt-6 text-3xl leading-tight">
           Hi, I am
           <br />
           Shanthosh <span className="text-muted-foreground">Krishnakumar</span>,
