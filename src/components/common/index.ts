@@ -12,3 +12,6 @@ export * from './container';
 
 export { default as CollapsibleWrapper } from './collapsibleWrapper';
 export * from './collapsibleWrapper';
+
+export { default as Timeline } from './timeline';
+export * from './timeline';
