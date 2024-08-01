@@ -1,3 +1,12 @@
+'use client';
+
+import { Autoplay, Navigation, Pagination } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/autoplay';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+
 import { Container, TestimonialBlock } from '@/components';
 import recommendationsData from '@/data/recommendations.json';
 
@@ -7,15 +16,25 @@ const Recommendations = () => {
       <Container>
         <h2 className="text-center text-xl">LinkedIn Recommendations</h2>
 
-        {recommendationsData.map((item) => (
-          <TestimonialBlock
-            key={item.name}
-            imageFileName={item.imageFileName}
-            name={item.name}
-            about={item.about}
-            content={item.content}
-          />
-        ))}
+        <Swiper
+          modules={[Autoplay, Navigation, Pagination]}
+          slidesPerView={1}
+          loop
+          autoplay={{ delay: 10000 }}
+          navigation
+          pagination={{ clickable: true }}
+        >
+          {recommendationsData.map((item) => (
+            <SwiperSlide key={item.name}>
+              <TestimonialBlock
+                imageFileName={item.imageFileName}
+                name={item.name}
+                about={item.about}
+                content={item.content}
+              />
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </Container>
     </section>
   );
