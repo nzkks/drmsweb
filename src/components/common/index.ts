@@ -15,3 +15,6 @@ export * from './collapsibleWrapper';
 
 export { default as Timeline } from './timeline';
 export * from './timeline';
+
+export { default as TestimonialBlock } from './testimonialBlock';
+export * from './testimonialBlock';

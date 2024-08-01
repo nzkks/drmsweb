@@ -9,3 +9,6 @@ export * from './about';
 
 export { default as Experience } from './experience';
 export * from './experience';
+
+export { default as Recommendations } from './recommendations';
+export * from './recommendations';

@@ -1,4 +1,11 @@
-import { About, Container, Experience, Hero, Skills } from '@/components';
+import {
+  About,
+  Container,
+  Experience,
+  Hero,
+  Recommendations,
+  Skills,
+} from '@/components';
 
 const Home = () => {
   return (
@@ -7,10 +14,8 @@ const Home = () => {
       <Skills />
       <About />
       <Experience />
+      <Recommendations />
 
-      <section className="h-48 py-16" id="recommendations">
-        <Container>Recommendations</Container>
-      </section>
       <section className="h-48 py-16" id="certifications">
         <Container>Certifications</Container>
       </section>
