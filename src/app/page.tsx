@@ -1,6 +1,6 @@
 import {
   About,
-  Container,
+  Certifications,
   Experience,
   Hero,
   Recommendations,
@@ -15,10 +15,7 @@ const Home = () => {
       <About />
       <Experience />
       <Recommendations />
-
-      <section className="h-48 py-16" id="certifications">
-        <Container>Certifications</Container>
-      </section>
+      <Certifications />
     </main>
   );
 };

@@ -12,3 +12,6 @@ export * from './experience';
 
 export { default as Recommendations } from './recommendations';
 export * from './recommendations';
+
+export { default as Certifications } from './certifications';
+export * from './certifications';
