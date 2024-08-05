@@ -39,8 +39,18 @@ const Header = () => {
     };
   }, []);
 
+  const handleMobileMenuPress = (href: string) => {
+    setIsMenuOpen(!isMenuOpen);
+    setActiveSection(href);
+  };
+
   return (
-    <Navbar shouldHideOnScroll onMenuOpenChange={setIsMenuOpen} maxWidth="xl">
+    <Navbar
+      isMenuOpen={isMenuOpen}
+      onMenuOpenChange={setIsMenuOpen}
+      shouldHideOnScroll
+      maxWidth="xl"
+    >
       <NavbarContent>
         <NavbarMenuToggle
           aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
@@ -94,7 +104,7 @@ const Header = () => {
               )}
               href={href}
               size="lg"
-              onPress={() => setActiveSection(href)}
+              onPress={() => handleMobileMenuPress(href)}
             >
               {label}
             </Link>
