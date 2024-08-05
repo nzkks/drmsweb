@@ -1,0 +1,119 @@
+[
+  {
+    "name": "Get Started with Cloud Native, DevOps, Agile, and NoSQL",
+    "providerLogoFilename": "ibm_logo.svg",
+    "providerLogoFilenameDarkMode": "ibm_logo--dark.svg",
+    "providerName": "IBM",
+    "certificateImageFileName": "ibm-certificate.jpg",
+    "period": "Mar 2024",
+    "link": "https://www.coursera.org/account/accomplishments/records/NKLEFQZ5QSH6"
+  },
+  {
+    "name": "Developing Front-End Apps with React",
+    "providerLogoFilename": "ibm_logo.svg",
+    "providerLogoFilenameDarkMode": "ibm_logo--dark.svg",
+    "providerName": "IBM",
+    "certificateImageFileName": "ibm-certificate.jpg",
+    "period": "Mar 2024",
+    "link": "https://www.coursera.org/account/accomplishments/records/43ER7DEX85KP"
+  },
+  {
+    "name": "Developing Back-End Apps with Node.js and Express",
+    "providerLogoFilename": "ibm_logo.svg",
+    "providerLogoFilenameDarkMode": "ibm_logo--dark.svg",
+    "providerName": "IBM",
+    "certificateImageFileName": "ibm-certificate.jpg",
+    "period": "Mar 2024",
+    "link": "https://www.coursera.org/account/accomplishments/records/43ER7DEX85KP"
+  },
+  {
+    "name": "Introduction to Software Engineering",
+    "providerLogoFilename": "ibm_logo.svg",
+    "providerLogoFilenameDarkMode": "ibm_logo--dark.svg",
+    "providerName": "IBM",
+    "certificateImageFileName": "ibm-certificate.jpg",
+    "period": "Feb 2024",
+    "link": "https://www.coursera.org/account/accomplishments/records/LFR8T6W7QY7R"
+  },
+  {
+    "name": "Getting Started with Git and GitHub",
+    "providerLogoFilename": "ibm_logo.svg",
+    "providerLogoFilenameDarkMode": "ibm_logo--dark.svg",
+    "providerName": "IBM",
+    "certificateImageFileName": "ibm-certificate.jpg",
+    "period": "Feb 2024",
+    "link": "https://www.coursera.org/account/accomplishments/records/Q9FQUUJXE6RG"
+  },
+  {
+    "name": "JavaScript Programming Essentials",
+    "providerLogoFilename": "ibm_logo.svg",
+    "providerLogoFilenameDarkMode": "ibm_logo--dark.svg",
+    "providerName": "IBM",
+    "certificateImageFileName": "ibm-certificate.jpg",
+    "period": "Feb 2024",
+    "link": "https://www.coursera.org/account/accomplishments/records/87YM4VWXN9RT"
+  },
+  {
+    "name": "Become a Software Developer",
+    "providerLogoFilename": "linkedin-learning_logo.png",
+    "providerLogoFilenameDarkMode": "linkedin-learning_logo--dark.png",
+    "providerName": "LinkedIn",
+    "certificateImageFileName": "linkedin-certificate.jpg",
+    "period": "Feb 2022",
+    "link": "https://www.linkedin.com/learning/certificates/554b78b2790abcda197cfd51dc501f899f1462e77e7dfaba7c41f72c19fb82c9?trk=backfilled_certificate&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3Bnrl60avWRAq6juJmeandfA%3D%3D"
+  },
+  {
+    "name": "Advance Your Skills in JavaScript",
+    "providerLogoFilename": "linkedin-learning_logo.png",
+    "providerLogoFilenameDarkMode": "linkedin-learning_logo--dark.png",
+    "providerName": "LinkedIn",
+    "certificateImageFileName": "linkedin-certificate.jpg",
+    "period": "Sep 2021",
+    "link": "https://www.linkedin.com/learning/certificates/2971eebbd90acad8cd68ece806a724937bc3a27993d9ad265620abde4738ff67?trk=backfilled_certificate&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3Bnrl60avWRAq6juJmeandfA%3D%3D"
+  },
+  {
+    "name": "Become a Front-End Web Developer",
+    "providerLogoFilename": "linkedin-learning_logo.png",
+    "providerLogoFilenameDarkMode": "linkedin-learning_logo--dark.png",
+    "providerName": "LinkedIn",
+    "certificateImageFileName": "linkedin-certificate.jpg",
+    "period": "Sep 2021",
+    "link": "https://www.linkedin.com/learning/certificates/edfc261c97aad742f47ffa891b9db66975b4d7c0c77711f00739033ea62b53b0?trk=backfilled_certificate&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3Bnrl60avWRAq6juJmeandfA%3D%3D"
+  },
+  {
+    "name": "Become a Web Developer",
+    "providerLogoFilename": "linkedin-learning_logo.png",
+    "providerLogoFilenameDarkMode": "linkedin-learning_logo--dark.png",
+    "providerName": "LinkedIn",
+    "certificateImageFileName": "linkedin-certificate.jpg",
+    "period": "Sep 2021",
+    "link": "https://www.linkedin.com/learning/certificates/b91b399c7406e08614b6a8f3782fa107fbb7e29b4137ec63a4b0a893f0c8d72d?trk=backfilled_certificate&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3Bnrl60avWRAq6juJmeandfA%3D%3D"
+  },
+  {
+    "name": "JavaScript Essential Training",
+    "providerLogoFilename": "linkedin-learning_logo.png",
+    "providerLogoFilenameDarkMode": "linkedin-learning_logo--dark.png",
+    "providerName": "LinkedIn",
+    "certificateImageFileName": "linkedin-certificate.jpg",
+    "period": "Jun 2021",
+    "link": "https://www.linkedin.com/learning/certificates/319ee08751b2655d79b9cbf0f52d25fa25e0e0bd5dcb39be1da6fa702018a6e7?trk=backfilled_certificate&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3Bnrl60avWRAq6juJmeandfA%3D%3D"
+  },
+  {
+    "name": "Learning App Building with Vanilla JavaScript",
+    "providerLogoFilename": "linkedin-learning_logo.png",
+    "providerLogoFilenameDarkMode": "linkedin-learning_logo--dark.png",
+    "providerName": "LinkedIn",
+    "certificateImageFileName": "linkedin-certificate.jpg",
+    "period": "Jun 2021",
+    "link": "https://www.linkedin.com/learning/certificates/960de219c4b7bf83a0447a061e58fad2e770547503d529c4ffb6ea7fb36fbe50?trk=backfilled_certificate&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3Bnrl60avWRAq6juJmeandfA%3D%3D"
+  },
+  {
+    "name": "Front End Engineer certificate",
+    "providerLogoFilename": "pro5-ai_logo.png",
+    "providerLogoFilenameDarkMode": "pro5-ai_logo--dark.png",
+    "providerName": "Pro5.ai",
+    "certificateImageFileName": "pro5-ai-certificate.jpg",
+    "period": "Mar 2024",
+    "link": "https://storage.mangtas.com/public/certificates/FE-cert-5178066302-Shanthosh_Krishnakumar-23-03-24_16_38.pdf"
+  }
+]
