@@ -18,3 +18,6 @@ export * from './timeline';
 
 export { default as TestimonialBlock } from './testimonialBlock';
 export * from './testimonialBlock';
+
+export { default as CertificationBlock } from './certificationBlock';
+export * from './certificationBlock';
