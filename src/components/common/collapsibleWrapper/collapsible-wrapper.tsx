@@ -29,7 +29,9 @@ const CollapsibleWrapper = ({ title, content }: Props) => {
             </CollapsibleTrigger>
             <div className="ml-3 font-bold">{title}</div>
           </div>
-          <CollapsibleContent>{content}</CollapsibleContent>
+          <CollapsibleContent className="data-[state=closed]:animate-slide-up data-[state=open]:animate-slide-down overflow-hidden">
+            {content}
+          </CollapsibleContent>
         </>
       </Collapsible>
     </div>
