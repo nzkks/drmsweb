@@ -21,14 +21,14 @@ const CollapsibleWrapper = ({ title, content }: Props) => {
     <div className="mb-4">
       <Collapsible open={open} onOpenChange={setOpen} asChild>
         <>
-          <div className="mb-2 flex items-center">
-            <CollapsibleTrigger asChild>
-              <button className="IconButton">
+          <CollapsibleTrigger>
+            <div className="mb-2 flex items-center">
+              <div className="IconButton">
                 {open ? <Cross2Icon /> : <RowSpacingIcon />}
-              </button>
-            </CollapsibleTrigger>
-            <div className="ml-3 font-bold">{title}</div>
-          </div>
+              </div>
+              <div className="ml-3 font-bold">{title}</div>
+            </div>
+          </CollapsibleTrigger>
           <CollapsibleContent className="data-[state=closed]:animate-slide-up data-[state=open]:animate-slide-down overflow-hidden">
             {content}
           </CollapsibleContent>
