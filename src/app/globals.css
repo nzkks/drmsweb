@@ -27,9 +27,11 @@
 
 @layer base {
   :root {
+    --bg-gradient-stops: #d6ecec, #d7ecef, #d9ecf1, #dbecf3, #deecf5, #daeaf6,
+      #d7e8f7, #d4e6f8, #c9e1fa, #bfddfb, #b5d8fd, #aad3ff;
     --background: 263 39% 94%;
     --foreground: 234 20% 19%;
-    --card: 263 39% 94%;
+    --card: 227 29% 94%;
     --card-foreground: 234 20% 19%;
     --popover: 263 39% 94%;
     --popover-foreground: 234 20% 19%;
@@ -52,14 +54,16 @@
   }
 
   :root[class~='dark'] {
-    --background: 234 32.51% 5.05%;
+    --bg-gradient-stops: #1f0e4a, #190e44, #140d3d, #100b37, #0e0730, #0d072f,
+      #0b082d, #0a082c, #080c30, #061034, #031239, #00153d;
+    --background: 222.5 100% 7.16%;
     --foreground: 0 0% 100%;
-    --card: 234 22.51% 11.05%;
+    --card: 225 39% 12%;
     --card-foreground: 0 0% 100%;
-    --popover: 234 22.51% 11.05%;
+    --popover: 225 39% 12%;
     --popover-foreground: 0 0% 100%;
     --primary: 223 70% 67%;
-    --primary-foreground: 234 32.51% 5.05%;
+    --primary-foreground: 222.5 100% 7.16%;
     --secondary: 221 38% 77%;
     --secondary-foreground: 0 0% 100%;
     --muted: 221 38% 77%;
@@ -70,7 +74,7 @@
     --accent2-foreground: 0 0% 100%;
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 100%;
-    --border: 221 38% 77%;
+    --border: 221 43% 28%;
     --input: 221 38% 77%;
     --ring: 223 70% 67%;
     --radius: 0.5rem;
