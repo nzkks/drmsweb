@@ -5,7 +5,7 @@ import { Container } from '@/components';
 
 const Hero = () => {
   return (
-    <section className="min-h-48 py-16">
+    <section className="py-16">
       <Container className="text-center">
         <div className="text-md">
           <Chip color="default" variant="flat">

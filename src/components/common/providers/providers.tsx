@@ -4,7 +4,7 @@ import { ReactNode } from 'react';
 import { NextUIProvider } from '@nextui-org/react';
 import { useRouter } from 'next/navigation';
 
-import {ThemeProvider} from '@/components';;
+import { ThemeProvider } from '@/components';
 
 const Providers = ({ children }: { children: ReactNode }) => {
   const router = useRouter();
@@ -17,7 +17,7 @@ const Providers = ({ children }: { children: ReactNode }) => {
         enableSystem
         disableTransitionOnChange
       >
-        <div className="bg-background text-foreground">{children}</div>
+        {children}
       </ThemeProvider>
     </NextUIProvider>
   );

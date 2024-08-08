@@ -27,7 +27,7 @@ const Skills = () => {
   ));
 
   return (
-    <section className="min-h-48 py-16" id="skills">
+    <section className="py-16" id="skills">
       <h2 className="text-center text-xl">
         I turn these skills into beautiful web projects
       </h2>
