@@ -18,11 +18,17 @@ const Skills = () => {
       autoFill
       className="my-8"
     >
-      {groupedSkillData[category].map((skill) => (
-        <div key={skill.name} className="mx-4">
-          {skill.name}
-        </div>
-      ))}
+      {groupedSkillData[category].map((skill) => {
+        return (
+          <div key={skill.name} className="mx-4">
+            {skill.highlight ? (
+              <span className="font-bold text-accent">{skill.name}</span>
+            ) : (
+              <span>{skill.name}</span>
+            )}
+          </div>
+        );
+      })}
     </Marquee>
   ));
 

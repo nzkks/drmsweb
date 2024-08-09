@@ -3,186 +3,231 @@
     "name": "React.js",
     "logo": "",
     "level": 7,
-    "category": "A"
+    "category": "A",
+    "highlight": true
   },
   {
     "name": "Next.js",
     "logo": "",
     "level": 7,
-    "category": "A"
+    "category": "A",
+    "highlight": true
   },
   {
     "name": "Vite.js",
     "logo": "",
     "level": 7,
-    "category": "A"
+    "category": "A",
+    "highlight": false
   },
   {
     "name": "Typescript",
     "logo": "",
     "level": 7,
-    "category": "A"
+    "category": "A",
+    "highlight": true
   },
   {
     "name": "HTML5",
     "logo": "",
     "level": 7,
-    "category": "A"
+    "category": "A",
+    "highlight": true
   },
   {
     "name": "CSS3",
     "logo": "",
     "level": 7,
-    "category": "A"
+    "category": "A",
+    "highlight": true
   },
   {
     "name": "JavaScript",
     "logo": "",
     "level": 7,
-    "category": "A"
+    "category": "A",
+    "highlight": true
+  },
+  {
+    "name": "Tailwind Css",
+    "logo": "",
+    "level": 7,
+    "category": "A",
+    "highlight": false
   },
   {
     "name": "Styled Components",
     "logo": "",
     "level": 7,
-    "category": "A"
+    "category": "A",
+    "highlight": false
   },
   {
     "name": "Emotion/css",
     "logo": "",
     "level": 7,
-    "category": "B"
+    "category": "B",
+    "highlight": false
   },
   {
     "name": "React Storybook",
     "logo": "",
     "level": 7,
-    "category": "B"
+    "category": "B",
+    "highlight": false
   },
   {
     "name": "Chromatic",
     "logo": "",
     "level": 7,
-    "category": "B"
+    "category": "B",
+    "highlight": false
   },
   {
     "name": "Redux Toolkit",
     "logo": "",
     "level": 7,
-    "category": "B"
+    "category": "B",
+    "highlight": false
   },
   {
     "name": "TanStack React Query",
     "logo": "",
     "level": 7,
-    "category": "B"
+    "category": "B",
+    "highlight": false
   },
   {
     "name": "React Hook Form",
     "logo": "",
     "level": 7,
-    "category": "B"
+    "category": "B",
+    "highlight": false
   },
   {
     "name": "GSAP",
     "logo": "",
     "level": 7,
-    "category": "B"
+    "category": "B",
+    "highlight": true
+  },
+  {
+    "name": "Framer Motion",
+    "logo": "",
+    "level": 7,
+    "category": "B",
+    "highlight": false
   },
   {
     "name": "Three.js",
     "logo": "",
     "level": 7,
-    "category": "B"
+    "category": "B",
+    "highlight": false
   },
   {
     "name": "React Testing Library",
     "logo": "",
     "level": 7,
-    "category": "C"
+    "category": "C",
+    "highlight": false
   },
   {
     "name": "Vitest",
     "logo": "",
     "level": 7,
-    "category": "C"
+    "category": "C",
+    "highlight": false
   },
   {
     "name": "Jest",
     "logo": "",
     "level": 7,
-    "category": "C"
+    "category": "C",
+    "highlight": false
   },
   {
     "name": "Material-UI",
     "logo": "",
     "level": 7,
-    "category": "C"
+    "category": "C",
+    "highlight": true
   },
   {
     "name": "Astro.js",
     "logo": "",
     "level": 7,
-    "category": "C"
+    "category": "C",
+    "highlight": true
   },
   {
     "name": "Bootstrap",
     "logo": "",
     "level": 7,
-    "category": "C"
+    "category": "C",
+    "highlight": true
   },
   {
     "name": "REST API",
     "logo": "",
     "level": 7,
-    "category": "C"
+    "category": "C",
+    "highlight": false
   },
   {
     "name": "GraphQL",
     "logo": "",
     "level": 7,
-    "category": "C"
+    "category": "C",
+    "highlight": false
   },
   {
     "name": "CLI",
     "logo": "",
     "level": 7,
-    "category": "D"
+    "category": "D",
+    "highlight": false
   },
   {
     "name": "Git",
     "logo": "",
     "level": 7,
-    "category": "D"
+    "category": "D",
+    "highlight": false
   },
   {
     "name": "Sanity headless CMS",
     "logo": "",
     "level": 7,
-    "category": "D"
+    "category": "D",
+    "highlight": false
   },
   {
     "name": "Stripe integration",
     "logo": "",
     "level": 7,
-    "category": "D"
+    "category": "D",
+    "highlight": false
   },
   {
     "name": "WordPress CMS",
     "logo": "",
     "level": 7,
-    "category": "D"
+    "category": "D",
+    "highlight": false
   },
   {
     "name": "Azure DevOps",
     "logo": "",
     "level": 7,
-    "category": "D"
+    "category": "D",
+    "highlight": false
   },
   {
     "name": "GitHub Actions",
     "logo": "",
     "level": 7,
-    "category": "D"
+    "category": "D",
+    "highlight": false
   }
 ]
