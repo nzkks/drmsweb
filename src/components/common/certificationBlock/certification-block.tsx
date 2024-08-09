@@ -43,7 +43,7 @@ const CertificationBlock = ({
           <Link
             href={link}
             target="_blank"
-            className="absolute left-1/2 top-1/2 hidden size-12 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-lg bg-[rgba(204,204,204,0.53)] group-hover:flex"
+            className="absolute left-1/2 top-1/2 hidden size-12 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-lg bg-accent/50 group-hover:flex"
           >
             <ExternalLinkIcon />
           </Link>
