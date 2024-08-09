@@ -28,7 +28,7 @@ const RootLayout = ({
     <html lang="en" suppressHydrationWarning>
       <body
         className={cn(
-          'bg-gradient-primary min-h-screen font-sans text-foreground antialiased',
+          'min-h-screen bg-background font-sans text-foreground antialiased',
           fontSans.variable,
         )}
       >
