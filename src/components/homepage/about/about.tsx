@@ -8,13 +8,14 @@ const About = () => {
       <Container>
         <h2 className="text-center text-xl">About me</h2>
 
-        <div className="mt-10 grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-3">
+        <div className="group/about mt-10 grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-3">
           {aboutData.map((data) => (
-            <CollapsibleWrapper
+            <div
               key={data.title}
-              title={data.title}
-              content={data.content}
-            />
+              className="group transition-all lg:hover:!opacity-100 lg:group-hover/about:opacity-50"
+            >
+              <CollapsibleWrapper title={data.title} content={data.content} />
+            </div>
           ))}
         </div>
       </Container>
