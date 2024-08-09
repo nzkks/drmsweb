@@ -56,9 +56,9 @@
   :root[class~='dark'] {
     --bg-gradient-stops: #1f0e4a, #190e44, #140d3d, #100b37, #0e0730, #0d072f,
       #0b082d, #0a082c, #080c30, #061034, #031239, #00153d;
-    --background: 222.5 100% 7.16%;
-    --foreground: 0 0% 100%;
-    --card: 225 39% 12%;
+    --background: 215.68 64.91% 11.18%;
+    --foreground: 225 20.2% 61.18%;
+    --card: 218.3 58.02% 15.88%;
     --card-foreground: 0 0% 100%;
     --popover: 225 39% 12%;
     --popover-foreground: 0 0% 100%;
@@ -68,8 +68,8 @@
     --secondary-foreground: 0 0% 100%;
     --muted: 221 38% 77%;
     --muted-foreground: 0 0% 50%;
-    --accent: 227 45% 43%;
-    --accent-foreground: 0 0% 100%;
+    --accent: 172.46 66.01% 50.39%;
+    --accent-foreground: 0 0% 0%;
     --accent2: 224 34% 65%;
     --accent2-foreground: 0 0% 100%;
     --destructive: 0 62.8% 30.6%;
@@ -78,10 +78,17 @@
     --input: 221 38% 77%;
     --ring: 223 70% 67%;
     --radius: 0.5rem;
+    --swiper-navigation-color: #2dd4bf;
+    --swiper-pagination-color: #2dd4bf;
     --swiper-pagination-bullet-inactive-color: #ccc;
   }
 }
 
-.swiper-pagination-bullet {
-  background: var(--swiper-pagination-bullet-inactive-color);
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: hsl(225.71deg 70% 88.24%);
 }
