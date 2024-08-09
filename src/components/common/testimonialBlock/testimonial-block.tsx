@@ -17,13 +17,16 @@ const TestimonialBlock = ({ imageFileName, name, about, content }: Props) => {
             src={`/images/testimonials/${imageFileName}`}
             width="200"
             height="200"
-            className="mx-auto h-40 w-40 rounded-full object-cover grayscale group-hover:grayscale-0"
+            className="mx-auto size-40 rounded-full object-cover grayscale group-hover:grayscale-0"
           />
         </div>
         <figcaption className="mt-5 md:mt-0">
           <div className="m-auto text-left">
             <span className="font-bold">“</span>
-            <div dangerouslySetInnerHTML={{ __html: content }} />
+            <div
+              dangerouslySetInnerHTML={{ __html: content }}
+              className="*:mb-3 [&>:last-child]:mb-0"
+            />
             <span className="font-bold">”</span>
           </div>
           <div className="mt-8">
