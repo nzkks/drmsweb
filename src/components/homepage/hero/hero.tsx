@@ -26,7 +26,6 @@ const Hero = () => {
           <br />
           Shanthosh <span className="text-muted-foreground">Krishnakumar</span>,
           <br />
-          your{' '}
           <span className="bg-gradient-to-b from-primary-500 to-primary-700 bg-clip-text font-bold text-transparent">
             Frontend Developer
           </span>
