@@ -33,20 +33,20 @@ const menuItems = [
 const Skills = () => {
   const [selectedMenuItem, setSelectedMenuItem] = useState('animation');
 
-  const groupedSkillData = groupObjArrayByProperty(
+  const skillRowsForMarquee = groupObjArrayByProperty(
     skillsData,
-    (x) => x.category,
+    (x) => x.rowId,
   );
 
-  const marquees = Object.keys(groupedSkillData).map((category, index) => (
+  const marquees = Object.keys(skillRowsForMarquee).map((rowId, index) => (
     <Marquee
-      key={category}
+      key={rowId}
       direction={index % 2 === 0 ? 'left' : 'right'}
       speed={20}
       autoFill
       className="my-8"
     >
-      {groupedSkillData[category].map((skill) => {
+      {skillRowsForMarquee[rowId].map((skill) => {
         return (
           <div key={skill.name} className="mx-4">
             {skill.highlight ? (

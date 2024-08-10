@@ -4,6 +4,7 @@
     "logo": "",
     "level": 7,
     "category": "A",
+    "rowId": "A",
     "highlight": true
   },
   {
@@ -11,6 +12,7 @@
     "logo": "",
     "level": 7,
     "category": "A",
+    "rowId": "A",
     "highlight": true
   },
   {
@@ -18,6 +20,7 @@
     "logo": "",
     "level": 7,
     "category": "A",
+    "rowId": "A",
     "highlight": false
   },
   {
@@ -25,6 +28,7 @@
     "logo": "",
     "level": 7,
     "category": "A",
+    "rowId": "A",
     "highlight": true
   },
   {
@@ -32,6 +36,7 @@
     "logo": "",
     "level": 7,
     "category": "A",
+    "rowId": "A",
     "highlight": true
   },
   {
@@ -39,6 +44,7 @@
     "logo": "",
     "level": 7,
     "category": "A",
+    "rowId": "A",
     "highlight": true
   },
   {
@@ -46,6 +52,7 @@
     "logo": "",
     "level": 7,
     "category": "A",
+    "rowId": "A",
     "highlight": true
   },
   {
@@ -53,6 +60,7 @@
     "logo": "",
     "level": 7,
     "category": "A",
+    "rowId": "A",
     "highlight": false
   },
   {
@@ -60,6 +68,7 @@
     "logo": "",
     "level": 7,
     "category": "A",
+    "rowId": "A",
     "highlight": false
   },
   {
@@ -67,6 +76,7 @@
     "logo": "",
     "level": 7,
     "category": "B",
+    "rowId": "B",
     "highlight": false
   },
   {
@@ -74,6 +84,7 @@
     "logo": "",
     "level": 7,
     "category": "B",
+    "rowId": "B",
     "highlight": false
   },
   {
@@ -81,6 +92,7 @@
     "logo": "",
     "level": 7,
     "category": "B",
+    "rowId": "B",
     "highlight": false
   },
   {
@@ -88,6 +100,7 @@
     "logo": "",
     "level": 7,
     "category": "B",
+    "rowId": "B",
     "highlight": false
   },
   {
@@ -95,6 +108,7 @@
     "logo": "",
     "level": 7,
     "category": "B",
+    "rowId": "B",
     "highlight": false
   },
   {
@@ -102,6 +116,7 @@
     "logo": "",
     "level": 7,
     "category": "B",
+    "rowId": "B",
     "highlight": false
   },
   {
@@ -109,6 +124,7 @@
     "logo": "",
     "level": 7,
     "category": "B",
+    "rowId": "B",
     "highlight": true
   },
   {
@@ -116,6 +132,7 @@
     "logo": "",
     "level": 7,
     "category": "B",
+    "rowId": "B",
     "highlight": false
   },
   {
@@ -123,6 +140,7 @@
     "logo": "",
     "level": 7,
     "category": "B",
+    "rowId": "B",
     "highlight": false
   },
   {
@@ -130,6 +148,7 @@
     "logo": "",
     "level": 7,
     "category": "C",
+    "rowId": "C",
     "highlight": false
   },
   {
@@ -137,6 +156,7 @@
     "logo": "",
     "level": 7,
     "category": "C",
+    "rowId": "C",
     "highlight": false
   },
   {
@@ -144,6 +164,7 @@
     "logo": "",
     "level": 7,
     "category": "C",
+    "rowId": "C",
     "highlight": false
   },
   {
@@ -151,6 +172,7 @@
     "logo": "",
     "level": 7,
     "category": "C",
+    "rowId": "C",
     "highlight": true
   },
   {
@@ -158,6 +180,7 @@
     "logo": "",
     "level": 7,
     "category": "C",
+    "rowId": "C",
     "highlight": true
   },
   {
@@ -165,6 +188,7 @@
     "logo": "",
     "level": 7,
     "category": "C",
+    "rowId": "C",
     "highlight": true
   },
   {
@@ -172,6 +196,7 @@
     "logo": "",
     "level": 7,
     "category": "C",
+    "rowId": "C",
     "highlight": false
   },
   {
@@ -179,6 +204,7 @@
     "logo": "",
     "level": 7,
     "category": "C",
+    "rowId": "C",
     "highlight": false
   },
   {
@@ -186,6 +212,7 @@
     "logo": "",
     "level": 7,
     "category": "D",
+    "rowId": "D",
     "highlight": false
   },
   {
@@ -193,6 +220,7 @@
     "logo": "",
     "level": 7,
     "category": "D",
+    "rowId": "D",
     "highlight": false
   },
   {
@@ -200,6 +228,7 @@
     "logo": "",
     "level": 7,
     "category": "D",
+    "rowId": "D",
     "highlight": false
   },
   {
@@ -207,6 +236,7 @@
     "logo": "",
     "level": 7,
     "category": "D",
+    "rowId": "D",
     "highlight": false
   },
   {
@@ -214,6 +244,7 @@
     "logo": "",
     "level": 7,
     "category": "D",
+    "rowId": "D",
     "highlight": false
   },
   {
@@ -221,6 +252,7 @@
     "logo": "",
     "level": 7,
     "category": "D",
+    "rowId": "D",
     "highlight": false
   },
   {
@@ -228,6 +260,7 @@
     "logo": "",
     "level": 7,
     "category": "D",
+    "rowId": "D",
     "highlight": false
   }
 ]
