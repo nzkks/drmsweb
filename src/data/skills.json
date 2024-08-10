@@ -3,7 +3,9 @@
     "name": "React.js",
     "logo": "",
     "level": 7,
-    "category": "A",
+    "categories": [
+      "Frameworks and Libraries"
+    ],
     "rowId": "A",
     "highlight": true
   },
@@ -11,7 +13,9 @@
     "name": "Next.js",
     "logo": "",
     "level": 7,
-    "category": "A",
+    "categories": [
+      "Frameworks and Libraries"
+    ],
     "rowId": "A",
     "highlight": true
   },
@@ -19,7 +23,9 @@
     "name": "Vite.js",
     "logo": "",
     "level": 7,
-    "category": "A",
+    "categories": [
+      "Frameworks and Libraries"
+    ],
     "rowId": "A",
     "highlight": false
   },
@@ -27,7 +33,9 @@
     "name": "Typescript",
     "logo": "",
     "level": 7,
-    "category": "A",
+    "categories": [
+      "Core Technologies"
+    ],
     "rowId": "A",
     "highlight": true
   },
@@ -35,7 +43,9 @@
     "name": "HTML5",
     "logo": "",
     "level": 7,
-    "category": "A",
+    "categories": [
+      "Core Technologies"
+    ],
     "rowId": "A",
     "highlight": true
   },
@@ -43,7 +53,9 @@
     "name": "CSS3",
     "logo": "",
     "level": 7,
-    "category": "A",
+    "categories": [
+      "Core Technologies"
+    ],
     "rowId": "A",
     "highlight": true
   },
@@ -51,7 +63,9 @@
     "name": "JavaScript",
     "logo": "",
     "level": 7,
-    "category": "A",
+    "categories": [
+      "Core Technologies"
+    ],
     "rowId": "A",
     "highlight": true
   },
@@ -59,7 +73,9 @@
     "name": "Tailwind Css",
     "logo": "",
     "level": 7,
-    "category": "A",
+    "categories": [
+      "Styling and Design"
+    ],
     "rowId": "A",
     "highlight": false
   },
@@ -67,7 +83,9 @@
     "name": "Styled Components",
     "logo": "",
     "level": 7,
-    "category": "A",
+    "categories": [
+      "Styling and Design"
+    ],
     "rowId": "A",
     "highlight": false
   },
@@ -75,7 +93,9 @@
     "name": "Emotion/css",
     "logo": "",
     "level": 7,
-    "category": "B",
+    "categories": [
+      "Styling and Design"
+    ],
     "rowId": "B",
     "highlight": false
   },
@@ -83,7 +103,9 @@
     "name": "React Storybook",
     "logo": "",
     "level": 7,
-    "category": "B",
+    "categories": [
+      "Other Tools"
+    ],
     "rowId": "B",
     "highlight": false
   },
@@ -91,7 +113,9 @@
     "name": "Chromatic",
     "logo": "",
     "level": 7,
-    "category": "B",
+    "categories": [
+      "Other Tools"
+    ],
     "rowId": "B",
     "highlight": false
   },
@@ -99,7 +123,19 @@
     "name": "Redux Toolkit",
     "logo": "",
     "level": 7,
-    "category": "B",
+    "categories": [
+      "State Management"
+    ],
+    "rowId": "B",
+    "highlight": false
+  },
+  {
+    "name": "Redux Thunk",
+    "logo": "",
+    "level": 7,
+    "categories": [
+      "State Management"
+    ],
     "rowId": "B",
     "highlight": false
   },
@@ -107,7 +143,9 @@
     "name": "TanStack React Query",
     "logo": "",
     "level": 7,
-    "category": "B",
+    "categories": [
+      "State Management"
+    ],
     "rowId": "B",
     "highlight": false
   },
@@ -115,7 +153,10 @@
     "name": "React Hook Form",
     "logo": "",
     "level": 7,
-    "category": "B",
+    "categories": [
+      "State Management",
+      "Forms"
+    ],
     "rowId": "B",
     "highlight": false
   },
@@ -123,7 +164,10 @@
     "name": "GSAP",
     "logo": "",
     "level": 7,
-    "category": "B",
+    "categories": [
+      "Styling and Design",
+      "Animation and Interaction"
+    ],
     "rowId": "B",
     "highlight": true
   },
@@ -131,7 +175,10 @@
     "name": "Framer Motion",
     "logo": "",
     "level": 7,
-    "category": "B",
+    "categories": [
+      "Styling and Design",
+      "Animation and Interaction"
+    ],
     "rowId": "B",
     "highlight": false
   },
@@ -139,7 +186,9 @@
     "name": "Three.js",
     "logo": "",
     "level": 7,
-    "category": "B",
+    "categories": [
+      "Animation and Interaction"
+    ],
     "rowId": "B",
     "highlight": false
   },
@@ -147,7 +196,9 @@
     "name": "React Testing Library",
     "logo": "",
     "level": 7,
-    "category": "C",
+    "categories": [
+      "Testing"
+    ],
     "rowId": "C",
     "highlight": false
   },
@@ -155,7 +206,9 @@
     "name": "Vitest",
     "logo": "",
     "level": 7,
-    "category": "C",
+    "categories": [
+      "Testing"
+    ],
     "rowId": "C",
     "highlight": false
   },
@@ -163,7 +216,9 @@
     "name": "Jest",
     "logo": "",
     "level": 7,
-    "category": "C",
+    "categories": [
+      "Testing"
+    ],
     "rowId": "C",
     "highlight": false
   },
@@ -171,7 +226,9 @@
     "name": "Material-UI",
     "logo": "",
     "level": 7,
-    "category": "C",
+    "categories": [
+      "Styling and Design"
+    ],
     "rowId": "C",
     "highlight": true
   },
@@ -179,7 +236,9 @@
     "name": "Astro.js",
     "logo": "",
     "level": 7,
-    "category": "C",
+    "categories": [
+      "Frameworks and Libraries"
+    ],
     "rowId": "C",
     "highlight": true
   },
@@ -187,7 +246,9 @@
     "name": "Bootstrap",
     "logo": "",
     "level": 7,
-    "category": "C",
+    "categories": [
+      "Styling and Design"
+    ],
     "rowId": "C",
     "highlight": true
   },
@@ -195,7 +256,9 @@
     "name": "REST API",
     "logo": "",
     "level": 7,
-    "category": "C",
+    "categories": [
+      "APIs and Data Handling"
+    ],
     "rowId": "C",
     "highlight": false
   },
@@ -203,7 +266,9 @@
     "name": "GraphQL",
     "logo": "",
     "level": 7,
-    "category": "C",
+    "categories": [
+      "APIs and Data Handling"
+    ],
     "rowId": "C",
     "highlight": false
   },
@@ -211,7 +276,9 @@
     "name": "CLI",
     "logo": "",
     "level": 7,
-    "category": "D",
+    "categories": [
+      "Build Tools and Workflow"
+    ],
     "rowId": "D",
     "highlight": false
   },
@@ -219,7 +286,10 @@
     "name": "Git",
     "logo": "",
     "level": 7,
-    "category": "D",
+    "categories": [
+      "Build Tools and Workflow",
+      "Version Control and Collaboration"
+    ],
     "rowId": "D",
     "highlight": false
   },
@@ -227,7 +297,10 @@
     "name": "Sanity headless CMS",
     "logo": "",
     "level": 7,
-    "category": "D",
+    "categories": [
+      "APIs and Data Handling",
+      "CMSs"
+    ],
     "rowId": "D",
     "highlight": false
   },
@@ -235,7 +308,9 @@
     "name": "Stripe integration",
     "logo": "",
     "level": 7,
-    "category": "D",
+    "categories": [
+      "APIs and Data Handling"
+    ],
     "rowId": "D",
     "highlight": false
   },
@@ -243,7 +318,9 @@
     "name": "WordPress CMS",
     "logo": "",
     "level": 7,
-    "category": "D",
+    "categories": [
+      "Other Tools"
+    ],
     "rowId": "D",
     "highlight": false
   },
@@ -251,7 +328,10 @@
     "name": "Azure DevOps",
     "logo": "",
     "level": 7,
-    "category": "D",
+    "categories": [
+      "Build Tools and Workflow",
+      "Version Control and Collaboration"
+    ],
     "rowId": "D",
     "highlight": false
   },
@@ -259,7 +339,9 @@
     "name": "GitHub Actions",
     "logo": "",
     "level": 7,
-    "category": "D",
+    "categories": [
+      "Build Tools and Workflow"
+    ],
     "rowId": "D",
     "highlight": false
   }
