@@ -113,7 +113,13 @@ const config: Config = {
   darkMode: ['class'],
   plugins: [
     require('tailwindcss-animate'),
-    plugin(({ matchUtilities, theme }) => {
+    plugin(({ addBase, matchUtilities, theme }) => {
+      addBase({
+        'h1, h2, h3, h4, h5, h6': {
+          'scroll-margin-top': theme('spacing.32'),
+          color: 'hsl(var(--heading))',
+        },
+      });
       matchUtilities(
         {
           'auto-fill': (value) => ({

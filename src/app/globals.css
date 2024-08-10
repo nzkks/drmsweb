@@ -2,29 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* --background: #ede8f5;
---foreground: #27293b;
---primary: #7091e6;
---primary-foreground: #ffffff;
---secondary: #adbbda;
---secondary-foreground: #ffffff;
---accent: #3d52a0;
---accent-foreground: #ffffff;
---accent2: #8697c4;
---accent2-foreground: #ffffff; */
-
-/* Above in HSL colours */
-/* --background: hsl(263, 39%, 94%);
---foreground: hsl(234, 20%, 19%);
---primary: hsl(223, 70%, 67%);
---primary-foreground: hsl(0, 0%, 100%);
---secondary: hsl(221, 38%, 77%);
---secondary-foreground: hsl(0, 0%, 100%);
---accent: hsl(227, 45%, 43%);
---accent-foreground: hsl(0, 0%, 100%);
---accent2: hsl(224, 34%, 65%);
---accent2-foreground: hsl(0, 0%, 100%); */
-
 @layer base {
   :root {
     --bg-gradient-stops: #d6ecec, #d7ecef, #d9ecf1, #dbecf3, #deecf5, #daeaf6,
@@ -51,6 +28,7 @@
     --input: 221 38% 77%;
     --ring: 223 70% 67%;
     --radius: 0.5rem;
+    --heading: 215.68 64.91% 11.18%;
   }
 
   :root[class~='dark'] {
@@ -78,17 +56,9 @@
     --input: 221 38% 77%;
     --ring: 223 70% 67%;
     --radius: 0.5rem;
+    --heading: 225.71 70% 88.24%;
     --swiper-navigation-color: #2dd4bf;
     --swiper-pagination-color: #2dd4bf;
     --swiper-pagination-bullet-inactive-color: #ccc;
   }
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: hsl(225.71deg 70% 88.24%);
 }
