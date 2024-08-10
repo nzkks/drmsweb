@@ -9,11 +9,10 @@ import {
   DropdownTrigger,
 } from '@nextui-org/react';
 import { DotsVerticalIcon } from '@radix-ui/react-icons';
-import Marquee from 'react-fast-marquee';
 
 import { Container } from '@/components';
 import skillsData from '@/data/skills.json';
-import groupObjArrayByProperty from '@/lib/groupObjArrayByProperty';
+import SkillsMarquee from './skills-marquee';
 
 const menuItems = [
   {
@@ -32,33 +31,6 @@ const menuItems = [
 
 const Skills = () => {
   const [selectedMenuItem, setSelectedMenuItem] = useState('animation');
-
-  const skillRowsForMarquee = groupObjArrayByProperty(
-    skillsData,
-    (x) => x.rowId,
-  );
-
-  const marquees = Object.keys(skillRowsForMarquee).map((rowId, index) => (
-    <Marquee
-      key={rowId}
-      direction={index % 2 === 0 ? 'left' : 'right'}
-      speed={20}
-      autoFill
-      className="my-8"
-    >
-      {skillRowsForMarquee[rowId].map((skill) => {
-        return (
-          <div key={skill.name} className="mx-4">
-            {skill.highlight ? (
-              <span className="font-bold text-accent">{skill.name}</span>
-            ) : (
-              <span>{skill.name}</span>
-            )}
-          </div>
-        );
-      })}
-    </Marquee>
-  ));
 
   return (
     <section className="py-16" id="skills">
@@ -91,7 +63,9 @@ const Skills = () => {
       </div>
 
       {selectedMenuItem === 'animation' ? (
-        <Container>{marquees}</Container>
+        <Container>
+          <SkillsMarquee data={skillsData} />
+        </Container>
       ) : selectedMenuItem === 'experience' ? (
         <Container>
           <>Experience</>
