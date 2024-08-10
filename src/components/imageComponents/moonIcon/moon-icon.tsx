@@ -3,7 +3,7 @@ type Props = {
 };
 
 const MoonIcon = (props: Props) => (
-  <svg viewBox="0 0 24 24" fill="none" className="m-2 h-6 w-6">
+  <svg viewBox="0 0 24 24" fill="none" className="m-2 size-6">
     <path
       fillRule="evenodd"
       clipRule="evenodd"

@@ -9,7 +9,7 @@ const SunIcon = (props: Props) => (
     strokeWidth="2"
     strokeLinecap="round"
     strokeLinejoin="round"
-    className="m-2 h-6 w-6"
+    className="m-2 size-6"
   >
     <path
       d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
