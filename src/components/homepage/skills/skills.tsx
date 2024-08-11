@@ -31,7 +31,7 @@ const menuItems = [
 ];
 
 const Skills = () => {
-  const [selectedMenuItem, setSelectedMenuItem] = useState('animation');
+  const [selectedMenuItem, setSelectedMenuItem] = useState('category');
 
   return (
     <section className="py-16" id="skills">
