@@ -13,6 +13,7 @@ import { DotsVerticalIcon } from '@radix-ui/react-icons';
 import { Container } from '@/components';
 import skillsData from '@/data/skills.json';
 import SkillsMarquee from './skills-marquee';
+import SkillsCategorized from './skills-categorized';
 
 const menuItems = [
   {
@@ -72,7 +73,7 @@ const Skills = () => {
         </Container>
       ) : (
         <Container>
-          <>Categorized</>
+          <SkillsCategorized data={skillsData} />
         </Container>
       )}
     </section>

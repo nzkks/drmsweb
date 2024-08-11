@@ -1,15 +1,7 @@
 import Marquee from 'react-fast-marquee';
 
 import groupObjArrayByProperty from '@/lib/groupObjArrayByProperty';
-
-type Skills = {
-  name: string;
-  logo: string;
-  level: number;
-  categories: string[];
-  rowId: string;
-  highlight: boolean;
-};
+import { Skills } from '@/types';
 
 type Props = {
   data: Skills[];
