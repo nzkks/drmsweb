@@ -161,6 +161,17 @@
     "highlight": false
   },
   {
+    "name": "Formik",
+    "logo": "",
+    "level": 7,
+    "categories": [
+      "State Management",
+      "Forms"
+    ],
+    "rowId": "B",
+    "highlight": false
+  },
+  {
     "name": "GSAP",
     "logo": "",
     "level": 7,
