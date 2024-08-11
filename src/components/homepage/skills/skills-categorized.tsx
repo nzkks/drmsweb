@@ -1,7 +1,7 @@
-import { Skills } from '@/types';
+import { Skill } from '@/types';
 
 type Props = {
-  data: Skills[];
+  data: Skill[];
 };
 
 const SkillsCategorized = ({ data }: Props) => {

@@ -1,1 +1,1 @@
-export type { Skills } from './skills';
+export type { Skill } from './skill';
