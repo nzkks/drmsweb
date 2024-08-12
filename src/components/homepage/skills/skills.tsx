@@ -14,12 +14,13 @@ import { Container } from '@/components';
 import skillsData from '@/data/skills.json';
 import SkillsMarquee from './skills-marquee';
 import SkillsCategorized from './skills-categorized';
+// import SkillsExperience from './skills-experience';
 
 const menuItems = [
-  {
-    key: 'experience',
-    label: 'Show experience level',
-  },
+  // {
+  //   key: 'experience',
+  //   label: 'Show experience level',
+  // },
   {
     key: 'category',
     label: 'Show categorized',
@@ -31,7 +32,7 @@ const menuItems = [
 ];
 
 const Skills = () => {
-  const [selectedMenuItem, setSelectedMenuItem] = useState('category');
+  const [selectedMenuItem, setSelectedMenuItem] = useState('animation');
 
   return (
     <section className="py-16" id="skills">
@@ -67,11 +68,13 @@ const Skills = () => {
         <Container>
           <SkillsMarquee data={skillsData} />
         </Container>
-      ) : selectedMenuItem === 'experience' ? (
-        <Container>
-          <>Experience</>
-        </Container>
       ) : (
+        // currently I am convinced that specifying experience in rating/level is not useful after reading in the internet.
+
+        // ) : selectedMenuItem === 'experience' ? (
+        //   <Container>
+        //     <SkillsExperience data={skillsData} />
+        //   </Container>
         <Container>
           <SkillsCategorized data={skillsData} />
         </Container>
