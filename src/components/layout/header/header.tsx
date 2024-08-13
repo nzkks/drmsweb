@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 import {
   Navbar,
@@ -14,6 +14,8 @@ import {
   NavbarMenuItem,
 } from '@nextui-org/react';
 import clsx from 'clsx';
+import { motion } from 'framer-motion';
+
 import { ThemeSwitch } from '@/components/common';
 
 const mainMenuItems = [
@@ -63,21 +65,11 @@ const Header = () => {
         </NavbarBrand>
       </NavbarContent>
 
-      <NavbarContent className="hidden gap-4 sm:flex" justify="center">
-        {mainMenuItems.map(({ href, label }) => (
-          <NavbarItem key={label} isActive={activeSection === href}>
-            <Link
-              className={
-                activeSection === href ? 'text-primary' : 'text-foreground'
-              }
-              href={href}
-              onPress={() => setActiveSection(href)}
-            >
-              {label}
-            </Link>
-          </NavbarItem>
-        ))}
-      </NavbarContent>
+      <SlideMenu
+        activeSection={activeSection}
+        setActiveSection={setActiveSection}
+      />
+
       <NavbarContent justify="end">
         <NavbarItem>
           <Button
@@ -112,6 +104,102 @@ const Header = () => {
         ))}
       </NavbarMenu>
     </Navbar>
+  );
+};
+
+type SlideMenuProps = {
+  activeSection: string;
+  setActiveSection: (section: string) => void;
+};
+
+const SlideMenu = ({ activeSection, setActiveSection }: SlideMenuProps) => {
+  const [position, setPosition] = useState({
+    width: 0,
+    left: 0,
+    opacity: 0,
+  });
+
+  return (
+    <ul
+      onMouseLeave={() => setPosition((prev) => ({ ...prev, opacity: 0 }))}
+      className="relative hidden w-fit items-center justify-center gap-4 p-1 sm:flex"
+    >
+      {mainMenuItems.map(({ href, label }) => (
+        <SlideMenuItem
+          key={label}
+          label={label}
+          href={href}
+          setPosition={setPosition}
+          activeSection={activeSection}
+          setActiveSection={setActiveSection}
+        />
+      ))}
+
+      <Cursor position={position} />
+    </ul>
+  );
+};
+
+type SlideMenuItemProps = {
+  label: string;
+  href: string;
+  setPosition: (position: {
+    width: number;
+    left: number;
+    opacity: number;
+  }) => void;
+  activeSection: string;
+  setActiveSection: (section: string) => void;
+};
+
+const SlideMenuItem = ({
+  label,
+  href,
+  setPosition,
+  activeSection,
+  setActiveSection,
+}: SlideMenuItemProps) => {
+  const ref = useRef<HTMLLIElement>(null);
+
+  return (
+    <li
+      ref={ref}
+      onMouseEnter={() => {
+        if (!ref.current) return;
+        const { width } = ref.current.getBoundingClientRect();
+
+        setPosition({
+          width,
+          left: ref.current.offsetLeft,
+          opacity: 1,
+        });
+      }}
+      className={clsx(
+        'relative z-10 flex h-8 cursor-pointer items-center px-3 text-xs uppercase mix-blend-difference md:h-10 md:px-4 md:text-base',
+        activeSection === href ? 'rounded-xl bg-accent' : 'bg-transparent',
+      )}
+    >
+      <Link
+        href={href}
+        onPress={() => setActiveSection(href)}
+        className={activeSection === href ? 'text-black' : 'text-heading'}
+      >
+        {label}
+      </Link>
+    </li>
+  );
+};
+
+const Cursor = ({
+  position,
+}: {
+  position: { width: number; left: number; opacity: number };
+}) => {
+  return (
+    <motion.li
+      animate={position}
+      className="absolute z-0 h-10 rounded-xl bg-accent"
+    />
   );
 };
 

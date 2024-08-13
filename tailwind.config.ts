@@ -36,6 +36,7 @@ const config: Config = {
         '6xl': 'clamp(4.77rem, 7.48vw + 2.9rem, 8.88rem)',
       },
       colors: {
+        heading: 'hsl(var(--heading))',
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
         ring: 'hsl(var(--ring))',
