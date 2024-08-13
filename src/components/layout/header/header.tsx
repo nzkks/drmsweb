@@ -24,7 +24,7 @@ const mainMenuItems = [
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [activeSection, setActiveSection] = useState('');
+  const [activeSection, setActiveSection] = useState('/');
 
   useEffect(() => {
     const handleHashChange = () => {
@@ -57,7 +57,7 @@ const Header = () => {
           className="sm:hidden"
         />
         <NavbarBrand>
-          <Link href="/">
+          <Link href="/" onPress={() => setActiveSection('/')}>
             <div className="font-bold text-inherit">SK</div>
           </Link>
         </NavbarBrand>
