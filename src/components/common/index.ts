@@ -21,3 +21,6 @@ export * from './testimonialBlock';
 
 export { default as CertificationBlock } from './certificationBlock';
 export * from './certificationBlock';
+
+export { default as PageReadingProgress } from './pageReadingProgress';
+export * from './pageReadingProgress';

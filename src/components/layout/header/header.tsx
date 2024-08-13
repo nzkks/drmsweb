@@ -16,7 +16,7 @@ import {
 import clsx from 'clsx';
 import { motion } from 'framer-motion';
 
-import { ThemeSwitch } from '@/components/common';
+import { PageReadingProgress, ThemeSwitch } from '@/components/common';
 
 const mainMenuItems = [
   { href: '#skills', label: 'Skills' },
@@ -47,63 +47,66 @@ const Header = () => {
   };
 
   return (
-    <Navbar
-      isMenuOpen={isMenuOpen}
-      onMenuOpenChange={setIsMenuOpen}
-      shouldHideOnScroll
-      maxWidth="xl"
-    >
-      <NavbarContent>
-        <NavbarMenuToggle
-          aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
-          className="sm:hidden"
-        />
-        <NavbarBrand>
-          <Link href="/" onPress={() => setActiveSection('/')}>
-            <div className="font-bold text-inherit">SK</div>
-          </Link>
-        </NavbarBrand>
-      </NavbarContent>
-
-      <SlideMenu
-        activeSection={activeSection}
-        setActiveSection={setActiveSection}
-      />
-
-      <NavbarContent justify="end">
-        <NavbarItem>
-          <Button
-            as={Link}
-            href="#"
-            variant="flat"
-            className="bg-primary-900 uppercase text-primary-foreground hover:bg-accent hover:text-black"
-          >
-            Contact
-          </Button>
-        </NavbarItem>
-        <NavbarItem>
-          <ThemeSwitch />
-        </NavbarItem>
-      </NavbarContent>
-
-      <NavbarMenu>
-        {mainMenuItems.map(({ href, label }) => (
-          <NavbarMenuItem key={label} isActive={activeSection === href}>
-            <Link
-              className={clsx(
-                'w-full',
-                activeSection === href ? 'text-primary' : 'text-foreground',
-              )}
-              href={href}
-              size="lg"
-              onPress={() => handleMobileMenuPress(href)}
-            >
-              {label}
+    <div className="sticky top-0 z-50">
+      <Navbar
+        isMenuOpen={isMenuOpen}
+        onMenuOpenChange={setIsMenuOpen}
+        // shouldHideOnScroll
+        maxWidth="xl"
+      >
+        <NavbarContent>
+          <NavbarMenuToggle
+            aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
+            className="sm:hidden"
+          />
+          <NavbarBrand>
+            <Link href="/" onPress={() => setActiveSection('/')}>
+              <div className="font-bold text-inherit">SK</div>
             </Link>
-          </NavbarMenuItem>
-        ))}
-      </NavbarMenu>
-    </Navbar>
+          </NavbarBrand>
+        </NavbarContent>
+
+        <SlideMenu
+          activeSection={activeSection}
+          setActiveSection={setActiveSection}
+        />
+
+        <NavbarContent justify="end">
+          <NavbarItem>
+            <Button
+              as={Link}
+              href="#"
+              variant="flat"
+              className="bg-primary-900 uppercase text-primary-foreground hover:bg-accent hover:text-black"
+            >
+              Contact
+            </Button>
+          </NavbarItem>
+          <NavbarItem>
+            <ThemeSwitch />
+          </NavbarItem>
+        </NavbarContent>
+
+        <NavbarMenu>
+          {mainMenuItems.map(({ href, label }) => (
+            <NavbarMenuItem key={label} isActive={activeSection === href}>
+              <Link
+                className={clsx(
+                  'w-full',
+                  activeSection === href ? 'text-primary' : 'text-foreground',
+                )}
+                href={href}
+                size="lg"
+                onPress={() => handleMobileMenuPress(href)}
+              >
+                {label}
+              </Link>
+            </NavbarMenuItem>
+          ))}
+        </NavbarMenu>
+      </Navbar>
+      <PageReadingProgress />
+    </div>
   );
 };
 
