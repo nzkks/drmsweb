@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { Button, Chip } from '@nextui-org/react';
 
 import { Container } from '@/components';
+import LetterFontWeightAnimator from './letter-font-weight-animator';
 
 const Hero = () => {
   return (
@@ -24,7 +25,12 @@ const Hero = () => {
         <h1 className="mt-6 text-3xl leading-tight">
           Hi, I am
           <br />
-          Shanthosh <span className="text-muted-foreground">Krishnakumar</span>,
+          <LetterFontWeightAnimator
+            word="Shanthosh"
+            className="hidden sm:inline-block"
+          />
+          <span className="inline-block sm:hidden">Shanthosh</span>{' '}
+          <span className="text-muted-foreground">Krishnakumar</span>,
           <br />
           <span className="bg-gradient-to-b from-background to-accent bg-clip-text font-bold text-transparent">
             Frontend Developer
