@@ -76,7 +76,7 @@ const Header = () => {
             as={Link}
             href="#"
             variant="flat"
-            className="bg-primary-900 text-primary-foreground"
+            className="bg-primary-900 uppercase text-primary-foreground hover:bg-accent hover:text-black"
           >
             Contact
           </Button>
