@@ -62,3 +62,17 @@
     --swiper-pagination-bullet-inactive-color: #ccc;
   }
 }
+
+@layer components {
+  .section-glass-bg1 {
+    @apply absolute inset-x-0 top-0 h-[60.1875rem] bg-[url('/images/bg-images/section-bg--light.jpg')] bg-[length:150rem_100%] bg-top bg-no-repeat dark:bg-background dark:bg-[url('/images/bg-images/section-bg--dark.jpg')] xl:top-8;
+  }
+
+  .block-glass1 {
+    @apply bg-blue-200/20 bg-clip-padding backdrop-blur-3xl dark:bg-blue-200/10;
+  }
+
+  .block-glass-accent {
+    @apply bg-accent/30 bg-clip-padding backdrop-blur-3xl;
+  }
+}

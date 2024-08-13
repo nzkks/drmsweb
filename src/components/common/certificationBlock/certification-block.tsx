@@ -32,18 +32,20 @@ const CertificationBlock = ({
   return (
     <Card
       key={`${name}-${period}`}
-      className="group flex flex-col border-border bg-gradient-to-br from-blue-500/10 to-background bg-clip-padding saturate-100 backdrop-blur backdrop-contrast-100 transition-all hover:from-accent/10 lg:hover:!opacity-100 lg:group-hover/list:opacity-50"
+      className="block-glass1 group flex flex-col border-border transition-all dark:border-[#5b769d] lg:hover:!opacity-100 lg:group-hover/list:opacity-50"
     >
       <div className="flex h-full flex-col">
         <CardHeader className="p-3">
           <CardTitle className="text-md">{name}</CardTitle>
-          <CardDescription>{period}</CardDescription>
+          <CardDescription className="text-foreground">
+            {period}
+          </CardDescription>
         </CardHeader>
         <CardContent className="relative flex grow p-3">
           <Link
             href={link}
             target="_blank"
-            className="absolute left-1/2 top-1/2 hidden size-12 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-lg bg-accent/50 group-hover:flex"
+            className="block-glass-accent absolute left-1/2 top-1/2 hidden size-12 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-lg group-hover:flex"
           >
             <ExternalLinkIcon />
           </Link>
