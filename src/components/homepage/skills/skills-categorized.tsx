@@ -24,9 +24,11 @@ const SkillsCategorized = ({ data }: Props) => {
   const renderCategory = Object.keys(categoryMap).map((category) => (
     <div
       key={category}
-      className="dark:block-glass-dark1 rounded-xl border-1 px-3 py-2 shadow-md dark:border-[#2f4250]"
+      className="block-glass1 rounded-xl border-1 px-3 py-2 shadow-md dark:border-[#2f4250]"
     >
-      <h3 className="mb-3 text-center">{category}</h3>
+      <h3 className="mb-3 text-center font-semibold dark:text-white">
+        {category}
+      </h3>
       <ul className="list-inside list-disc">
         {categoryMap[category].map((skill) => (
           <li key={skill.name}>{skill.name}</li>
@@ -36,7 +38,7 @@ const SkillsCategorized = ({ data }: Props) => {
   ));
 
   return (
-    <div className="dark:section-gradient-bg-dark1 my-8 grid gap-1 transition-all auto-fill-[250px]">
+    <div className="my-8 grid gap-1 transition-all auto-fill-[250px] dark:text-heading">
       {renderCategory}
     </div>
   );

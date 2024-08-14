@@ -64,16 +64,16 @@
 }
 
 @layer components {
+  .section-gradient-bg1 {
+    @apply bg-white/30 bg-[radial-gradient(at_47%_33%,hsl(226.67,45%,43%)_0,transparent_59%),radial-gradient(at_82%_65%,hsl(168.39,53%,89%)_0,transparent_55%)] dark:bg-[#0a192f]/30 dark:bg-[radial-gradient(at_47%_33%,hsl(172.46,66%,20%)_0,transparent_59%),radial-gradient(at_82%_65%,hsl(218.3,57.99999999999999%,16%)_0,transparent_55%)];
+  }
+
+  .block-glass1 {
+    @apply bg-white/30 backdrop-blur-3xl backdrop-saturate-[150%] dark:bg-[#0a192f]/30;
+  }
+
   .section-glass-bg1 {
     @apply absolute inset-x-0 top-0 -z-10 size-full bg-[url('/images/bg-images/section-bg--light.jpg')] bg-cover bg-top bg-repeat dark:bg-background dark:bg-[url('/images/bg-images/section-bg--dark.jpg')] xl:top-8;
-  }
-
-  .section-gradient-bg-dark1 {
-    @apply bg-[#0a192f/30] bg-[radial-gradient(at_47%_33%,hsl(172.46,66%,20%)_0,transparent_59%),radial-gradient(at_82%_65%,hsl(218.3,57.99999999999999%,16%)_0,transparent_55%)];
-  }
-
-  .block-glass-dark1 {
-    @apply bg-[#0a192f/30] backdrop-blur-3xl backdrop-saturate-[150%];
   }
 
   .block-glass2 {

@@ -35,7 +35,7 @@ const Skills = () => {
   const [selectedMenuItem, setSelectedMenuItem] = useState('animation');
 
   return (
-    <section className="py-16" id="skills">
+    <section className="section-gradient-bg1 py-16" id="skills">
       <div className="flex items-center justify-center">
         <div>
           <h2 className="text-center text-xl">
