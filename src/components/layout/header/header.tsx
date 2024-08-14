@@ -75,7 +75,7 @@ const Header = () => {
           <NavbarItem>
             <Button
               as={Link}
-              href="#"
+              href="#cta"
               variant="flat"
               className="bg-primary-900 uppercase text-primary-foreground hover:bg-accent hover:text-black"
             >
