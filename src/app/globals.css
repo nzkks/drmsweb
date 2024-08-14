@@ -65,7 +65,7 @@
 
 @layer components {
   .section-glass-bg1 {
-    @apply absolute inset-x-0 top-0 h-[60.1875rem] bg-[url('/images/bg-images/section-bg--light.jpg')] bg-[length:150rem_100%] bg-top bg-no-repeat dark:bg-background dark:bg-[url('/images/bg-images/section-bg--dark.jpg')] xl:top-8;
+    @apply absolute inset-x-0 top-0 -z-10 size-full bg-[url('/images/bg-images/section-bg--light.jpg')] bg-cover bg-top bg-repeat dark:bg-background dark:bg-[url('/images/bg-images/section-bg--dark.jpg')] xl:top-8;
   }
 
   .block-glass1 {
