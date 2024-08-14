@@ -32,7 +32,7 @@ const CertificationBlock = ({
   return (
     <Card
       key={`${name}-${period}`}
-      className="block-glass1 group flex flex-col border-border transition-all dark:border-[#5b769d] lg:hover:!opacity-100 lg:group-hover/list:opacity-50"
+      className="block-glass2 group flex flex-col border-border transition-all dark:border-[#5b769d] lg:hover:!opacity-100 lg:group-hover/list:opacity-50"
     >
       <div className="flex h-full flex-col">
         <CardHeader className="p-3">

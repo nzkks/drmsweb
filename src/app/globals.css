@@ -68,7 +68,15 @@
     @apply absolute inset-x-0 top-0 -z-10 size-full bg-[url('/images/bg-images/section-bg--light.jpg')] bg-cover bg-top bg-repeat dark:bg-background dark:bg-[url('/images/bg-images/section-bg--dark.jpg')] xl:top-8;
   }
 
-  .block-glass1 {
+  .section-gradient-bg-dark1 {
+    @apply bg-[#0a192f/30] bg-[radial-gradient(at_47%_33%,hsl(172.46,66%,20%)_0,transparent_59%),radial-gradient(at_82%_65%,hsl(218.3,57.99999999999999%,16%)_0,transparent_55%)];
+  }
+
+  .block-glass-dark1 {
+    @apply bg-[#0a192f/30] backdrop-blur-3xl backdrop-saturate-[150%];
+  }
+
+  .block-glass2 {
     @apply bg-blue-200/20 bg-clip-padding backdrop-blur-3xl dark:bg-blue-200/10;
   }
 
