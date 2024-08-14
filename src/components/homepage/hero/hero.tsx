@@ -27,7 +27,7 @@ const Hero = () => {
           <br />
           <LetterFontWeightAnimator
             word="Shanthosh"
-            className="hidden sm:inline-block"
+            className="hidden w-[290px] text-right sm:inline-block"
           />
           <span className="inline-block sm:hidden">Shanthosh</span>{' '}
           <span className="text-muted-foreground">Krishnakumar</span>,
@@ -39,9 +39,9 @@ const Hero = () => {
         <div className="mt-6">
           <Button
             as={Link}
-            href="#"
+            href="#cta"
             variant="flat"
-            className="text-md h-12 w-36 bg-primary-900 font-bold text-primary-foreground"
+            className="text-md h-12 w-36 bg-primary-900 font-bold uppercase text-primary-foreground"
           >
             Hire me
           </Button>

@@ -58,9 +58,7 @@ const LetterFontWeightAnimator = ({ word, className }: Props) => {
     </span>
   ));
 
-  return (
-    <div className={cn('hover-text w-[275px]', className)}>{renderedWord}</div>
-  );
+  return <div className={cn('hover-text', className)}>{renderedWord}</div>;
 };
 
 export default LetterFontWeightAnimator;
