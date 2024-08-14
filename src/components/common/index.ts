@@ -24,3 +24,6 @@ export * from './certificationBlock';
 
 export { default as PageReadingProgress } from './pageReadingProgress';
 export * from './pageReadingProgress';
+
+export { default as ToTopLinkWithProgress } from './toTopLinkWithProgress';
+export * from './toTopLinkWithProgress';

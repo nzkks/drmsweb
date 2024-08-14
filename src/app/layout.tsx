@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 import { Inter as FontSans } from 'next/font/google';
 
 import './globals.css';
-import { Header, Providers } from '@/components';
+import { Header, Providers, ToTopLinkWithProgress } from '@/components';
 import { cn } from '@/lib/utils';
 
 const fontSans = FontSans({
@@ -28,13 +28,14 @@ const RootLayout = ({
     <html lang="en" suppressHydrationWarning>
       <body
         className={cn(
-          'min-h-svh bg-background font-sans text-foreground antialiased',
+          'relative min-h-svh bg-background font-sans text-foreground antialiased',
           fontSans.variable,
         )}
       >
         <Providers>
           <Header />
           {children}
+          <ToTopLinkWithProgress size={50} strokeWidth={2} />
         </Providers>
       </body>
     </html>
