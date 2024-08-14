@@ -1,5 +1,5 @@
 import { Button, Link } from '@nextui-org/react';
-import { ImPhone } from 'react-icons/im';
+import { MdOutlineAlternateEmail } from 'react-icons/md';
 import { PiFilePdfBold } from 'react-icons/pi';
 import { TbFileTypeDocx } from 'react-icons/tb';
 
@@ -16,10 +16,13 @@ const Cta = () => (
           <Button
             as={Link}
             href="mailto:kkshanthosh@gmail.com"
-            className="flex"
+            className="flex uppercase"
+            aria-label="email me"
           >
-            <ImPhone className="size-7" />
-            <div className="hidden sm:inline-block">Contact Now</div>
+            <MdOutlineAlternateEmail className="size-7" />
+            <div>
+              Email <span className="hidden sm:inline-block">me</span>
+            </div>
           </Button>
           <Button
             as={Link}
@@ -28,7 +31,7 @@ const Cta = () => (
             rel="noopener noreferrer"
             download="ShanthoshK_Frontend_Dev_cv.pdf"
             aria-label="download cv"
-            className="flex"
+            className="flex uppercase"
           >
             <PiFilePdfBold className="size-8" />
             <div className="hidden sm:inline-block">Download cv</div>
@@ -40,7 +43,7 @@ const Cta = () => (
             rel="noopener noreferrer"
             download="ShanthoshK_Frontend_Dev_cv.docx"
             aria-label="download cv"
-            className="flex"
+            className="flex uppercase"
           >
             <TbFileTypeDocx className="size-8" />
             <div className="hidden sm:inline-block">Download cv</div>
