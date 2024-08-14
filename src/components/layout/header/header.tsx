@@ -47,7 +47,7 @@ const Header = () => {
   };
 
   return (
-    <div className="sticky top-0 z-50">
+    <div id="top" className="sticky top-0 z-50">
       <Navbar
         isMenuOpen={isMenuOpen}
         onMenuOpenChange={setIsMenuOpen}
