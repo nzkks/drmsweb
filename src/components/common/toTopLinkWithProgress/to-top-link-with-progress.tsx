@@ -10,6 +10,7 @@ const ToTopLinkWithProgress = ({
   strokeWidth?: number;
 }) => {
   const completion = useReadingProgress();
+  if (completion < 10 || completion > 95) return;
 
   const radius = (size - strokeWidth) / 2;
   const circumference = 2 * Math.PI * radius;
