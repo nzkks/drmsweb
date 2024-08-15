@@ -41,9 +41,12 @@ const Hero = () => {
             as={Link}
             href="#cta"
             variant="flat"
-            className="text-md h-12 w-36 bg-primary-900 font-bold uppercase text-primary-foreground"
+            className="group relative h-12 w-36 overflow-hidden rounded-xl bg-gray-800 px-8 py-4 text-foreground text-white transition-all duration-300 ease-out hover:bg-gradient-to-r hover:from-gray-600 hover:to-gray-400 hover:ring-2 hover:ring-gray-600 hover:ring-offset-2"
           >
-            Hire me
+            <span className="ease absolute right-0 -mt-12 h-32 w-8 translate-x-12 rotate-12 bg-white opacity-10 transition-all duration-700 group-hover:-translate-x-40"></span>
+            <span className="text-md relative font-bold uppercase">
+              Hire me
+            </span>
           </Button>
         </div>
       </Container>
