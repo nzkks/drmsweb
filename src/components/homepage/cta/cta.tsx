@@ -20,16 +20,6 @@ const Cta = () => {
           </h3>
           <div className="mx-auto mt-10 flex max-w-3xl items-center justify-center gap-4">
             <ShinyBtn
-              href="mailto:kkshanthosh@gmail.com"
-              ariaLabel="email me"
-              width={width > 640 ? 130 : 90}
-            >
-              <MdOutlineAlternateEmail className="size-7" />
-              <div className="sm:ml-2">
-                Email <span className="hidden sm:inline-block">me</span>
-              </div>
-            </ShinyBtn>
-            <ShinyBtn
               href="/files/ShanthoshK_Frontend_Dev_cv.pdf"
               target="_blank"
               isExternal={true}
@@ -52,6 +42,16 @@ const Cta = () => {
             >
               <TbFileTypeDocx className="size-8" />
               <div className="hidden sm:inline-block">Download cv</div>
+            </ShinyBtn>
+            <ShinyBtn
+              href="mailto:kkshanthosh@gmail.com"
+              ariaLabel="email me"
+              width={width > 640 ? 130 : 90}
+            >
+              <MdOutlineAlternateEmail className="size-7" />
+              <div className="sm:ml-2">
+                Email <span className="hidden sm:inline-block">me</span>
+              </div>
             </ShinyBtn>
           </div>
         </div>
