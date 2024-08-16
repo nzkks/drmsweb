@@ -171,14 +171,18 @@ const SlideMenuItem = ({
         });
       }}
       className={clsx(
-        'relative z-10 flex h-8 cursor-pointer items-center px-3 text-xs uppercase mix-blend-difference md:h-10 md:px-4 md:text-base',
+        'group relative z-10 flex h-8 cursor-pointer items-center px-3 text-xs uppercase md:h-10 md:px-4 md:text-base',
         activeSection === href ? 'rounded-xl bg-accent' : 'bg-transparent',
       )}
     >
       <Link
         href={href}
         onPress={() => setActiveSection(href)}
-        className={activeSection === href ? 'text-black' : 'text-heading'}
+        className={
+          activeSection === href
+            ? 'text-white dark:text-black'
+            : 'text-heading group-hover:text-white group-hover:dark:text-black'
+        }
       >
         {label}
       </Link>
