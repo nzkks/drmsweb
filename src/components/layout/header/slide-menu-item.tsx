@@ -37,7 +37,7 @@ const SlideMenuItem = ({
         });
       }}
       className={clsx(
-        'group relative z-10 flex h-8 cursor-pointer items-center px-3 text-xs uppercase transition-all md:h-10 md:px-4 lg:text-lg',
+        'text-md group relative z-10 flex h-8 cursor-pointer items-center px-3 uppercase transition-all md:h-10 md:px-4',
         activeSection === href ? 'rounded-xl bg-accent' : 'bg-transparent',
       )}
     >
