@@ -33,9 +33,9 @@ const ShinyBtn = ({
       as={Link}
       href={href}
       target={target}
-      rel={isExternal ? '' : 'noopener noreferrer'}
+      rel={isExternal ? 'noopener noreferrer' : undefined}
       style={{ width: `${width}px`, height: `${height}px` }}
-      download={downloadFileName}
+      download={downloadFileName ? downloadFileName : undefined}
       isIconOnly={isIconOnly}
       className={cn(
         `hover:-tranneutral-y-px flex h-full rounded-md bg-gradient-to-r from-blue-600 to-blue-500 px-3 py-2 text-center shadow-xl shadow-blue-200 transition-all hover:bg-gradient-to-b hover:shadow-2xl hover:shadow-blue-400 dark:shadow-blue-800 dark:hover:shadow-blue-700`,
