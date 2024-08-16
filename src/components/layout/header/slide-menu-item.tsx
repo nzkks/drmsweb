@@ -37,7 +37,7 @@ const SlideMenuItem = ({
         });
       }}
       className={clsx(
-        'group relative z-10 flex h-8 cursor-pointer items-center px-3 text-xs uppercase md:h-10 md:px-4 md:text-base',
+        'group relative z-10 flex h-8 cursor-pointer items-center px-3 text-xs uppercase transition-all md:h-10 md:px-4 lg:text-lg',
         activeSection === href ? 'rounded-xl bg-accent' : 'bg-transparent',
       )}
     >
@@ -47,7 +47,7 @@ const SlideMenuItem = ({
         className={
           activeSection === href
             ? 'text-white dark:text-black'
-            : 'text-heading group-hover:text-white group-hover:dark:text-black'
+            : 'text-heading transition-all group-hover:text-white group-hover:dark:text-black'
         }
       >
         {label}
