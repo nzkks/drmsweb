@@ -330,7 +330,8 @@
     "logo": "",
     "level": 7,
     "categories": [
-      "Miscellaneous"
+      "Miscellaneous",
+      "CMSs"
     ],
     "rowId": "D",
     "highlight": false
