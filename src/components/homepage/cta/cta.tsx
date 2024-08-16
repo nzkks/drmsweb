@@ -5,7 +5,7 @@ import { MdOutlineAlternateEmail } from 'react-icons/md';
 import { PiFilePdfBold } from 'react-icons/pi';
 import { TbFileTypeDocx } from 'react-icons/tb';
 
-import { Container } from '@/components';
+import { Container, ShinyBtn } from '@/components';
 import { useWindowSize } from '@/hooks';
 
 const Cta = () => {
@@ -19,43 +19,40 @@ const Cta = () => {
             Download my Curriculum Vitae document / Contact me now
           </h3>
           <div className="mx-auto mt-10 flex max-w-3xl items-center justify-center gap-4">
-            <Button
-              as={Link}
+            <ShinyBtn
               href="mailto:kkshanthosh@gmail.com"
-              className="flex uppercase"
-              aria-label="email me"
+              ariaLabel="email me"
+              width={width > 640 ? 130 : 90}
             >
               <MdOutlineAlternateEmail className="size-7" />
-              <div>
+              <div className="sm:ml-2">
                 Email <span className="hidden sm:inline-block">me</span>
               </div>
-            </Button>
-            <Button
-              as={Link}
+            </ShinyBtn>
+            <ShinyBtn
               href="/files/ShanthoshK_Frontend_Dev_cv.pdf"
               target="_blank"
-              rel="noopener noreferrer"
-              download="ShanthoshK_Frontend_Dev_cv.pdf"
+              isExternal={true}
+              downloadFileName="ShanthoshK_Frontend_Dev_cv.pdf"
               aria-label="download cv"
-              className="flex uppercase"
               isIconOnly={width < 640}
+              width={width > 640 ? 160 : 50}
             >
               <PiFilePdfBold className="size-8" />
               <div className="hidden sm:inline-block">Download cv</div>
-            </Button>
-            <Button
-              as={Link}
+            </ShinyBtn>
+            <ShinyBtn
               href="/files/ShanthoshK_Frontend_Dev_cv.docx"
               target="_blank"
-              rel="noopener noreferrer"
-              download="ShanthoshK_Frontend_Dev_cv.docx"
+              isExternal={true}
+              downloadFileName="ShanthoshK_Frontend_Dev_cv.docx"
               aria-label="download cv"
-              className="flex uppercase"
               isIconOnly={width < 640}
+              width={width > 640 ? 160 : 50}
             >
               <TbFileTypeDocx className="size-8" />
               <div className="hidden sm:inline-block">Download cv</div>
-            </Button>
+            </ShinyBtn>
           </div>
         </div>
       </Container>

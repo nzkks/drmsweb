@@ -16,7 +16,7 @@ import {
 import clsx from 'clsx';
 import { motion } from 'framer-motion';
 
-import { PageReadingProgress, ThemeSwitch } from '@/components/common';
+import { PageReadingProgress, ShinyBtn, ThemeSwitch } from '@/components';
 
 const mainMenuItems = [
   { href: '#skills', label: 'Skills' },
@@ -73,14 +73,7 @@ const Header = () => {
 
         <NavbarContent justify="end">
           <NavbarItem>
-            <Button
-              as={Link}
-              href="#cta"
-              variant="flat"
-              className="bg-primary-900 uppercase text-primary-foreground hover:bg-accent hover:text-black"
-            >
-              Contact
-            </Button>
+            <ShinyBtn href="#cta">Hire me</ShinyBtn>
           </NavbarItem>
           <NavbarItem>
             <ThemeSwitch />

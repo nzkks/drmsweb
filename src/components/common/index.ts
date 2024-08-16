@@ -27,3 +27,6 @@ export * from './pageReadingProgress';
 
 export { default as ToTopLinkWithProgress } from './toTopLinkWithProgress';
 export * from './toTopLinkWithProgress';
+
+export { default as ShinyBtn } from './shinyBtn';
+export * from './shinyBtn';

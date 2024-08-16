@@ -136,7 +136,7 @@ const config: Config = {
       );
     }),
     nextui({
-      addCommonColors: false,
+      addCommonColors: true,
       themes: {
         light: {
           colors: {
