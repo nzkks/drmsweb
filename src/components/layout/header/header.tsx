@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
 
 import {
   Navbar,
@@ -8,15 +8,14 @@ import {
   NavbarContent,
   NavbarItem,
   Link,
-  Button,
   NavbarMenuToggle,
   NavbarMenu,
   NavbarMenuItem,
 } from '@nextui-org/react';
 import clsx from 'clsx';
-import { motion } from 'framer-motion';
 
 import { PageReadingProgress, ShinyBtn, ThemeSwitch } from '@/components';
+import SlideMenu from './slide-menu';
 
 const mainMenuItems = [
   { href: '#skills', label: 'Skills' },
@@ -69,6 +68,7 @@ const Header = () => {
         <SlideMenu
           activeSection={activeSection}
           setActiveSection={setActiveSection}
+          menuItems={mainMenuItems}
         />
 
         <NavbarContent justify="end">
@@ -100,106 +100,6 @@ const Header = () => {
       </Navbar>
       <PageReadingProgress />
     </div>
-  );
-};
-
-type SlideMenuProps = {
-  activeSection: string;
-  setActiveSection: (section: string) => void;
-};
-
-const SlideMenu = ({ activeSection, setActiveSection }: SlideMenuProps) => {
-  const [position, setPosition] = useState({
-    width: 0,
-    left: 0,
-    opacity: 0,
-  });
-
-  return (
-    <ul
-      onMouseLeave={() => setPosition((prev) => ({ ...prev, opacity: 0 }))}
-      className="relative hidden w-fit items-center justify-center gap-4 p-1 sm:flex"
-    >
-      {mainMenuItems.map(({ href, label }) => (
-        <SlideMenuItem
-          key={label}
-          label={label}
-          href={href}
-          setPosition={setPosition}
-          activeSection={activeSection}
-          setActiveSection={setActiveSection}
-        />
-      ))}
-
-      <Cursor position={position} />
-    </ul>
-  );
-};
-
-type SlideMenuItemProps = {
-  label: string;
-  href: string;
-  setPosition: (position: {
-    width: number;
-    left: number;
-    opacity: number;
-  }) => void;
-  activeSection: string;
-  setActiveSection: (section: string) => void;
-};
-
-const SlideMenuItem = ({
-  label,
-  href,
-  setPosition,
-  activeSection,
-  setActiveSection,
-}: SlideMenuItemProps) => {
-  const ref = useRef<HTMLLIElement>(null);
-
-  return (
-    <li
-      ref={ref}
-      onMouseEnter={() => {
-        if (!ref.current) return;
-        const { width } = ref.current.getBoundingClientRect();
-
-        setPosition({
-          width,
-          left: ref.current.offsetLeft,
-          opacity: 1,
-        });
-      }}
-      className={clsx(
-        'group relative z-10 flex h-8 cursor-pointer items-center px-3 text-xs uppercase md:h-10 md:px-4 md:text-base',
-        activeSection === href ? 'rounded-xl bg-accent' : 'bg-transparent',
-      )}
-    >
-      <Link
-        href={href}
-        onPress={() => setActiveSection(href)}
-        className={
-          activeSection === href
-            ? 'text-white dark:text-black'
-            : 'text-heading group-hover:text-white group-hover:dark:text-black'
-        }
-      >
-        {label}
-      </Link>
-    </li>
-  );
-};
-
-const Cursor = ({
-  position,
-}: {
-  position: { width: number; left: number; opacity: number };
-}) => {
-  return (
-    <motion.li
-      animate={position}
-      className="absolute z-0 h-10 rounded-xl bg-accent"
-    />
   );
 };
 
