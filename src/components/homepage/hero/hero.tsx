@@ -21,12 +21,12 @@ const Hero = () => {
             Typescript
           </Chip>
         </div>
-        <h1 className="mt-6 text-3xl leading-tight">
+        <h1 className="mt-6 text-5xl leading-tight">
           Hi, I am
           <br />
           <LetterFontWeightAnimator
             word="Shanthosh"
-            className="hidden w-[290px] text-right sm:inline-block"
+            className="hidden text-right sm:inline-block"
           />
           <span className="inline-block sm:hidden">Shanthosh</span>{' '}
           <span className="text-muted-foreground">Krishnakumar</span>,
