@@ -5,7 +5,7 @@ type Props = {
 };
 
 const SkillsExperience = ({ data }: Props) => {
-  const highlightedSkills = data.filter((skill) => skill.highlight);
+  const highlightedSkills = data.filter((skill) => skill.isHighlight);
 
   return (
     <div>

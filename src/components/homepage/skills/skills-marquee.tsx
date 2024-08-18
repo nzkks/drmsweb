@@ -24,7 +24,7 @@ const SkillsMarquee = ({ data }: Props) => {
             key={skill.name}
             className="block-glass1 mx-4 rounded-xl border-1 px-3 py-2 shadow dark:border-[#2f4250]"
           >
-            {skill.highlight ? (
+            {skill.isHighlight ? (
               <span className="font-bold text-accent">{skill.name}</span>
             ) : (
               <span>{skill.name}</span>

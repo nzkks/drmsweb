@@ -4,5 +4,5 @@ export interface Skill {
   level: number;
   categories: string[];
   rowId: string;
-  highlight: boolean;
+  isHighlight: boolean;
 }
