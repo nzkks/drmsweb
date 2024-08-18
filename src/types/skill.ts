@@ -5,4 +5,5 @@ export interface Skill {
   categories: string[];
   rowId: string;
   isHighlight: boolean;
+  isCoreSkill: boolean;
 }

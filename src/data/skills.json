@@ -7,7 +7,8 @@
       "Frameworks and Libraries"
     ],
     "rowId": "A",
-    "isHighlight": true
+    "isHighlight": true,
+    "isCoreSkill": true
   },
   {
     "name": "Next.js",
@@ -17,7 +18,8 @@
       "Frameworks and Libraries"
     ],
     "rowId": "A",
-    "isHighlight": true
+    "isHighlight": true,
+    "isCoreSkill": true
   },
   {
     "name": "Vite.js",
@@ -27,7 +29,8 @@
       "Frameworks and Libraries"
     ],
     "rowId": "A",
-    "isHighlight": false
+    "isHighlight": false,
+    "isCoreSkill": false
   },
   {
     "name": "Typescript",
@@ -37,7 +40,8 @@
       "Core Technologies"
     ],
     "rowId": "A",
-    "isHighlight": true
+    "isHighlight": true,
+    "isCoreSkill": false
   },
   {
     "name": "HTML5",
@@ -47,7 +51,8 @@
       "Core Technologies"
     ],
     "rowId": "A",
-    "isHighlight": true
+    "isHighlight": true,
+    "isCoreSkill": true
   },
   {
     "name": "CSS3",
@@ -57,7 +62,8 @@
       "Core Technologies"
     ],
     "rowId": "A",
-    "isHighlight": true
+    "isHighlight": true,
+    "isCoreSkill": true
   },
   {
     "name": "JavaScript",
@@ -67,7 +73,8 @@
       "Core Technologies"
     ],
     "rowId": "A",
-    "isHighlight": true
+    "isHighlight": true,
+    "isCoreSkill": true
   },
   {
     "name": "Tailwind Css",
@@ -77,7 +84,8 @@
       "Styling and Design"
     ],
     "rowId": "A",
-    "isHighlight": false
+    "isHighlight": false,
+    "isCoreSkill": false
   },
   {
     "name": "Styled Components",
@@ -87,7 +95,8 @@
       "Styling and Design"
     ],
     "rowId": "A",
-    "isHighlight": false
+    "isHighlight": false,
+    "isCoreSkill": false
   },
   {
     "name": "Emotion/css",
@@ -97,7 +106,8 @@
       "Styling and Design"
     ],
     "rowId": "B",
-    "isHighlight": false
+    "isHighlight": false,
+    "isCoreSkill": false
   },
   {
     "name": "React Storybook",
@@ -107,7 +117,8 @@
       "Miscellaneous"
     ],
     "rowId": "B",
-    "isHighlight": false
+    "isHighlight": false,
+    "isCoreSkill": false
   },
   {
     "name": "Chromatic",
@@ -117,7 +128,8 @@
       "Miscellaneous"
     ],
     "rowId": "B",
-    "isHighlight": false
+    "isHighlight": false,
+    "isCoreSkill": false
   },
   {
     "name": "Redux Toolkit",
@@ -127,7 +139,8 @@
       "State Management"
     ],
     "rowId": "B",
-    "isHighlight": false
+    "isHighlight": false,
+    "isCoreSkill": false
   },
   {
     "name": "Redux Thunk",
@@ -137,7 +150,8 @@
       "State Management"
     ],
     "rowId": "B",
-    "isHighlight": false
+    "isHighlight": false,
+    "isCoreSkill": false
   },
   {
     "name": "TanStack React Query",
@@ -147,7 +161,8 @@
       "State Management"
     ],
     "rowId": "B",
-    "isHighlight": false
+    "isHighlight": false,
+    "isCoreSkill": false
   },
   {
     "name": "React Hook Form",
@@ -158,7 +173,8 @@
       "Forms"
     ],
     "rowId": "B",
-    "isHighlight": false
+    "isHighlight": false,
+    "isCoreSkill": false
   },
   {
     "name": "Formik",
@@ -169,7 +185,8 @@
       "Forms"
     ],
     "rowId": "B",
-    "isHighlight": false
+    "isHighlight": false,
+    "isCoreSkill": false
   },
   {
     "name": "GSAP",
@@ -180,7 +197,8 @@
       "Animation and Interaction"
     ],
     "rowId": "B",
-    "isHighlight": true
+    "isHighlight": true,
+    "isCoreSkill": false
   },
   {
     "name": "Framer Motion",
@@ -191,7 +209,8 @@
       "Animation and Interaction"
     ],
     "rowId": "B",
-    "isHighlight": true
+    "isHighlight": true,
+    "isCoreSkill": false
   },
   {
     "name": "Three.js",
@@ -201,7 +220,8 @@
       "Animation and Interaction"
     ],
     "rowId": "B",
-    "isHighlight": false
+    "isHighlight": false,
+    "isCoreSkill": false
   },
   {
     "name": "React Testing Library",
@@ -211,7 +231,8 @@
       "Testing"
     ],
     "rowId": "C",
-    "isHighlight": false
+    "isHighlight": false,
+    "isCoreSkill": false
   },
   {
     "name": "Vitest",
@@ -221,7 +242,8 @@
       "Testing"
     ],
     "rowId": "C",
-    "isHighlight": false
+    "isHighlight": false,
+    "isCoreSkill": false
   },
   {
     "name": "Jest",
@@ -231,7 +253,8 @@
       "Testing"
     ],
     "rowId": "C",
-    "isHighlight": false
+    "isHighlight": false,
+    "isCoreSkill": false
   },
   {
     "name": "Material-UI",
@@ -241,7 +264,8 @@
       "Styling and Design"
     ],
     "rowId": "C",
-    "isHighlight": true
+    "isHighlight": true,
+    "isCoreSkill": false
   },
   {
     "name": "Astro.js",
@@ -251,7 +275,8 @@
       "Frameworks and Libraries"
     ],
     "rowId": "C",
-    "isHighlight": true
+    "isHighlight": true,
+    "isCoreSkill": false
   },
   {
     "name": "Bootstrap",
@@ -261,7 +286,8 @@
       "Styling and Design"
     ],
     "rowId": "C",
-    "isHighlight": true
+    "isHighlight": true,
+    "isCoreSkill": false
   },
   {
     "name": "REST API",
@@ -271,7 +297,8 @@
       "APIs and Data Handling"
     ],
     "rowId": "C",
-    "isHighlight": false
+    "isHighlight": false,
+    "isCoreSkill": false
   },
   {
     "name": "GraphQL",
@@ -281,7 +308,8 @@
       "APIs and Data Handling"
     ],
     "rowId": "C",
-    "isHighlight": false
+    "isHighlight": false,
+    "isCoreSkill": false
   },
   {
     "name": "CLI",
@@ -291,7 +319,8 @@
       "Build Tools and Workflow"
     ],
     "rowId": "D",
-    "isHighlight": false
+    "isHighlight": false,
+    "isCoreSkill": false
   },
   {
     "name": "Git",
@@ -302,7 +331,8 @@
       "Version Control and Collaboration"
     ],
     "rowId": "D",
-    "isHighlight": false
+    "isHighlight": false,
+    "isCoreSkill": false
   },
   {
     "name": "Sanity headless CMS",
@@ -313,7 +343,8 @@
       "CMSs"
     ],
     "rowId": "D",
-    "isHighlight": false
+    "isHighlight": false,
+    "isCoreSkill": false
   },
   {
     "name": "Stripe integration",
@@ -323,7 +354,8 @@
       "APIs and Data Handling"
     ],
     "rowId": "D",
-    "isHighlight": false
+    "isHighlight": false,
+    "isCoreSkill": false
   },
   {
     "name": "WordPress CMS",
@@ -334,7 +366,8 @@
       "CMSs"
     ],
     "rowId": "D",
-    "isHighlight": false
+    "isHighlight": false,
+    "isCoreSkill": false
   },
   {
     "name": "Azure DevOps",
@@ -345,7 +378,8 @@
       "Version Control and Collaboration"
     ],
     "rowId": "D",
-    "isHighlight": false
+    "isHighlight": false,
+    "isCoreSkill": false
   },
   {
     "name": "GitHub Actions",
@@ -355,6 +389,7 @@
       "Build Tools and Workflow"
     ],
     "rowId": "D",
-    "isHighlight": false
+    "isHighlight": false,
+    "isCoreSkill": false
   }
 ]
