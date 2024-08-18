@@ -22,6 +22,17 @@
     "isCoreSkill": true
   },
   {
+    "name": "Frontend Development",
+    "logo": "",
+    "level": 9,
+    "categories": [
+      "Miscellaneous"
+    ],
+    "rowId": "A",
+    "isHighlight": true,
+    "isCoreSkill": true
+  },
+  {
     "name": "Vite.js",
     "logo": "",
     "level": 7,
