@@ -69,7 +69,7 @@ const Skills = () => {
           <SkillsMarquee data={skillsData} />
         </Container>
       ) : (
-        // currently I am convinced that specifying experience in rating/level is not useful after reading in the internet.
+        // currently I am convinced that specifying experience in rating/level is not useful after internet researching.
 
         // ) : selectedMenuItem === 'experience' ? (
         //   <Container>
