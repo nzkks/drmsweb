@@ -1,26 +1,14 @@
 import { Chip } from '@nextui-org/react';
 
 import { Container, ShinyBtn } from '@/components';
+import skillsData from '@/data/skills.json';
 import LetterFontWeightAnimator from './letter-font-weight-animator';
 
 const Hero = () => {
   return (
     <section className="py-16">
       <Container className="text-center">
-        <div className="text-md">
-          <Chip color="default" variant="flat">
-            React.js
-          </Chip>{' '}
-          <Chip color="default" variant="flat">
-            Next.js
-          </Chip>{' '}
-          <Chip color="default" variant="flat">
-            JavaScript
-          </Chip>{' '}
-          <Chip color="default" variant="flat">
-            Typescript
-          </Chip>
-        </div>
+        <div className="text-md">{renderCoreSkills}</div>
         <h1 className="mt-6 text-5xl leading-tight">
           Hi, I am
           <br />
@@ -44,5 +32,15 @@ const Hero = () => {
     </section>
   );
 };
+
+const renderCoreSkills = skillsData.map((skill) => {
+  if (skill.isCoreSkill) {
+    return (
+      <Chip key={skill.name} color="default" variant="flat" className="m-1">
+        {skill.name}
+      </Chip>
+    );
+  }
+});
 
 export default Hero;
