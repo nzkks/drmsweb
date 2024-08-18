@@ -1,6 +1,4 @@
-import { Chip } from '@nextui-org/react';
-
-import { Container, ShinyBtn } from '@/components';
+import { ChipWrapper, Container, ShinyBtn } from '@/components';
 import skillsData from '@/data/skills.json';
 import LetterFontWeightAnimator from './letter-font-weight-animator';
 
@@ -36,9 +34,9 @@ const Hero = () => {
 const renderCoreSkills = skillsData.map((skill) => {
   if (skill.isCoreSkill) {
     return (
-      <Chip key={skill.name} color="default" variant="flat" className="m-1">
+      <ChipWrapper key={skill.name} className="m-1">
         {skill.name}
-      </Chip>
+      </ChipWrapper>
     );
   }
 });

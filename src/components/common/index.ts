@@ -30,3 +30,6 @@ export * from './toTopLinkWithProgress';
 
 export { default as ShinyBtn } from './shinyBtn';
 export * from './shinyBtn';
+
+export { default as ChipWrapper } from './chipWrapper';
+export * from './chipWrapper';
