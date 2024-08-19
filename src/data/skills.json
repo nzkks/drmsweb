@@ -1,0 +1,406 @@
+[
+  {
+    "name": "React.js",
+    "logo": "",
+    "level": 7,
+    "categories": [
+      "Frameworks and Libraries"
+    ],
+    "rowId": "A",
+    "isHighlight": true,
+    "isCoreSkill": true
+  },
+  {
+    "name": "Next.js",
+    "logo": "",
+    "level": 7,
+    "categories": [
+      "Frameworks and Libraries"
+    ],
+    "rowId": "A",
+    "isHighlight": true,
+    "isCoreSkill": true
+  },
+  {
+    "name": "Frontend Development",
+    "logo": "",
+    "level": 9,
+    "categories": [
+      "Miscellaneous"
+    ],
+    "rowId": "A",
+    "isHighlight": true,
+    "isCoreSkill": true
+  },
+  {
+    "name": "Vite.js",
+    "logo": "",
+    "level": 7,
+    "categories": [
+      "Frameworks and Libraries"
+    ],
+    "rowId": "A",
+    "isHighlight": false,
+    "isCoreSkill": false
+  },
+  {
+    "name": "Typescript",
+    "logo": "",
+    "level": 7,
+    "categories": [
+      "Core Technologies"
+    ],
+    "rowId": "A",
+    "isHighlight": true,
+    "isCoreSkill": false
+  },
+  {
+    "name": "HTML5",
+    "logo": "",
+    "level": 7,
+    "categories": [
+      "Core Technologies"
+    ],
+    "rowId": "A",
+    "isHighlight": true,
+    "isCoreSkill": true
+  },
+  {
+    "name": "CSS3",
+    "logo": "",
+    "level": 7,
+    "categories": [
+      "Core Technologies"
+    ],
+    "rowId": "A",
+    "isHighlight": true,
+    "isCoreSkill": true
+  },
+  {
+    "name": "JavaScript",
+    "logo": "",
+    "level": 7,
+    "categories": [
+      "Core Technologies"
+    ],
+    "rowId": "A",
+    "isHighlight": true,
+    "isCoreSkill": true
+  },
+  {
+    "name": "Tailwind Css",
+    "logo": "",
+    "level": 7,
+    "categories": [
+      "Styling and Design"
+    ],
+    "rowId": "A",
+    "isHighlight": false,
+    "isCoreSkill": false
+  },
+  {
+    "name": "Styled Components",
+    "logo": "",
+    "level": 7,
+    "categories": [
+      "Styling and Design"
+    ],
+    "rowId": "A",
+    "isHighlight": false,
+    "isCoreSkill": false
+  },
+  {
+    "name": "Emotion/css",
+    "logo": "",
+    "level": 7,
+    "categories": [
+      "Styling and Design"
+    ],
+    "rowId": "B",
+    "isHighlight": false,
+    "isCoreSkill": false
+  },
+  {
+    "name": "React Storybook",
+    "logo": "",
+    "level": 7,
+    "categories": [
+      "Miscellaneous"
+    ],
+    "rowId": "B",
+    "isHighlight": false,
+    "isCoreSkill": false
+  },
+  {
+    "name": "Chromatic",
+    "logo": "",
+    "level": 7,
+    "categories": [
+      "Miscellaneous"
+    ],
+    "rowId": "B",
+    "isHighlight": false,
+    "isCoreSkill": false
+  },
+  {
+    "name": "Redux Toolkit",
+    "logo": "",
+    "level": 7,
+    "categories": [
+      "State Management"
+    ],
+    "rowId": "B",
+    "isHighlight": false,
+    "isCoreSkill": false
+  },
+  {
+    "name": "Redux Thunk",
+    "logo": "",
+    "level": 7,
+    "categories": [
+      "State Management"
+    ],
+    "rowId": "B",
+    "isHighlight": false,
+    "isCoreSkill": false
+  },
+  {
+    "name": "TanStack React Query",
+    "logo": "",
+    "level": 7,
+    "categories": [
+      "State Management"
+    ],
+    "rowId": "B",
+    "isHighlight": false,
+    "isCoreSkill": false
+  },
+  {
+    "name": "React Hook Form",
+    "logo": "",
+    "level": 7,
+    "categories": [
+      "State Management",
+      "Forms"
+    ],
+    "rowId": "B",
+    "isHighlight": false,
+    "isCoreSkill": false
+  },
+  {
+    "name": "Formik",
+    "logo": "",
+    "level": 7,
+    "categories": [
+      "State Management",
+      "Forms"
+    ],
+    "rowId": "B",
+    "isHighlight": false,
+    "isCoreSkill": false
+  },
+  {
+    "name": "GSAP",
+    "logo": "",
+    "level": 7,
+    "categories": [
+      "Styling and Design",
+      "Animation and Interaction"
+    ],
+    "rowId": "B",
+    "isHighlight": true,
+    "isCoreSkill": false
+  },
+  {
+    "name": "Framer Motion",
+    "logo": "",
+    "level": 7,
+    "categories": [
+      "Styling and Design",
+      "Animation and Interaction"
+    ],
+    "rowId": "B",
+    "isHighlight": true,
+    "isCoreSkill": false
+  },
+  {
+    "name": "Three.js",
+    "logo": "",
+    "level": 7,
+    "categories": [
+      "Animation and Interaction"
+    ],
+    "rowId": "B",
+    "isHighlight": false,
+    "isCoreSkill": false
+  },
+  {
+    "name": "React Testing Library",
+    "logo": "",
+    "level": 7,
+    "categories": [
+      "Testing"
+    ],
+    "rowId": "C",
+    "isHighlight": false,
+    "isCoreSkill": false
+  },
+  {
+    "name": "Vitest",
+    "logo": "",
+    "level": 7,
+    "categories": [
+      "Testing"
+    ],
+    "rowId": "C",
+    "isHighlight": false,
+    "isCoreSkill": false
+  },
+  {
+    "name": "Jest",
+    "logo": "",
+    "level": 7,
+    "categories": [
+      "Testing"
+    ],
+    "rowId": "C",
+    "isHighlight": false,
+    "isCoreSkill": false
+  },
+  {
+    "name": "Material-UI",
+    "logo": "",
+    "level": 7,
+    "categories": [
+      "Styling and Design"
+    ],
+    "rowId": "C",
+    "isHighlight": true,
+    "isCoreSkill": false
+  },
+  {
+    "name": "Astro.js",
+    "logo": "",
+    "level": 7,
+    "categories": [
+      "Frameworks and Libraries"
+    ],
+    "rowId": "C",
+    "isHighlight": true,
+    "isCoreSkill": false
+  },
+  {
+    "name": "Bootstrap",
+    "logo": "",
+    "level": 7,
+    "categories": [
+      "Styling and Design"
+    ],
+    "rowId": "C",
+    "isHighlight": true,
+    "isCoreSkill": false
+  },
+  {
+    "name": "REST API",
+    "logo": "",
+    "level": 7,
+    "categories": [
+      "APIs and Data Handling"
+    ],
+    "rowId": "C",
+    "isHighlight": false,
+    "isCoreSkill": false
+  },
+  {
+    "name": "GraphQL",
+    "logo": "",
+    "level": 7,
+    "categories": [
+      "APIs and Data Handling"
+    ],
+    "rowId": "C",
+    "isHighlight": false,
+    "isCoreSkill": false
+  },
+  {
+    "name": "CLI",
+    "logo": "",
+    "level": 7,
+    "categories": [
+      "Build Tools and Workflow"
+    ],
+    "rowId": "D",
+    "isHighlight": false,
+    "isCoreSkill": false
+  },
+  {
+    "name": "Git",
+    "logo": "",
+    "level": 7,
+    "categories": [
+      "Build Tools and Workflow",
+      "Version Control and Collaboration"
+    ],
+    "rowId": "D",
+    "isHighlight": false,
+    "isCoreSkill": false
+  },
+  {
+    "name": "Sanity headless CMS",
+    "logo": "",
+    "level": 7,
+    "categories": [
+      "APIs and Data Handling",
+      "CMSs"
+    ],
+    "rowId": "D",
+    "isHighlight": false,
+    "isCoreSkill": false
+  },
+  {
+    "name": "Stripe integration",
+    "logo": "",
+    "level": 7,
+    "categories": [
+      "APIs and Data Handling"
+    ],
+    "rowId": "D",
+    "isHighlight": false,
+    "isCoreSkill": false
+  },
+  {
+    "name": "WordPress CMS",
+    "logo": "",
+    "level": 7,
+    "categories": [
+      "Miscellaneous",
+      "CMSs"
+    ],
+    "rowId": "D",
+    "isHighlight": false,
+    "isCoreSkill": false
+  },
+  {
+    "name": "Azure DevOps",
+    "logo": "",
+    "level": 7,
+    "categories": [
+      "Build Tools and Workflow",
+      "Version Control and Collaboration"
+    ],
+    "rowId": "D",
+    "isHighlight": false,
+    "isCoreSkill": false
+  },
+  {
+    "name": "GitHub Actions",
+    "logo": "",
+    "level": 7,
+    "categories": [
+      "Build Tools and Workflow"
+    ],
+    "rowId": "D",
+    "isHighlight": false,
+    "isCoreSkill": false
+  }
+]
