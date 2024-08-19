@@ -3,3 +3,5 @@ export * from './moonIcon';
 
 export { default as SunIcon } from './sunIcon';
 export * from './sunIcon';
+
+export * from './icons';

@@ -1,0 +1,14 @@
+[
+  {
+    "name": "LinkedIn",
+    "link": "https://www.linkedin.com/in/shanthoshk",
+    "iconName": "LinkedInIcon",
+    "iconTitle": "Connect with me on LinkedIn"
+  },
+  {
+    "name": "GitHub",
+    "link": "https://github.com/nzkks",
+    "iconName": "GithubIcon",
+    "iconTitle": "Visit my GitHub profile"
+  }
+]

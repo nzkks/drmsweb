@@ -1,6 +1,6 @@
 import { Chip } from '@nextui-org/react';
 
-import { Container, ShinyBtn } from '@/components';
+import { ContactIcons, Container, ShinyBtn } from '@/components';
 import skillsData from '@/data/skills.json';
 import LetterFontWeightAnimator from './letter-font-weight-animator';
 
@@ -9,6 +9,11 @@ const Hero = () => {
     <section className="py-16">
       <Container className="text-center">
         <div className="text-md">{renderCoreSkills}</div>
+
+        <div className="mt-6">
+          <ContactIcons />
+        </div>
+
         <h1 className="mt-6 text-5xl leading-tight">
           Hi, I am
           <br />

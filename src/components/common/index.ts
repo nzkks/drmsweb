@@ -30,3 +30,9 @@ export * from './toTopLinkWithProgress';
 
 export { default as ShinyBtn } from './shinyBtn';
 export * from './shinyBtn';
+
+export { default as ContactIcons } from './contactIcons';
+export * from './contactIcons';
+
+export { default as DynamicIcon } from './dynamicIcon';
+export * from './dynamicIcon';
