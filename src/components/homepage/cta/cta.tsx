@@ -1,6 +1,5 @@
 'use client';
 
-import { Button, Link } from '@nextui-org/react';
 import { MdOutlineAlternateEmail } from 'react-icons/md';
 import { PiFilePdfBold } from 'react-icons/pi';
 import { TbFileTypeDocx } from 'react-icons/tb';
