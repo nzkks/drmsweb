@@ -8,7 +8,7 @@ import {
   DropdownMenu,
   DropdownTrigger,
 } from '@nextui-org/react';
-import { DotsVerticalIcon } from '@radix-ui/react-icons';
+import { BsThreeDotsVertical } from 'react-icons/bs';
 
 import { Container } from '@/components';
 import skillsData from '@/data/skills.json';
@@ -46,7 +46,7 @@ const Skills = () => {
           <Dropdown>
             <DropdownTrigger>
               <Button isIconOnly variant="flat" className="size-8">
-                <DotsVerticalIcon />
+                <BsThreeDotsVertical />
               </Button>
             </DropdownTrigger>
 

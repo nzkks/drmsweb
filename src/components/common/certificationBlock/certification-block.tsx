@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { ExternalLinkIcon } from '@radix-ui/react-icons';
+import { FaExternalLinkAlt } from 'react-icons/fa';
 import {
   Card,
   CardContent,
@@ -47,7 +47,7 @@ const CertificationBlock = ({
             target="_blank"
             className="block-glass-accent absolute left-1/2 top-1/2 hidden size-12 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-lg group-hover:flex"
           >
-            <ExternalLinkIcon />
+            <FaExternalLinkAlt />
           </Link>
         </CardContent>
         <CardFooter className="p-3">

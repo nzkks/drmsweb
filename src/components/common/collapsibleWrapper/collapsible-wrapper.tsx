@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { RowSpacingIcon, Cross2Icon } from '@radix-ui/react-icons';
+import { BsArrowsExpand, BsX } from 'react-icons/bs';
 
 import {
   Collapsible,
@@ -24,12 +24,12 @@ const CollapsibleWrapper = ({ title, content }: Props) => {
           <CollapsibleTrigger>
             <div className="mb-2 flex items-center">
               <div className="IconButton">
-                {open ? <Cross2Icon /> : <RowSpacingIcon />}
+                {open ? <BsX /> : <BsArrowsExpand />}
               </div>
               <div className="ml-3 font-bold">{title}</div>
             </div>
           </CollapsibleTrigger>
-          <CollapsibleContent className="data-[state=closed]:animate-slide-up data-[state=open]:animate-slide-down overflow-hidden">
+          <CollapsibleContent className="overflow-hidden data-[state=closed]:animate-slide-up data-[state=open]:animate-slide-down">
             {content}
           </CollapsibleContent>
         </>
