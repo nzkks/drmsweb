@@ -19,6 +19,8 @@ jobs:
         node-version: [21.7.3]
     env:
       NEXT_WEBSITE_URL: ${{secrets.NEXT_WEBSITE_URL}}
+      ACTIONS_STEP_DEBUG: ${{secrets.ACTIONS_STEP_DEBUG}}
+      ACTIONS_RUNNER_DEBUG: ${{secrets.ACTIONS_RUNNER_DEBUG}}
 
     steps:
     - uses: actions/checkout@v4
