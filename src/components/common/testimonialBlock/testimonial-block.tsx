@@ -14,7 +14,7 @@ const TestimonialBlock = ({ imageFileName, name, about, content }: Props) => {
         <div className="relative block md:w-[200px]">
           <Image
             alt={name}
-            src={`./images/testimonials/${imageFileName}`}
+            src={`/images/testimonials/${imageFileName}`}
             width="200"
             height="200"
             className="mx-auto size-40 rounded-full object-cover grayscale group-hover:grayscale-0"
