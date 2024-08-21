@@ -56,7 +56,7 @@ const CertificationBlock = ({
               <>
                 <div className="absolute hidden size-full dark:block">
                   <Image
-                    src={`/images/certifications/${providerLogoFilenameDarkMode}`}
+                    src={`./images/certifications/${providerLogoFilenameDarkMode}`}
                     fill
                     style={{
                       objectFit: 'contain',
@@ -66,7 +66,7 @@ const CertificationBlock = ({
                 </div>
                 <div className="absolute size-full dark:hidden">
                   <Image
-                    src={`/images/certifications/${providerLogoFilename}`}
+                    src={`./images/certifications/${providerLogoFilename}`}
                     fill
                     style={{
                       objectFit: 'contain',
@@ -77,7 +77,7 @@ const CertificationBlock = ({
               </>
             ) : (
               <Image
-                src={`/images/certifications/${providerLogoFilename}`}
+                src={`./images/certifications/${providerLogoFilename}`}
                 fill
                 style={{
                   objectFit: 'contain',
