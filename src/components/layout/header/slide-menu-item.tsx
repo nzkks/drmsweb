@@ -26,8 +26,8 @@ const SlideMenuItem = ({
 
   const handleMenuItemClick = (href: string, label: string) => {
     sendGTMEvent({
-      event: 'buttonClicked',
-      value: { section: 'Header menu', name: label, link: href },
+      event: 'Header-Menu-Item-Button-Clicked',
+      value: label,
     });
     setActiveSection(href);
   };

@@ -51,8 +51,8 @@ const CertificationBlock = ({
             className="block-glass-accent absolute left-1/2 top-1/2 hidden size-12 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-lg group-hover:flex"
             onClick={() =>
               sendGTMEvent({
-                event: 'buttonClicked',
-                value: { section: 'Certifications', name, link },
+                event: 'Certification-Link-Clicked',
+                value: name,
               })
             }
           >

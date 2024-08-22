@@ -20,8 +20,8 @@ const Cta = () => {
               downloadFileName="ShanthoshK_Frontend_Dev_cv.pdf"
               aria-label="download cv"
               width={180}
-              sectionForGA="CTA"
-              labelForGA="Download PDF cv"
+              buttonIdForGA="CTA-CV-PDF-Download-Link-Clicked"
+              valueForGA="Download PDF cv"
             >
               <PiFilePdfBold className="size-8" />
               <div className="ml-2 inline-block">Download cv</div>
@@ -33,8 +33,8 @@ const Cta = () => {
               downloadFileName="ShanthoshK_Frontend_Dev_cv.docx"
               aria-label="download cv"
               width={180}
-              sectionForGA="CTA"
-              labelForGA="Download DOCX cv"
+              buttonIdForGA="CTA-CV-DOCX-Download-Link-Clicked"
+              valueForGA="Download DOCX cv"
             >
               <TbFileTypeDocx className="size-8" />
               <div className="ml-2 inline-block">Download cv</div>
@@ -43,8 +43,8 @@ const Cta = () => {
               href="mailto:kkshanthosh@gmail.com"
               ariaLabel="email me"
               width={180}
-              sectionForGA="CTA"
-              labelForGA="Email me"
+              buttonIdForGA="CTA-Email-Link-Clicked"
+              valueForGA="Email me"
             >
               <MdOutlineAlternateEmail className="size-7" />
               <div className="ml-2 inline-block">Email me</div>

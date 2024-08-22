@@ -13,6 +13,7 @@ import {
   NavbarMenuItem,
 } from '@nextui-org/react';
 import clsx from 'clsx';
+import { sendGTMEvent } from '@next/third-parties/google';
 
 import { PageReadingProgress, ShinyBtn, ThemeSwitch } from '@/components';
 import SlideMenu from './slide-menu';
@@ -40,7 +41,11 @@ const Header = () => {
     };
   }, []);
 
-  const handleMobileMenuPress = (href: string) => {
+  const handleMobileMenuPress = (href: string, label: string) => {
+    sendGTMEvent({
+      event: 'Header-Mobile-Menu-Item-Button-Clicked',
+      value: label,
+    });
     setIsMenuOpen(!isMenuOpen);
     setActiveSection(href);
   };
@@ -73,7 +78,11 @@ const Header = () => {
 
         <NavbarContent justify="end">
           <NavbarItem>
-            <ShinyBtn href="#cta" sectionForGA="Header" labelForGA="Hire me">
+            <ShinyBtn
+              href="#cta"
+              buttonIdForGA="Header-HireMe"
+              valueForGA="Hire me"
+            >
               Hire me
             </ShinyBtn>
           </NavbarItem>
@@ -92,7 +101,7 @@ const Header = () => {
                 )}
                 href={href}
                 size="lg"
-                onPress={() => handleMobileMenuPress(href)}
+                onPress={() => handleMobileMenuPress(href, label)}
               >
                 {label}
               </Link>

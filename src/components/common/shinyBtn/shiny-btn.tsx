@@ -16,8 +16,8 @@ type Props = {
   className?: string;
   ariaLabel?: string;
   isIconOnly?: boolean;
-  sectionForGA?: string;
-  labelForGA?: string;
+  buttonIdForGA?: string;
+  valueForGA?: string;
   children?: React.ReactNode;
 };
 
@@ -31,8 +31,8 @@ const ShinyBtn = ({
   ariaLabel = '',
   downloadFileName = '',
   isIconOnly = false,
-  sectionForGA = '',
-  labelForGA = '',
+  buttonIdForGA = '',
+  valueForGA = '',
   children,
 }: Props) => {
   return (
@@ -51,8 +51,8 @@ const ShinyBtn = ({
       aria-label={ariaLabel}
       onPress={() =>
         sendGTMEvent({
-          event: 'buttonClicked',
-          value: { section: sectionForGA, name: labelForGA, link: href },
+          event: `${buttonIdForGA}-Link-Clicked`,
+          value: valueForGA,
         })
       }
     >

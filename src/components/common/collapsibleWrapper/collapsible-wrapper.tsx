@@ -21,11 +21,8 @@ const CollapsibleWrapper = ({ title, content }: Props) => {
   useEffect(() => {
     if (open) {
       sendGTMEvent({
-        event: 'InfoViewed',
-        value: {
-          section: 'About',
-          name: title,
-        },
+        event: 'About-Info-Viewed',
+        value: title,
       });
     }
   }, [open, title]);

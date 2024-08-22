@@ -33,8 +33,8 @@ const Hero = () => {
             href="#cta"
             width={144}
             className="mx-auto"
-            sectionForGA="Hero"
-            labelForGA="Hire me"
+            buttonIdForGA="Hero-HireMe-Link-Clicked"
+            valueForGA="Hire me"
           >
             Hire me
           </ShinyBtn>

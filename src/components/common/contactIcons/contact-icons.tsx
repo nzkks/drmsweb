@@ -15,12 +15,8 @@ const ContactIcons = () => {
         rel="noopener noreferrer"
         onPress={() =>
           sendGTMEvent({
-            event: 'buttonClicked',
-            value: {
-              section: 'Contact',
-              name: contact.name,
-              link: contact.link,
-            },
+            event: 'Contact-Icon-Clicked',
+            value: contact.name,
           })
         }
       >

@@ -37,8 +37,8 @@ const Skills = () => {
 
   const handleMenuItemClick = (key: string, label: string) => {
     sendGTMEvent({
-      event: 'buttonClicked',
-      value: { section: 'Skills', name: label },
+      event: 'Skills-View-Item-Button-Clicked',
+      value: label,
     });
     setSelectedMenuItem(key);
   };
@@ -56,8 +56,8 @@ const Skills = () => {
             <DropdownTrigger
               onClick={() =>
                 sendGTMEvent({
-                  event: 'buttonClicked',
-                  value: { section: 'Skills', name: 'Show menu' },
+                  event: 'Skills-View-Options-Button-Clicked',
+                  value: 'Show menu',
                 })
               }
             >
