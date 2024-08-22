@@ -1,6 +1,7 @@
 import { useRef } from 'react';
 import Link from 'next/link';
 import clsx from 'clsx';
+import { sendGTMEvent } from '@next/third-parties/google';
 
 type SlideMenuItemProps = {
   label: string;
@@ -23,6 +24,14 @@ const SlideMenuItem = ({
 }: SlideMenuItemProps) => {
   const ref = useRef<HTMLLIElement>(null);
 
+  const handleMenuItemClick = (href: string, label: string) => {
+    sendGTMEvent({
+      event: 'buttonClicked',
+      value: { section: 'Header menu', name: label, link: href },
+    });
+    setActiveSection(href);
+  };
+
   return (
     <li
       ref={ref}
@@ -43,7 +52,7 @@ const SlideMenuItem = ({
     >
       <Link
         href={href}
-        onClick={() => setActiveSection(href)}
+        onClick={() => handleMenuItemClick(href, label)}
         className={
           activeSection === href
             ? 'text-white dark:text-black'
