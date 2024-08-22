@@ -22,8 +22,10 @@ const CollapsibleWrapper = ({ title, content }: Props) => {
     if (open) {
       sendGTMEvent({
         event: 'InfoViewed',
-        section: 'About',
-        name: title,
+        value: {
+          section: 'About',
+          name: title,
+        },
       });
     }
   }, [open, title]);
