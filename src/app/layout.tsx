@@ -1,10 +1,14 @@
 import { ReactNode } from 'react';
 import type { Metadata } from 'next';
 import { Inter as FontSans } from 'next/font/google';
-import { GoogleTagManager } from '@next/third-parties/google';
 
 import './globals.css';
-import { Header, Providers, ToTopLinkWithProgress } from '@/components';
+import {
+  Analytics,
+  Header,
+  Providers,
+  ToTopLinkWithProgress,
+} from '@/components';
 import { cn } from '@/lib/utils';
 
 const fontSans = FontSans({
@@ -27,7 +31,7 @@ const RootLayout = ({
 }>) => {
   return (
     <html lang="en" suppressHydrationWarning>
-      <GoogleTagManager gtmId="GTM-PHKV9P3P" />
+      <Analytics />
       <body
         className={cn(
           'relative min-h-svh bg-background font-sans text-foreground antialiased',

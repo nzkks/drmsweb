@@ -36,3 +36,6 @@ export * from './contactIcons';
 
 export { default as DynamicIcon } from './dynamicIcon';
 export * from './dynamicIcon';
+
+export { default as Analytics } from './analytics';
+export * from './analytics';
