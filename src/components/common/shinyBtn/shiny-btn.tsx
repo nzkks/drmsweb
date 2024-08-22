@@ -1,6 +1,9 @@
+'use client';
+
 import { Button, Link } from '@nextui-org/react';
 
 import { cn } from '@/lib/utils';
+import { sendGTMEvent } from '@next/third-parties/google';
 
 type Props = {
   href: string;
@@ -13,6 +16,8 @@ type Props = {
   className?: string;
   ariaLabel?: string;
   isIconOnly?: boolean;
+  sectionForGA?: string;
+  labelForGA?: string;
   children?: React.ReactNode;
 };
 
@@ -26,6 +31,8 @@ const ShinyBtn = ({
   ariaLabel = '',
   downloadFileName = '',
   isIconOnly = false,
+  sectionForGA = '',
+  labelForGA = '',
   children,
 }: Props) => {
   return (
@@ -42,6 +49,12 @@ const ShinyBtn = ({
         className,
       )}
       aria-label={ariaLabel}
+      onPress={() =>
+        sendGTMEvent({
+          event: 'buttonClicked',
+          value: { section: sectionForGA, name: labelForGA, link: href },
+        })
+      }
     >
       <div className={`text-md flex items-center uppercase text-white`}>
         {children}

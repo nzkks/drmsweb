@@ -26,6 +26,8 @@ const Cta = () => {
                 aria-label="download cv"
                 isIconOnly={width < 640}
                 width={width > 640 ? 160 : 50}
+                sectionForGA="CTA"
+                labelForGA="Download PDF cv"
               >
                 <PiFilePdfBold className="size-8" />
                 <div className="hidden sm:inline-block">Download cv</div>
@@ -40,6 +42,8 @@ const Cta = () => {
                 aria-label="download cv"
                 isIconOnly={width < 640}
                 width={width > 640 ? 160 : 50}
+                sectionForGA="CTA"
+                labelForGA="Download DOCX cv"
               >
                 <TbFileTypeDocx className="size-8" />
                 <div className="hidden sm:inline-block">Download cv</div>
@@ -50,6 +54,8 @@ const Cta = () => {
                 href="mailto:kkshanthosh@gmail.com"
                 ariaLabel="email me"
                 width={width > 640 ? 130 : 90}
+                sectionForGA="CTA"
+                labelForGA="Email me"
               >
                 <MdOutlineAlternateEmail className="size-7" />
                 <div className="sm:ml-2">

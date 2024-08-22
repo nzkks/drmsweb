@@ -73,7 +73,9 @@ const Header = () => {
 
         <NavbarContent justify="end">
           <NavbarItem>
-            <ShinyBtn href="#cta">Hire me</ShinyBtn>
+            <ShinyBtn href="#cta" sectionForGA="Header" labelForGA="Hire me">
+              Hire me
+            </ShinyBtn>
           </NavbarItem>
           <NavbarItem>
             <ThemeSwitch />

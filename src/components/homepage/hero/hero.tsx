@@ -29,7 +29,13 @@ const Hero = () => {
           </span>
         </h1>
         <div className="mt-6 text-center">
-          <ShinyBtn href="#cta" width={144} className="mx-auto">
+          <ShinyBtn
+            href="#cta"
+            width={144}
+            className="mx-auto"
+            sectionForGA="Hero"
+            labelForGA="Hire me"
+          >
             Hire me
           </ShinyBtn>
         </div>
