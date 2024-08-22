@@ -1,4 +1,7 @@
+'use client';
+
 import { Link } from '@nextui-org/react';
+import { sendGTMEvent } from '@next/third-parties/google';
 
 import contacts from '@/data/contacts.json';
 import { DynamicIcon } from '@/components';
@@ -6,7 +9,21 @@ import { DynamicIcon } from '@/components';
 const ContactIcons = () => {
   const renderContactIcons = contacts.map((contact) => (
     <div key={contact.name} className="mx-1 cursor-pointer">
-      <Link href={contact.link} target="_blank" rel="noopener noreferrer">
+      <Link
+        href={contact.link}
+        target="_blank"
+        rel="noopener noreferrer"
+        onPress={() =>
+          sendGTMEvent({
+            event: 'buttonClicked',
+            value: {
+              section: 'Contact',
+              name: contact.name,
+              link: contact.link,
+            },
+          })
+        }
+      >
         <DynamicIcon
           name={contact.iconName}
           iconProps={{
