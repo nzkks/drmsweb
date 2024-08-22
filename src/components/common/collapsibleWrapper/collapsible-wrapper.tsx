@@ -1,7 +1,8 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { BsArrowsExpand, BsX } from 'react-icons/bs';
+import { sendGTMEvent } from '@next/third-parties/google';
 
 import {
   Collapsible,
@@ -16,6 +17,16 @@ type Props = {
 
 const CollapsibleWrapper = ({ title, content }: Props) => {
   const [open, setOpen] = useState(false);
+
+  useEffect(() => {
+    if (open) {
+      sendGTMEvent({
+        event: 'InfoViewed',
+        section: 'About',
+        name: title,
+      });
+    }
+  }, [open, title]);
 
   return (
     <div className="mb-4">
