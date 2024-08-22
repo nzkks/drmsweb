@@ -9,6 +9,7 @@ import {
   DropdownTrigger,
 } from '@nextui-org/react';
 import { BsThreeDotsVertical } from 'react-icons/bs';
+import { sendGTMEvent } from '@next/third-parties/google';
 
 import { Container } from '@/components';
 import skillsData from '@/data/skills.json';
@@ -34,6 +35,14 @@ const menuItems = [
 const Skills = () => {
   const [selectedMenuItem, setSelectedMenuItem] = useState('animation');
 
+  const handleMenuItemClick = (key: string, label: string) => {
+    sendGTMEvent({
+      event: 'buttonClicked',
+      value: { section: 'Skills', name: label },
+    });
+    setSelectedMenuItem(key);
+  };
+
   return (
     <section className="section-gradient-bg1 py-16" id="skills">
       <div className="flex items-center justify-center">
@@ -44,7 +53,14 @@ const Skills = () => {
         </div>
         <div className="ml-2 w-12">
           <Dropdown>
-            <DropdownTrigger>
+            <DropdownTrigger
+              onClick={() =>
+                sendGTMEvent({
+                  event: 'buttonClicked',
+                  value: { section: 'Skills', name: 'Show menu' },
+                })
+              }
+            >
               <Button isIconOnly variant="flat" className="size-8">
                 <BsThreeDotsVertical />
               </Button>
@@ -54,7 +70,7 @@ const Skills = () => {
               {menuItems.map((item) => (
                 <DropdownItem
                   key={item.key}
-                  onPress={() => setSelectedMenuItem(item.key)}
+                  onPress={() => handleMenuItemClick(item.key, item.label)}
                 >
                   {item.label}
                 </DropdownItem>
