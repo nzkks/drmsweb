@@ -1,3 +1,5 @@
+'use client';
+
 import Image from 'next/image';
 import Link from 'next/link';
 import { FaExternalLinkAlt } from 'react-icons/fa';
@@ -9,6 +11,7 @@ import {
   CardHeader,
   CardTitle,
 } from '@/components/ui/card';
+import { sendGTMEvent } from '@next/third-parties/google';
 
 type Props = {
   name: string;
@@ -46,6 +49,12 @@ const CertificationBlock = ({
             href={link}
             target="_blank"
             className="block-glass-accent absolute left-1/2 top-1/2 hidden size-12 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-lg group-hover:flex"
+            onClick={() =>
+              sendGTMEvent({
+                event: 'buttonClicked',
+                value: { section: 'Certifications', name, link },
+              })
+            }
           >
             <FaExternalLinkAlt />
           </Link>
