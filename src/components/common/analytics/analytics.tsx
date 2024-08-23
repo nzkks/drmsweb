@@ -4,12 +4,12 @@ import { GoogleAnalytics, GoogleTagManager } from '@next/third-parties/google';
 const Analytics = () => {
   const isProd = conf.environment === 'production';
 
-  return !isProd ? null : (
+  return isProd ? (
     <>
       <GoogleAnalytics gaId={conf.googleAnalyticsId} />
       <GoogleTagManager gtmId={conf.googleTagManagerId} />
     </>
-  );
+  ) : null;
 };
 
 export default Analytics;
