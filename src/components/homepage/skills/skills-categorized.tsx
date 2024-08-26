@@ -31,7 +31,9 @@ const SkillsCategorized = ({ data }: Props) => {
       </h3>
       <ul className="list-inside list-disc">
         {categoryMap[category].map((skill) => (
-          <li key={skill.name}>{skill.name}</li>
+          <li key={skill.name} className="transition-all hover:text-accent">
+            {skill.name}
+          </li>
         ))}
       </ul>
     </div>
