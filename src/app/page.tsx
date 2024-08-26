@@ -1,7 +1,6 @@
 import {
   About,
   Certifications,
-  Cta,
   Experience,
   Hero,
   Recommendations,
@@ -16,7 +15,6 @@ const Home = () => {
       <Hero />
       <Skills />
       <About />
-      <Cta />
       <Experience />
       <Certifications />
       <Recommendations />
