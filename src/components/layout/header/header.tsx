@@ -80,11 +80,12 @@ const Header = () => {
         <NavbarContent justify="end">
           <NavbarItem>
             <ShinyBtn
-              href="#cta"
-              buttonIdForGA="Header-HireMe"
-              valueForGA="Hire me"
+              href="mailto:kkshanthosh@gmail.com"
+              ariaLabel="contact"
+              buttonIdForGA="Header-Contact"
+              valueForGA="Contact"
             >
-              Hire me
+              Contact
             </ShinyBtn>
           </NavbarItem>
           <NavbarItem>
