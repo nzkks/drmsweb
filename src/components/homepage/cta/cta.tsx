@@ -4,13 +4,14 @@ import { MdOutlineAlternateEmail } from 'react-icons/md';
 import { PiFilePdfBold } from 'react-icons/pi';
 import { TbFileTypeDocx } from 'react-icons/tb';
 
-import { Container, ShinyBtn } from '@/components';
+import { Container, SectionBg, ShinyBtn } from '@/components';
 
 const Cta = () => {
   return (
-    <section className="py-16" id="cta">
-      <Container>
-        <div className="mt-10 text-center">
+    <section className="relative border-t border-[#25213b]" id="cta">
+      <SectionBg />
+      <Container className="py-16">
+        <div className="text-center">
           <h3 className="text-xl">Download my CV and contact me</h3>
           <div className="mx-auto mt-10 grid max-w-xl items-center justify-center gap-4 auto-fit-[170px]">
             <ShinyBtn

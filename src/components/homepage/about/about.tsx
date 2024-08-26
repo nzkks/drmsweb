@@ -1,11 +1,12 @@
-import { CollapsibleWrapper, Container } from '@/components';
+import { CollapsibleWrapper, Container, SectionBg } from '@/components';
 
 import aboutData from '@/data/about.json';
 
 const About = () => {
   return (
-    <section className="py-16" id="about">
-      <Container>
+    <section className="relative border-t border-[#25213b]" id="about">
+      <SectionBg />
+      <Container className="py-16">
         <h2 className="text-center text-xl">About me</h2>
 
         <div className="group/about mt-10 grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-3">

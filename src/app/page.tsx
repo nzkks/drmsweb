@@ -5,12 +5,14 @@ import {
   Experience,
   Hero,
   Recommendations,
+  SectionBg,
   Skills,
 } from '@/components';
 
 const Home = () => {
   return (
-    <main>
+    <main className="relative">
+      <SectionBg />
       <Hero />
       <Skills />
       <About />

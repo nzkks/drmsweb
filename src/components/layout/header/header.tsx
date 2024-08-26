@@ -57,8 +57,9 @@ const Header = () => {
         onMenuOpenChange={setIsMenuOpen}
         // shouldHideOnScroll
         maxWidth="xl"
+        className="bg-transparent shadow-none"
       >
-        <NavbarContent>
+        <NavbarContent className="bg-transparent">
           <NavbarMenuToggle
             aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
             className="sm:hidden"

@@ -39,3 +39,6 @@ export * from './dynamicIcon';
 
 export { default as Analytics } from './analytics';
 export * from './analytics';
+
+export { default as SectionBg } from './sectionBg';
+export * from './sectionBg';
