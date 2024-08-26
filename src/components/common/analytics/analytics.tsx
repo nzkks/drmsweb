@@ -3,12 +3,8 @@ import { GoogleAnalytics, GoogleTagManager } from '@next/third-parties/google';
 const Analytics = () => {
   return (
     <>
-      <GoogleAnalytics
-        gaId={process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID as string}
-      />
-      <GoogleTagManager
-        gtmId={process.env.NEXT_PUBLIC_GOOGLE_TAG_MANAGER_ID as string}
-      />
+      <GoogleAnalytics gaId="G-VHLPLLSSD8" />
+      <GoogleTagManager gtmId="GTM-PHKV9P3P" />
     </>
   );
 };
