@@ -19,6 +19,7 @@ const ContactIcons = () => {
             value: contact.name,
           })
         }
+        className="transition-all duration-300 hover:scale-125"
       >
         <DynamicIcon
           name={contact.iconName}
