@@ -37,7 +37,7 @@ const CertificationBlock = ({
 
   return (
     <Card key={`${name}-${period}`} className="group flex flex-col" data-glow>
-      <div className="flex h-full flex-col border dark:border-[#11203b]">
+      <div className="flex h-full flex-col rounded-xl border dark:border-[#11203b]">
         <CardHeader className="p-3">
           <CardTitle className="text-md">{name}</CardTitle>
           <CardDescription className="text-foreground">
