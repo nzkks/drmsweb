@@ -10,13 +10,17 @@ import 'swiper/css/pagination';
 import 'swiper/css/mousewheel';
 import { SiLinkedin } from 'react-icons/si';
 
-import { Container, TestimonialBlock } from '@/components';
+import { Container, SectionBg, TestimonialBlock } from '@/components';
 import recommendationsData from '@/data/recommendations.json';
 
 const Recommendations = () => {
   return (
-    <section className="py-16" id="recommendations">
-      <Container>
+    <section
+      className="relative border-t border-[#25213b]"
+      id="recommendations"
+    >
+      <SectionBg />
+      <Container className="py-16">
         <h2 className="text-center text-xl">
           <Link
             href="https://www.linkedin.com/in/shanthoshk/"

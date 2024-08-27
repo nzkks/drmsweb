@@ -15,6 +15,3 @@ export * from './recommendations';
 
 export { default as Certifications } from './certifications';
 export * from './certifications';
-
-export { default as Cta } from './cta';
-export * from './cta';

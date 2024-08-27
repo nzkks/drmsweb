@@ -36,7 +36,9 @@ const CollapsibleWrapper = ({ title, content }: Props) => {
               <div className="IconButton">
                 {open ? <BsX /> : <BsArrowsExpand />}
               </div>
-              <div className="ml-3 font-bold">{title}</div>
+              <div className="ml-3 font-bold transition-all hover:text-accent">
+                {title}
+              </div>
             </div>
           </CollapsibleTrigger>
           <CollapsibleContent className="overflow-hidden data-[state=closed]:animate-slide-up data-[state=open]:animate-slide-down">

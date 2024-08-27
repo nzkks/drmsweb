@@ -3,6 +3,9 @@ import { Chip } from '@nextui-org/react';
 import { ContactIcons, Container, ShinyBtn } from '@/components';
 import skillsData from '@/data/skills.json';
 import LetterFontWeightAnimator from './letter-font-weight-animator';
+import { PiFilePdfBold } from 'react-icons/pi';
+import { TbFileTypeDocx } from 'react-icons/tb';
+import { MdOutlineAlternateEmail } from 'react-icons/md';
 
 const Hero = () => {
   return (
@@ -15,7 +18,7 @@ const Hero = () => {
         </div>
 
         <h1 className="mt-6 text-5xl leading-tight">
-          Hi, I am
+          Hello, This is
           <br />
           <LetterFontWeightAnimator
             word="Shanthosh"
@@ -23,21 +26,50 @@ const Hero = () => {
           />
           <span className="inline-block sm:hidden">Shanthosh</span>{' '}
           <span className="text-muted-foreground">Krishnakumar</span>,
-          <br />
+          <br />a{' '}
           <span className="bg-gradient-to-b from-background to-accent bg-clip-text font-bold text-transparent">
             Frontend Developer
           </span>
         </h1>
-        <div className="mt-6 text-center">
-          <ShinyBtn
-            href="#cta"
-            width={144}
-            className="mx-auto"
-            buttonIdForGA="Hero-HireMe-Link-Clicked"
-            valueForGA="Hire me"
-          >
-            Hire me
-          </ShinyBtn>
+        <div className="mt-10 text-center">
+          <div className="mx-auto mt-10 grid max-w-xl items-center justify-center gap-4 auto-fit-[170px]">
+            <ShinyBtn
+              href="/files/ShanthoshK_Frontend_Dev_cv.pdf"
+              target="_blank"
+              isExternal={true}
+              downloadFileName="ShanthoshK_Frontend_Dev_cv.pdf"
+              aria-label="download cv"
+              width={180}
+              buttonIdForGA="CTA-CV-PDF-Download-Link-Clicked"
+              valueForGA="Download PDF cv"
+            >
+              <PiFilePdfBold className="size-8" />
+              <div className="ml-2 inline-block">Download cv</div>
+            </ShinyBtn>
+            <ShinyBtn
+              href="/files/ShanthoshK_Frontend_Dev_cv.docx"
+              target="_blank"
+              isExternal={true}
+              downloadFileName="ShanthoshK_Frontend_Dev_cv.docx"
+              aria-label="download cv"
+              width={180}
+              buttonIdForGA="CTA-CV-DOCX-Download-Link-Clicked"
+              valueForGA="Download DOCX cv"
+            >
+              <TbFileTypeDocx className="size-8" />
+              <div className="ml-2 inline-block">Download cv</div>
+            </ShinyBtn>
+            <ShinyBtn
+              href="mailto:kkshanthosh@gmail.com"
+              ariaLabel="email me"
+              width={180}
+              buttonIdForGA="CTA-Email-Link-Clicked"
+              valueForGA="Email me"
+            >
+              <MdOutlineAlternateEmail className="size-7" />
+              <div className="ml-2 inline-block">Email me</div>
+            </ShinyBtn>
+          </div>
         </div>
       </Container>
     </section>

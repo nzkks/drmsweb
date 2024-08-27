@@ -1,10 +1,11 @@
-import { Container, Timeline } from '@/components';
+import { Container, SectionBg, Timeline } from '@/components';
 import experienceData from '@/data/experience.json';
 
 const Experience = () => {
   return (
-    <section className="py-16" id="experience">
-      <Container>
+    <section className="relative border-t border-[#25213b]" id="experience">
+      <SectionBg />
+      <Container className="py-16">
         <h2 className="text-center text-xl">Experience</h2>
 
         <div className="mt-6">

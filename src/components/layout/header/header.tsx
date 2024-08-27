@@ -57,8 +57,9 @@ const Header = () => {
         onMenuOpenChange={setIsMenuOpen}
         // shouldHideOnScroll
         maxWidth="xl"
+        className="bg-transparent shadow-none"
       >
-        <NavbarContent>
+        <NavbarContent className="bg-transparent">
           <NavbarMenuToggle
             aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
             className="sm:hidden"
@@ -79,11 +80,12 @@ const Header = () => {
         <NavbarContent justify="end">
           <NavbarItem>
             <ShinyBtn
-              href="#cta"
-              buttonIdForGA="Header-HireMe"
-              valueForGA="Hire me"
+              href="mailto:kkshanthosh@gmail.com"
+              ariaLabel="contact"
+              buttonIdForGA="Header-Contact"
+              valueForGA="Contact"
             >
-              Hire me
+              Contact
             </ShinyBtn>
           </NavbarItem>
           <NavbarItem>
