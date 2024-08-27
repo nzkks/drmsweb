@@ -34,22 +34,29 @@ const LetterFontWeightAnimator = ({ word, className }: Props) => {
 
       span.addEventListener('mouseleave', function (this: typeof span) {
         this.style.fontWeight = '400';
-        this.style.color = 'hsl(var(--foreground))';
+        this.style.color = 'hsl(var(--heading))';
 
         const leftNeighbor = this.previousElementSibling as HTMLSpanElement;
         const rightNeighbor = this.nextElementSibling as HTMLSpanElement;
 
         if (leftNeighbor) {
           leftNeighbor.style.fontWeight = '400';
-          leftNeighbor.style.color = 'hsl(var(--foreground))';
+          leftNeighbor.style.color = 'hsl(var(--heading))';
         }
 
         if (rightNeighbor) {
           rightNeighbor.style.fontWeight = '400';
-          rightNeighbor.style.color = 'hsl(var(--foreground))';
+          rightNeighbor.style.color = 'hsl(var(--heading))';
         }
       });
     });
+
+    // return () => {
+    //   spans.forEach((span) => {
+    //     span.removeEventListener('mouseenter', function () {});
+    //     span.removeEventListener('mouseleave', function () {});
+    //   });
+    // };
   }, []);
 
   const renderedWord = word.split('').map((letter, index) => (
