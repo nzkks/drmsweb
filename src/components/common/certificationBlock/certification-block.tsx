@@ -12,6 +12,7 @@ import {
   CardTitle,
 } from '@/components/ui/card';
 import { sendGTMEvent } from '@next/third-parties/google';
+import { usePointerGlow } from '@/hooks';
 
 type Props = {
   name: string;
@@ -32,12 +33,11 @@ const CertificationBlock = ({
   period,
   link,
 }: Props) => {
+  const [status] = usePointerGlow();
+
   return (
-    <Card
-      key={`${name}-${period}`}
-      className="block-glass2 group flex flex-col border-border transition-all dark:border-[#5b769d] lg:hover:!opacity-100 lg:group-hover/list:opacity-50"
-    >
-      <div className="flex h-full flex-col">
+    <Card key={`${name}-${period}`} className="group flex flex-col" data-glow>
+      <div className="flex h-full flex-col border dark:border-[#11203b]">
         <CardHeader className="p-3">
           <CardTitle className="text-md">{name}</CardTitle>
           <CardDescription className="text-foreground">
