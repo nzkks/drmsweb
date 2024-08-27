@@ -9,6 +9,7 @@ import {
   Providers,
   ToTopLinkWithProgress,
 } from '@/components';
+import { Toaster } from '@/components/ui/toaster';
 import { cn } from '@/lib/utils';
 
 const fontSans = FontSans({
@@ -78,6 +79,7 @@ const RootLayout = ({
           <Header />
           {children}
           <ToTopLinkWithProgress size={50} strokeWidth={2} />
+          <Toaster />
         </Providers>
       </body>
     </html>
