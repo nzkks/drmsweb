@@ -18,8 +18,8 @@ const Home = () => {
       <About />
       <Experience />
       <Certifications />
-      <Recommendations />
       <Contact />
+      <Recommendations />
     </main>
   );
 };
