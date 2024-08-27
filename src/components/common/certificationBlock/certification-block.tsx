@@ -67,6 +67,7 @@ const CertificationBlock = ({
                   <Image
                     src={`/images/certifications/${providerLogoFilenameDarkMode}`}
                     fill
+                    sizes={'(max-width: 768px) 100vw, 768px'}
                     style={{
                       objectFit: 'contain',
                     }}
@@ -77,6 +78,7 @@ const CertificationBlock = ({
                   <Image
                     src={`/images/certifications/${providerLogoFilename}`}
                     fill
+                    sizes={'(max-width: 768px) 100vw, 768px'}
                     style={{
                       objectFit: 'contain',
                     }}
@@ -88,6 +90,7 @@ const CertificationBlock = ({
               <Image
                 src={`/images/certifications/${providerLogoFilename}`}
                 fill
+                sizes={'(max-width: 768px) 100vw, 768px'}
                 style={{
                   objectFit: 'contain',
                 }}
