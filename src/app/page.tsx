@@ -6,6 +6,7 @@ import {
   Recommendations,
   SectionBg,
   Skills,
+  Contact,
 } from '@/components';
 
 const Home = () => {
@@ -18,6 +19,7 @@ const Home = () => {
       <Experience />
       <Certifications />
       <Recommendations />
+      <Contact />
     </main>
   );
 };
