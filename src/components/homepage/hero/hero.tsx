@@ -18,7 +18,7 @@ const Hero = () => {
         </div>
 
         <h1 className="mt-6 text-5xl leading-tight">
-          Hi, I am
+          Hello, This is
           <br />
           <LetterFontWeightAnimator
             word="Shanthosh"
@@ -26,7 +26,7 @@ const Hero = () => {
           />
           <span className="inline-block sm:hidden">Shanthosh</span>{' '}
           <span className="text-muted-foreground">Krishnakumar</span>,
-          <br />
+          <br />a{' '}
           <span className="bg-gradient-to-b from-background to-accent bg-clip-text font-bold text-transparent">
             Frontend Developer
           </span>
