@@ -40,7 +40,7 @@ const Hero = () => {
               downloadFileName="ShanthoshK_Frontend_Dev_cv.pdf"
               aria-label="download cv"
               width={180}
-              buttonIdForGA="CTA-CV-PDF-Download-Link-Clicked"
+              buttonIdForGA="Hero-CV-PDF-Download-Link-Clicked"
               valueForGA="Download PDF cv"
             >
               <PiFilePdfBold className="size-8" />
@@ -53,7 +53,7 @@ const Hero = () => {
               downloadFileName="ShanthoshK_Frontend_Dev_cv.docx"
               aria-label="download cv"
               width={180}
-              buttonIdForGA="CTA-CV-DOCX-Download-Link-Clicked"
+              buttonIdForGA="Hero-CV-DOCX-Download-Link-Clicked"
               valueForGA="Download DOCX cv"
             >
               <TbFileTypeDocx className="size-8" />
@@ -63,7 +63,7 @@ const Hero = () => {
               href="mailto:kkshanthosh@gmail.com"
               ariaLabel="email me"
               width={180}
-              buttonIdForGA="CTA-Email-Link-Clicked"
+              buttonIdForGA="Hero-Email-Link-Clicked"
               valueForGA="Email me"
             >
               <MdOutlineAlternateEmail className="size-7" />
