@@ -13,7 +13,7 @@ const Providers = ({ children }: { children: ReactNode }) => {
     <NextUIProvider navigate={router.push}>
       <ThemeProvider
         attribute="class"
-        defaultTheme="system"
+        defaultTheme="dark"
         enableSystem
         disableTransitionOnChange
       >
