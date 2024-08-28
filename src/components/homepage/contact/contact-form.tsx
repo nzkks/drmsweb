@@ -1,12 +1,14 @@
 'use client';
 
 import { useRef } from 'react';
+import Link from 'next/link';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useForm } from 'react-hook-form';
 import { z } from 'zod';
 import { Button } from '@nextui-org/react';
 import ReCAPTCHA from 'react-google-recaptcha';
 import { CgSpinner } from 'react-icons/cg';
+import { RiMailSendLine } from 'react-icons/ri';
 
 import {
   Form,
@@ -20,7 +22,6 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { toast } from '@/components/ui/use-toast';
 import { sendContactForm } from '@/actions/send-email';
-import Link from 'next/link';
 
 const formSchema = z.object({
   username: z.string().min(2, {
@@ -166,14 +167,17 @@ const ContactForm = () => {
             isSubmitting
               ? 'cursor-not-allowed opacity-50'
               : 'cursor-pointer opacity-100'
-          } bg-accent font-semibold dark:text-black`}
+          } group bg-accent font-semibold text-white dark:text-black`}
           type="submit"
           disabled={isSubmitting}
         >
           {isSubmitting ? (
             <CgSpinner className="size-6 animate-spin" />
           ) : (
-            'Send'
+            <>
+              <RiMailSendLine className="group-hover:scale-125" />{' '}
+              <span>SEND</span>
+            </>
           )}
         </Button>
       </form>
