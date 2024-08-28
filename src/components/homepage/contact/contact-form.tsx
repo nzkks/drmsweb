@@ -6,6 +6,7 @@ import { useForm } from 'react-hook-form';
 import { z } from 'zod';
 import { Button } from '@nextui-org/react';
 import ReCAPTCHA from 'react-google-recaptcha';
+import { CgSpinner } from 'react-icons/cg';
 
 import {
   Form,
@@ -57,7 +58,10 @@ const ContactForm = () => {
     },
   });
 
-  const { reset } = form;
+  const {
+    reset,
+    formState: { isSubmitting },
+  } = form;
 
   const onSubmit = async (values: FormData) => {
     const token = await recaptchaRef.current?.executeAsync();
@@ -135,10 +139,19 @@ const ContactForm = () => {
         />
 
         <Button
-          className="bg-accent font-semibold dark:text-black"
+          className={`${
+            isSubmitting
+              ? 'cursor-not-allowed opacity-50'
+              : 'cursor-pointer opacity-100'
+          } bg-accent font-semibold dark:text-black`}
           type="submit"
+          disabled={isSubmitting}
         >
-          Submit
+          {isSubmitting ? (
+            <CgSpinner className="size-6 animate-spin" />
+          ) : (
+            'Send'
+          )}
         </Button>
       </form>
     </Form>
