@@ -188,3 +188,7 @@
   inset: calc(var(--border-size) * -1);
   border-width: calc(var(--border-size) * 1);
 }
+
+.grecaptcha-badge {
+  visibility: hidden;
+}

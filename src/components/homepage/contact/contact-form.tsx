@@ -20,6 +20,7 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { toast } from '@/components/ui/use-toast';
 import { sendContactForm } from '@/actions/send-email';
+import Link from 'next/link';
 
 const formSchema = z.object({
   username: z.string().min(2, {
@@ -126,6 +127,27 @@ const ContactForm = () => {
             </FormItem>
           )}
         />
+        <p className="text-tiny">
+          This site is protected by reCAPTCHA and the Google{' '}
+          <Link
+            href="https://policies.google.com/privacy"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline"
+          >
+            Privacy Policy
+          </Link>{' '}
+          and{' '}
+          <Link
+            href="https://policies.google.com/terms"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline"
+          >
+            Terms of Service
+          </Link>{' '}
+          apply.
+        </p>
 
         <ReCAPTCHA
           sitekey={
