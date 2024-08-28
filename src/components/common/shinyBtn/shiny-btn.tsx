@@ -51,7 +51,7 @@ const ShinyBtn = ({
       aria-label={ariaLabel}
       onPress={() =>
         sendGTMEvent({
-          event: `${buttonIdForGA}-Link-Clicked`,
+          event: buttonIdForGA,
           value: valueForGA,
         })
       }
