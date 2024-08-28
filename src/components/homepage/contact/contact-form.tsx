@@ -73,7 +73,7 @@ const ContactForm = () => {
       toast({
         title: 'Error',
         description:
-          'Apologies! Something went wrong. Please email me directly to kkshanthosh [at] gmail [dot] com.',
+          'Apologies! Something went wrong. Please email me directly.',
         variant: 'destructive',
       });
     } else {
