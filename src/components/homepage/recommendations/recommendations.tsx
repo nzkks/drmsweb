@@ -26,9 +26,12 @@ const Recommendations = () => {
             href="https://www.linkedin.com/in/shanthoshk/"
             target="_blank"
             rel="noopener noreferrer"
+            className="group"
           >
-            LinkedIn Recommendations{' '}
-            <SiLinkedin className="inline-block size-6" />
+            <span className="group-hover:text-accent">
+              LinkedIn Recommendations
+            </span>{' '}
+            <SiLinkedin className="inline-block size-6 group-hover:scale-125" />
           </Link>
         </h2>
 
