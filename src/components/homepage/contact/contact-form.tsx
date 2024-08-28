@@ -18,6 +18,7 @@ import {
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { toast } from '@/components/ui/use-toast';
+import { sendContactForm } from '@/actions/send-email';
 
 const formSchema = z.object({
   username: z.string().min(2, {
@@ -56,17 +57,27 @@ const ContactForm = () => {
     },
   });
 
+  const { reset } = form;
+
   const onSubmit = async (values: FormData) => {
     const token = await recaptchaRef.current?.executeAsync();
     const dataWithToken = { ...values, token };
-    toast({
-      title: 'You submitted the following values:',
-      description: (
-        <pre className="mt-2 w-[340px] rounded-md bg-slate-950 p-4">
-          <code className="text-white">{JSON.stringify(values, null, 2)}</code>
-        </pre>
-      ),
-    });
+    const result = await sendContactForm(dataWithToken as any);
+    if (result.error) {
+      toast({
+        title: 'Error',
+        description:
+          'Apologies! Something went wrong. Please email me directly.',
+        variant: 'destructive',
+      });
+    } else {
+      toast({
+        title: 'Success',
+        description: 'Thanks for your message! I will get back to you ASAP.',
+        variant: 'default',
+      });
+      reset();
+    }
   };
 
   return (
@@ -113,7 +124,11 @@ const ContactForm = () => {
         />
 
         <ReCAPTCHA
-          sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY || ''}
+          sitekey={
+            process.env.NODE_ENV !== 'production'
+              ? (process.env.NEXT_PUBLIC_RECAPTCHA_LOCALHOST_SITE_KEY as string)
+              : (process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY as string)
+          }
           size="invisible"
           ref={recaptchaRef}
           hl="en"
