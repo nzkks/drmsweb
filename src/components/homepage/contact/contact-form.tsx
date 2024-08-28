@@ -136,6 +136,7 @@ const ContactForm = () => {
           size="invisible"
           ref={recaptchaRef}
           hl="en"
+          badge="bottomleft"
         />
 
         <Button
