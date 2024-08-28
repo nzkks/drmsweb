@@ -1,10 +1,12 @@
 'use client';
 
+import { useRef } from 'react';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useForm } from 'react-hook-form';
 import { z } from 'zod';
-
 import { Button } from '@nextui-org/react';
+import ReCAPTCHA from 'react-google-recaptcha';
+
 import {
   Form,
   FormControl,
@@ -43,6 +45,8 @@ const formSchema = z.object({
 type FormData = z.infer<typeof formSchema>;
 
 const ContactForm = () => {
+  const recaptchaRef = useRef<ReCAPTCHA>(null);
+
   const form = useForm<FormData>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -52,7 +56,9 @@ const ContactForm = () => {
     },
   });
 
-  const onSubmit = (values: FormData) => {
+  const onSubmit = async (values: FormData) => {
+    const token = await recaptchaRef.current?.executeAsync();
+    const dataWithToken = { ...values, token };
     toast({
       title: 'You submitted the following values:',
       description: (
@@ -105,6 +111,14 @@ const ContactForm = () => {
             </FormItem>
           )}
         />
+
+        <ReCAPTCHA
+          sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY || ''}
+          size="invisible"
+          ref={recaptchaRef}
+          hl="en"
+        />
+
         <Button
           className="bg-accent font-semibold dark:text-black"
           type="submit"
