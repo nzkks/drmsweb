@@ -22,6 +22,7 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { toast } from '@/components/ui/use-toast';
 import { sendContactForm } from '@/actions/send-email';
+import { sendGTMEvent } from '@next/third-parties/google';
 
 const formSchema = z.object({
   username: z.string().min(2, {
@@ -70,6 +71,11 @@ const ContactForm = () => {
     const dataWithToken = { ...values, token };
     const result = await sendContactForm(dataWithToken as any);
     if (result.error) {
+      sendGTMEvent({
+        event: 'Contact-Form-Failure',
+        value: 'Contact Form failure',
+      });
+
       toast({
         title: 'Error',
         description:
@@ -77,6 +83,11 @@ const ContactForm = () => {
         variant: 'destructive',
       });
     } else {
+      sendGTMEvent({
+        event: 'Contact-Form-Submitted-Successfully',
+        value: 'Contact Form submitted successfully',
+      });
+
       toast({
         title: 'Success',
         description: 'Thanks for your message! I will get back to you ASAP.',
@@ -170,6 +181,12 @@ const ContactForm = () => {
           } group bg-accent font-semibold text-white dark:text-black`}
           type="submit"
           disabled={isSubmitting}
+          onPress={() =>
+            sendGTMEvent({
+              event: 'Contact-Form-Submit-btn-clicked',
+              value: 'Contact Form submit button clicked',
+            })
+          }
         >
           {isSubmitting ? (
             <CgSpinner className="size-6 animate-spin" />

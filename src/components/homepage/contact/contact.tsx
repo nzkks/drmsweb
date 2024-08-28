@@ -4,6 +4,7 @@ import { useEffect } from 'react';
 import Link from 'next/link';
 import { MdOutlineAlternateEmail } from 'react-icons/md';
 import { MdLocalPhone } from 'react-icons/md';
+import { sendGTMEvent } from '@next/third-parties/google';
 
 import { ContactIcons, Container, SectionBg } from '@/components/common';
 import ContactForm from './contact-form';
@@ -37,6 +38,12 @@ const Contact = () => {
                 href=""
                 target="_blank"
                 className="text-accent underline hover:text-heading"
+                onClick={() =>
+                  sendGTMEvent({
+                    event: 'Contact-Email-Link-Clicked',
+                    value: 'Email Link Clicked',
+                  })
+                }
               >
                 Click to send me an email
               </Link>
@@ -49,6 +56,12 @@ const Contact = () => {
               <Link
                 href="tel:+642102495970"
                 className="text-accent underline hover:text-heading"
+                onClick={() =>
+                  sendGTMEvent({
+                    event: 'Contact-Phone-Link-Clicked',
+                    value: 'Phone Link Clicked',
+                  })
+                }
               >
                 +64 21 024 95970
               </Link>
