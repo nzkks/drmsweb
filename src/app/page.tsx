@@ -1,6 +1,7 @@
 import {
   About,
   Certifications,
+  Contact,
   Experience,
   Hero,
   Recommendations,
@@ -17,6 +18,7 @@ const Home = () => {
       <About />
       <Experience />
       <Certifications />
+      <Contact />
       <Recommendations />
     </main>
   );

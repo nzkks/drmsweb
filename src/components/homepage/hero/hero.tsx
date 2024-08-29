@@ -60,7 +60,7 @@ const Hero = () => {
               <div className="ml-2 inline-block">Download cv</div>
             </ShinyBtn>
             <ShinyBtn
-              href="mailto:kkshanthosh@gmail.com"
+              href="#contact"
               ariaLabel="email me"
               width={180}
               buttonIdForGA="Hero-Email-Link-Clicked"

@@ -5,8 +5,14 @@ import { sendGTMEvent } from '@next/third-parties/google';
 
 import contacts from '@/data/contacts.json';
 import { DynamicIcon } from '@/components';
+import { cn } from '@/lib/utils';
 
-const ContactIcons = () => {
+type Props = {
+  align?: 'start' | 'center' | 'end';
+  className?: string;
+};
+
+const ContactIcons = ({ align = 'center', className }: Props) => {
   const renderContactIcons = contacts.map((contact) => (
     <div key={contact.name} className="mx-1 cursor-pointer">
       <Link
@@ -34,7 +40,7 @@ const ContactIcons = () => {
   ));
 
   return (
-    <div className="flex items-center justify-center gap-2">
+    <div className={cn(`flex items-center justify-${align} gap-2`, className)}>
       {renderContactIcons}
     </div>
   );

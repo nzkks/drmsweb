@@ -61,8 +61,12 @@ const Skills = () => {
                 })
               }
             >
-              <Button isIconOnly variant="flat" className="size-8">
-                <BsThreeDotsVertical />
+              <Button
+                isIconOnly
+                variant="flat"
+                className="group size-8 hover:bg-accent"
+              >
+                <BsThreeDotsVertical className="group-hover:animate-spin group-hover:transition-all" />
               </Button>
             </DropdownTrigger>
 
