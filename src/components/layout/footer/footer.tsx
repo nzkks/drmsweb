@@ -3,7 +3,12 @@ import { IoMdStar } from 'react-icons/io';
 
 const Footer = () => {
   return (
-    <div className="relative border-t border-[#353951]">
+    <section className="relative border-t border-[#25213b]">
+      <div className="flex -translate-y-px justify-center">
+        <div className="w-3/4">
+          <div className="h-px w-full bg-gradient-to-r from-transparent via-violet-500 to-transparent"></div>
+        </div>
+      </div>
       <div className="mx-auto p-6 sm:px-12 lg:max-w-[70rem] lg:py-10 xl:max-w-[76rem] 2xl:max-w-[92rem]">
         <div className="-z-40 flex justify-center">
           <div className="h-1px absolute top-0 w-1/2 bg-gradient-to-r from-transparent via-violet-500 to-transparent"></div>
@@ -35,7 +40,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

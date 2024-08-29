@@ -9,8 +9,13 @@ import { MdOutlineAlternateEmail } from 'react-icons/md';
 
 const Hero = () => {
   return (
-    <section className="py-16">
-      <Container className="text-center">
+    <section className="relative border-t border-[#25213b]">
+      <div className="flex -translate-y-px justify-center">
+        <div className="w-3/4">
+          <div className="h-px w-full bg-gradient-to-r from-transparent via-violet-500 to-transparent"></div>
+        </div>
+      </div>
+      <Container className="py-16 text-center">
         <div className="text-md">{renderCoreSkills}</div>
 
         <div className="mt-6">
