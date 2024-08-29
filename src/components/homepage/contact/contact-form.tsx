@@ -4,8 +4,9 @@ import { useEffect, useState } from 'react';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useForm, useWatch } from 'react-hook-form';
 import { z } from 'zod';
-
 import { Button } from '@nextui-org/react';
+import { CgSpinner } from 'react-icons/cg';
+
 import {
   Form,
   FormControl,
@@ -64,7 +65,7 @@ const ContactForm = () => {
 
   const {
     control,
-    formState: { errors, isSubmitSuccessful, isSubmitting },
+    formState: { isSubmitting },
     handleSubmit,
     register,
     reset,
@@ -187,11 +188,22 @@ const ContactForm = () => {
               </FormItem>
             )}
           />
+
           <Button
-            className="bg-accent font-semibold dark:text-black"
+            className={`${
+              isSubmitting
+                ? 'cursor-not-allowed opacity-50'
+                : 'cursor-pointer opacity-100'
+            } bg-accent font-semibold dark:text-black`}
             type="submit"
+            disabled={isSubmitting}
           >
-            Send
+            Submit
+            {isSubmitting ? (
+              <CgSpinner className="size-6 animate-spin" />
+            ) : (
+              'Send'
+            )}
           </Button>
         </form>
       </Form>
