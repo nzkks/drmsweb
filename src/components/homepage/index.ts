@@ -15,3 +15,6 @@ export * from './recommendations';
 
 export { default as Certifications } from './certifications';
 export * from './certifications';
+
+export { default as Contact } from './contact';
+export * from './contact';
