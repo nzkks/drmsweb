@@ -1,7 +1,8 @@
 'use client';
 
+import { useEffect, useState } from 'react';
 import { zodResolver } from '@hookform/resolvers/zod';
-import { useForm } from 'react-hook-form';
+import { useForm, useWatch } from 'react-hook-form';
 import { z } from 'zod';
 
 import { Button } from '@nextui-org/react';
@@ -18,6 +19,11 @@ import { Textarea } from '@/components/ui/textarea';
 import { toast } from '@/components/ui/use-toast';
 
 const formSchema = z.object({
+  access_key: z.string(),
+  subject: z.string(),
+  from_name: z.string(),
+  botcheck: z.boolean(),
+
   username: z.string().min(2, {
     message: 'Full name is required',
   }),
@@ -45,12 +51,30 @@ type FormData = z.infer<typeof formSchema>;
 const ContactForm = () => {
   const form = useForm<FormData>({
     resolver: zodResolver(formSchema),
-    defaultValues: {
-      username: '',
-      email: '',
-      message: '',
-    },
+    mode: 'onTouched',
   });
+
+  const {
+    control,
+    formState: { errors, isSubmitSuccessful, isSubmitting },
+    handleSubmit,
+    register,
+    reset,
+    setValue,
+  } = form;
+
+  const [isSuccess, setIsSuccess] = useState(false);
+  const [Message, setMessage] = useState('');
+
+  const username = useWatch({
+    control,
+    name: 'username',
+    defaultValue: 'Someone',
+  });
+
+  useEffect(() => {
+    setValue('subject', `${username} sent a message from DRMSWeb contact form`);
+  }, [username, setValue]);
 
   const onSubmit = (values: FormData) => {
     toast({
@@ -64,55 +88,83 @@ const ContactForm = () => {
   };
 
   return (
-    <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
-        <FormField
-          control={form.control}
-          name="username"
-          render={({ field }) => (
-            <FormItem>
-              <FormLabel>Name</FormLabel>
-              <FormControl>
-                <Input placeholder="Name" {...field} />
-              </FormControl>
-              <FormMessage />
-            </FormItem>
-          )}
-        />
-        <FormField
-          control={form.control}
-          name="email"
-          render={({ field }) => (
-            <FormItem>
-              <FormLabel>Email</FormLabel>
-              <FormControl>
-                <Input type="email" placeholder="Email" {...field} />
-              </FormControl>
-              <FormMessage />
-            </FormItem>
-          )}
-        />
-        <FormField
-          control={form.control}
-          name="message"
-          render={({ field }) => (
-            <FormItem>
-              <FormLabel>Message</FormLabel>
-              <FormControl>
-                <Textarea placeholder="Message" {...field} />
-              </FormControl>
-              <FormMessage />
-            </FormItem>
-          )}
-        />
-        <Button
-          className="bg-accent font-semibold dark:text-black"
-          type="submit"
-        >
-          Send
-        </Button>
-      </form>
-    </Form>
+    <div>
+      {!isSubmitSuccessful && (
+        <Form {...form}>
+          <form onSubmit={handleSubmit(onSubmit)} className="space-y-8">
+            <input
+              type="hidden"
+              value="18426cc6-0455-4fd1-845f-55d5274faa43"
+              {...register('access_key')}
+            />
+            <input type="hidden" {...register('subject')} />
+            <input
+              type="hidden"
+              value="DRMSWeb site contact form"
+              {...register('from_name')}
+            />
+            <input
+              type="checkbox"
+              id=""
+              className="hidden"
+              style={{ display: 'none' }}
+              {...register('botcheck')}
+            ></input>
+
+            <FormField
+              control={control}
+              name="username"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel>Name</FormLabel>
+                  <FormControl>
+                    <Input placeholder="Name" autoComplete="false" {...field} />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+            <FormField
+              control={control}
+              name="email"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel>Email</FormLabel>
+                  <FormControl>
+                    <Input
+                      type="email"
+                      placeholder="Email"
+                      autoComplete="false"
+                      {...field}
+                    />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+            <FormField
+              control={control}
+              name="message"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel>Message</FormLabel>
+                  <FormControl>
+                    <Textarea placeholder="Message" {...field} />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+            <Button
+              className="bg-accent font-semibold dark:text-black"
+              type="submit"
+            >
+              Send
+            </Button>
+          </form>
+        </Form>
+      )}
+    </div>
   );
 };
 
