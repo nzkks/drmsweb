@@ -74,7 +74,6 @@ const ContactForm = () => {
               <FormControl>
                 <Input placeholder="Name" {...field} />
               </FormControl>
-              <FormDescription>This is your name.</FormDescription>
               <FormMessage />
             </FormItem>
           )}
@@ -88,7 +87,6 @@ const ContactForm = () => {
               <FormControl>
                 <Input type="email" placeholder="Email" {...field} />
               </FormControl>
-              <FormDescription>This is your email id.</FormDescription>
               <FormMessage />
             </FormItem>
           )}
@@ -102,12 +100,16 @@ const ContactForm = () => {
               <FormControl>
                 <Textarea placeholder="Message" {...field} />
               </FormControl>
-              <FormDescription>This is the message for me.</FormDescription>
               <FormMessage />
             </FormItem>
           )}
         />
-        <Button type="submit">Submit</Button>
+        <Button
+          className="bg-accent font-semibold dark:text-black"
+          type="submit"
+        >
+          Send
+        </Button>
       </form>
     </Form>
   );
