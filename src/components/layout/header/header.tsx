@@ -82,7 +82,7 @@ const Header = () => {
             <ShinyBtn
               href="#contact"
               ariaLabel="contact"
-              buttonIdForGA="Header-Contact"
+              buttonIdForGA="Header-Contact-Link-clicked"
               valueForGA="Contact"
             >
               Contact

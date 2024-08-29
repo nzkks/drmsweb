@@ -1,9 +1,9 @@
 'use client';
 
 import { Button, Link } from '@nextui-org/react';
+import { sendGTMEvent } from '@next/third-parties/google';
 
 import { cn } from '@/lib/utils';
-import { sendGTMEvent } from '@next/third-parties/google';
 
 type Props = {
   href: string;
@@ -49,12 +49,7 @@ const ShinyBtn = ({
         className,
       )}
       aria-label={ariaLabel}
-      onPress={() =>
-        sendGTMEvent({
-          event: `${buttonIdForGA}-Link-Clicked`,
-          value: valueForGA,
-        })
-      }
+      onPress={() => sendGTMEvent({ event: buttonIdForGA, value: valueForGA })}
     >
       <div className={`text-md flex items-center uppercase text-white`}>
         {children}
