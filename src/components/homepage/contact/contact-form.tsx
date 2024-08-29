@@ -7,6 +7,7 @@ import { z } from 'zod';
 import { Button } from '@nextui-org/react';
 import { CgSpinner } from 'react-icons/cg';
 import { RiMailSendLine } from 'react-icons/ri';
+import { sendGTMEvent } from '@next/third-parties/google';
 
 import {
   Form,
@@ -73,8 +74,8 @@ const ContactForm = () => {
     setValue,
   } = form;
 
-  const [isSuccess, setIsSuccess] = useState(false);
-  const [Message, setMessage] = useState('');
+  // const [isSuccess, setIsSuccess] = useState(false);
+  // const [Message, setMessage] = useState('');
 
   const username = useWatch({
     control,
@@ -99,6 +100,11 @@ const ContactForm = () => {
       .then(async (response) => {
         let json = await response.json();
         if (json.success) {
+          sendGTMEvent({
+            event: 'Contact-Form-Submitted-Successfully',
+            value: 'Contact Form submitted successfully',
+          });
+
           toast({
             title: 'Success',
             description:
@@ -106,12 +112,18 @@ const ContactForm = () => {
             variant: 'default',
           });
           reset();
-        } else {
-          setIsSuccess(false);
-          setMessage(json.message);
         }
+        // else {
+        //   setIsSuccess(false);
+        //   setMessage(json.message);
+        // }
       })
       .catch((error) => {
+        sendGTMEvent({
+          event: 'Contact-Form-Failure',
+          value: 'Contact Form failure',
+        });
+
         toast({
           title: 'Error',
           description:
@@ -198,6 +210,12 @@ const ContactForm = () => {
             } group bg-accent font-semibold text-white dark:text-black`}
             type="submit"
             disabled={isSubmitting}
+            onPress={() =>
+              sendGTMEvent({
+                event: 'Contact-Form-Submit-btn-clicked',
+                value: 'Contact Form submit button clicked',
+              })
+            }
           >
             {isSubmitting ? (
               <CgSpinner className="size-6 animate-spin" />
