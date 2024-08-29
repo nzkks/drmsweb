@@ -1,4 +1,5 @@
 import { Container, SectionBg } from '@/components/common';
+import ContactForm from './contact-form';
 
 const Contact = () => {
   return (
@@ -7,7 +8,11 @@ const Contact = () => {
       <Container className="py-16">
         <h2 className="text-center text-xl">Contact</h2>
 
-        <div className="mx-auto mt-6">Form</div>
+        <div className="mt-6">
+          <div className="mx-auto max-w-xl">
+            <ContactForm />
+          </div>
+        </div>
       </Container>
     </section>
   );
