@@ -1,3 +1,6 @@
+'use client';
+
+import { useEffect } from 'react';
 import Link from 'next/link';
 import { MdOutlineAlternateEmail } from 'react-icons/md';
 import { MdLocalPhone } from 'react-icons/md';
@@ -6,6 +9,14 @@ import { ContactIcons, Container, SectionBg } from '@/components/common';
 import ContactForm from './contact-form';
 
 const Contact = () => {
+  useEffect(() => {
+    const encEmail = 'a2tzaGFudGhvc2hAZ21haWwuY29t';
+    const emailLink = window.document.getElementById('contact-email');
+    if (emailLink) {
+      emailLink.setAttribute('href', 'mailto:'.concat(atob(encEmail)));
+    }
+  }, []);
+
   return (
     <section className="relative border-t border-[#25213b]" id="contact">
       <SectionBg />
@@ -22,10 +33,12 @@ const Contact = () => {
             </div>
             <div>
               <Link
-                href="mailto:kkshanthosh@gmail.com"
+                id="contact-email"
+                href=""
+                target="_blank"
                 className="text-accent underline hover:text-heading"
               >
-                kkshanthosh@gmail.com
+                Click to send me an email
               </Link>
             </div>
             <div className="mt-6 flex font-semibold">
