@@ -66,6 +66,7 @@ const Contact = () => {
             <div>Auckland - 2024, New Zealand</div>
           </div>
           <div className="mt-12 lg:mt-0">
+            <h2 className="mb-2 font-semibold">Get in touch</h2>
             <ContactForm />
           </div>
         </div>
