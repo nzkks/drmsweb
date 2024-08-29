@@ -24,14 +24,22 @@ const formSchema = z.object({
   from_name: z.string(),
   botcheck: z.boolean(),
 
-  username: z.string().min(2, {
-    message: 'Full name is required',
-  }),
+  username: z
+    .string()
+    .min(2, {
+      message: 'Full name is required',
+    })
+    .max(80, {
+      message: 'Full name is too long',
+    }),
 
   email: z
     .string()
     .email({
       message: 'Must be a valid email',
+    })
+    .max(255, {
+      message: 'Email address is too long',
     })
     .trim()
     .toLowerCase(),
@@ -76,94 +84,117 @@ const ContactForm = () => {
     setValue('subject', `${username} sent a message from DRMSWeb contact form`);
   }, [username, setValue]);
 
-  const onSubmit = (values: FormData) => {
-    toast({
-      title: 'You submitted the following values:',
-      description: (
-        <pre className="mt-2 w-[340px] rounded-md bg-slate-950 p-4">
-          <code className="text-white">{JSON.stringify(values, null, 2)}</code>
-        </pre>
-      ),
-    });
+  const onSubmit = async (values: FormData) => {
+    console.log(values);
+    await fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        Accept: 'application/json',
+      },
+      body: JSON.stringify(values, null, 2),
+    })
+      .then(async (response) => {
+        let json = await response.json();
+        if (json.success) {
+          toast({
+            title: 'Success',
+            description:
+              'Thanks for your message! I will get back to you ASAP.',
+            variant: 'default',
+          });
+          reset();
+        } else {
+          setIsSuccess(false);
+          setMessage(json.message);
+        }
+      })
+      .catch((error) => {
+        toast({
+          title: 'Error',
+          description:
+            'Apologies! Something went wrong. Please email me directly.',
+          variant: 'destructive',
+        });
+        console.log(error);
+      });
   };
 
   return (
     <div>
-      {!isSubmitSuccessful && (
-        <Form {...form}>
-          <form onSubmit={handleSubmit(onSubmit)} className="space-y-8">
-            <input
-              type="hidden"
-              value="18426cc6-0455-4fd1-845f-55d5274faa43"
-              {...register('access_key')}
-            />
-            <input type="hidden" {...register('subject')} />
-            <input
-              type="hidden"
-              value="DRMSWeb site contact form"
-              {...register('from_name')}
-            />
-            <input
-              type="checkbox"
-              id=""
-              className="hidden"
-              style={{ display: 'none' }}
-              {...register('botcheck')}
-            ></input>
+      <Form {...form}>
+        <form onSubmit={handleSubmit(onSubmit)} className="space-y-8">
+          <input
+            type="hidden"
+            value="18426cc6-0455-4fd1-845f-55d5274faa43"
+            {...register('access_key')}
+          />
+          <input type="hidden" {...register('subject')} />
+          <input
+            type="hidden"
+            value="DRMSWeb contact form"
+            {...register('from_name')}
+          />
+          <input
+            type="checkbox"
+            id=""
+            className="hidden"
+            style={{ display: 'none' }}
+            {...register('botcheck')}
+          ></input>
 
-            <FormField
-              control={control}
-              name="username"
-              render={({ field }) => (
-                <FormItem>
-                  <FormLabel>Name</FormLabel>
-                  <FormControl>
-                    <Input placeholder="Name" autoComplete="false" {...field} />
-                  </FormControl>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
-            <FormField
-              control={control}
-              name="email"
-              render={({ field }) => (
-                <FormItem>
-                  <FormLabel>Email</FormLabel>
-                  <FormControl>
-                    <Input
-                      type="email"
-                      placeholder="Email"
-                      autoComplete="false"
-                      {...field}
-                    />
-                  </FormControl>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
-            <FormField
-              control={control}
-              name="message"
-              render={({ field }) => (
-                <FormItem>
-                  <FormLabel>Message</FormLabel>
-                  <FormControl>
-                    <Textarea placeholder="Message" {...field} />
-                  </FormControl>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
-            <Button
-              className="bg-accent font-semibold dark:text-black"
-              type="submit"
-            >
-              Send
-            </Button>
-          </form>
-        </Form>
-      )}
+          <FormField
+            control={control}
+            name="username"
+            render={({ field }) => (
+              <FormItem>
+                <FormLabel>Name</FormLabel>
+                <FormControl>
+                  <Input placeholder="Name" autoComplete="false" {...field} />
+                </FormControl>
+                <FormMessage />
+              </FormItem>
+            )}
+          />
+          <FormField
+            control={control}
+            name="email"
+            render={({ field }) => (
+              <FormItem>
+                <FormLabel>Email</FormLabel>
+                <FormControl>
+                  <Input
+                    type="email"
+                    placeholder="Email"
+                    autoComplete="false"
+                    {...field}
+                  />
+                </FormControl>
+                <FormMessage />
+              </FormItem>
+            )}
+          />
+          <FormField
+            control={control}
+            name="message"
+            render={({ field }) => (
+              <FormItem>
+                <FormLabel>Message</FormLabel>
+                <FormControl>
+                  <Textarea placeholder="Message" {...field} />
+                </FormControl>
+                <FormMessage />
+              </FormItem>
+            )}
+          />
+          <Button
+            className="bg-accent font-semibold dark:text-black"
+            type="submit"
+          >
+            Send
+          </Button>
+        </form>
+      </Form>
     </div>
   );
 };
