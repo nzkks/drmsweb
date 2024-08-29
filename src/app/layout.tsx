@@ -5,6 +5,7 @@ import { Inter as FontSans } from 'next/font/google';
 import './globals.css';
 import {
   Analytics,
+  Footer,
   Header,
   Providers,
   ToTopLinkWithProgress,
@@ -80,6 +81,7 @@ const RootLayout = ({
           {children}
           <ToTopLinkWithProgress size={50} strokeWidth={2} />
           <Toaster />
+          <Footer />
         </Providers>
       </body>
     </html>
