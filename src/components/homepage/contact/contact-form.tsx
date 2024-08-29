@@ -199,7 +199,6 @@ const ContactForm = () => {
             type="submit"
             disabled={isSubmitting}
           >
-            Submit
             {isSubmitting ? (
               <CgSpinner className="size-6 animate-spin" />
             ) : (
