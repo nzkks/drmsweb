@@ -8,7 +8,6 @@ import { Button } from '@nextui-org/react';
 import {
   Form,
   FormControl,
-  FormDescription,
   FormField,
   FormItem,
   FormLabel,
@@ -20,29 +19,31 @@ import { toast } from '@/components/ui/use-toast';
 
 const formSchema = z.object({
   username: z.string().min(2, {
-    message: 'Name must be at least 2 characters.',
+    message: 'Full name is required',
   }),
 
   email: z
     .string()
     .email({
-      message: 'Enter the email',
+      message: 'Must be a valid email',
     })
     .trim()
     .toLowerCase(),
 
   message: z
     .string({ message: 'Enter message' })
-    .min(12, {
-      message: 'Message must be at least 20 characters.',
+    .min(20, {
+      message: 'Message must be at least 20 characters',
     })
     .max(1000, {
-      message: 'Message must not be longer than 1000 characters.',
+      message: 'Message must be less than 1000 characters',
     }),
 });
 
+type FormData = z.infer<typeof formSchema>;
+
 const ContactForm = () => {
-  const form = useForm<z.infer<typeof formSchema>>({
+  const form = useForm<FormData>({
     resolver: zodResolver(formSchema),
     defaultValues: {
       username: '',
@@ -51,7 +52,7 @@ const ContactForm = () => {
     },
   });
 
-  const onSubmit = (values: z.infer<typeof formSchema>) => {
+  const onSubmit = (values: FormData) => {
     toast({
       title: 'You submitted the following values:',
       description: (
