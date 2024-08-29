@@ -4,6 +4,7 @@ import { useEffect } from 'react';
 import Link from 'next/link';
 import { MdOutlineAlternateEmail } from 'react-icons/md';
 import { MdLocalPhone } from 'react-icons/md';
+import { IoLocationSharp } from 'react-icons/io5';
 
 import { ContactIcons, Container, SectionBg } from '@/components/common';
 import ContactForm from './contact-form';
@@ -53,6 +54,11 @@ const Contact = () => {
                 +64 21 024 95970
               </Link>
             </div>
+            <div className="mt-6 flex font-semibold">
+              <IoLocationSharp className="size-5" />
+              <span className="ml-1">Location:</span>
+            </div>
+            <div>Auckland - 2024, New Zealand</div>
           </div>
           <div className="mt-12 lg:mt-0">
             <ContactForm />
