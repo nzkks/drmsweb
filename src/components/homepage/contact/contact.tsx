@@ -27,7 +27,7 @@ const Contact = () => {
       </div>
       <SectionBg />
       <Container className="py-16">
-        <h2 className="text-center text-xl">Contact</h2>
+        <h2 className="text-center text-xl">Get in touch</h2>
 
         <div className="mx-auto mt-6 grid grid-cols-1 gap-4 lg:grid-cols-2">
           <div>
@@ -66,7 +66,12 @@ const Contact = () => {
             <div>Auckland - 2024, New Zealand</div>
           </div>
           <div className="mt-12 lg:mt-0">
-            <h2 className="mb-2 font-semibold">Get in touch</h2>
+            <p className="mb-2">
+              My inbox is always open. Whether you have a question or share
+              about any relevant job that suits my skills and experience or just
+              want to say hello, feel free to email me. I&apos;ll try my best to
+              get back to you as soon as I can.
+            </p>
             <ContactForm />
           </div>
         </div>
