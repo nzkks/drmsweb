@@ -32,10 +32,10 @@ const CollapsibleWrapper = ({ title, content }: Props) => {
       <>
         <CollapsibleTrigger>
           <div className="mb-2 flex items-center">
-            <div className="IconButton">
-              {open ? <BsX /> : <BsArrowsExpand />}
+            <div className="IconButton flex size-6 items-center justify-center">
+              {open ? <BsX size={24} /> : <BsArrowsExpand size={16} />}
             </div>
-            <div className="ml-3 font-bold transition-all hover:text-accent">
+            <div className="ml-3 font-bold transition-all group-hover/inner:text-accent">
               {title}
             </div>
           </div>

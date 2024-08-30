@@ -23,9 +23,9 @@ const About = () => {
           {aboutData.map((data) => (
             <div
               key={data.title}
-              className="flex flex-col items-center gap-4 md:flex-row"
+              className="group/inner flex flex-col items-center gap-4 transition-all md:flex-row md:items-start lg:hover:!opacity-100 lg:group-hover/about:opacity-50"
             >
-              <div className="w-10 text-center">
+              <div className="w-10">
                 <DynamicIcon
                   name={data.iconName}
                   iconProps={{
@@ -35,7 +35,7 @@ const About = () => {
                   }}
                 />
               </div>
-              <div className="group transition-all lg:hover:!opacity-100 lg:group-hover/about:opacity-50">
+              <div>
                 <CollapsibleWrapper title={data.title} content={data.content} />
               </div>
             </div>
