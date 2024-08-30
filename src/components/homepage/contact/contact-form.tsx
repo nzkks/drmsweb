@@ -162,7 +162,7 @@ const ContactForm = () => {
             name="username"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Your Name</FormLabel>
+                <FormLabel>Your full name</FormLabel>
                 <FormControl>
                   <Input placeholder="Name" autoComplete="false" {...field} />
                 </FormControl>
@@ -175,7 +175,7 @@ const ContactForm = () => {
             name="email"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Your Email</FormLabel>
+                <FormLabel>Your email</FormLabel>
                 <FormControl>
                   <Input
                     type="email"
