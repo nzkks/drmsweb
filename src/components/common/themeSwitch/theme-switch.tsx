@@ -17,10 +17,10 @@ const SunIconComponent = dynamic(
 );
 
 const themeVariants = [
-  {
-    key: 'system',
-    label: 'System',
-  },
+  // {
+  //   key: 'system',
+  //   label: 'System',
+  // },
   {
     key: 'light',
     label: 'Light',
