@@ -1,26 +1,32 @@
 [
   {
     "title": "New Zealand citizen",
-    "content": "I am a New Zealand citizen and living in Auckland, New Zealand. I am willing to relocate to anywhere."
+    "content": "I am a New Zealand citizen and living in Auckland, New Zealand. I am willing to relocate to anywhere.",
+    "iconName": "TrekkingIcon"
   },
   {
     "title": "Adaptable",
-    "content": "Dedicated, experienced and adaptable Frontend Developer with a strong foundation in problem-solving, critical thinking, and understanding the ever-evolving landscape of frontend development."
+    "content": "Dedicated, experienced and adaptable Frontend Developer with a strong foundation in problem-solving, critical thinking, and understanding the ever-evolving landscape of frontend development.",
+    "iconName": "AdaptableIcon"
   },
   {
     "title": "Ready for new challenges!",
-    "content": "Equipped with the resilience to tackle any new challenge, I thrive in dynamic environments and embrace the constant learning inherent in this field."
+    "content": "Equipped with the resilience to tackle any new challenge, I thrive in dynamic environments and embrace the constant learning inherent in this field.",
+    "iconName": "ChallengeIcon"
   },
   {
     "title": "Keen to learn",
-    "content": "My ability to learn and adapt ensures that I stay ahead of industry trends and deliver innovative solutions that meet the needs of my clients."
+    "content": "My ability to learn and adapt ensures that I stay ahead of industry trends and deliver innovative solutions that meet the needs of my clients.",
+    "iconName": "LearnIcon"
   },
   {
     "title": "Experienced Developer",
-    "content": "I excel in building responsive websites/web applications, ensuring design principles, user experience, and cross-browser compatibility."
+    "content": "I excel in building responsive websites/web applications, ensuring design principles, user experience, and cross-browser compatibility.",
+    "iconName": "ExperienceIcon"
   },
   {
     "title": "Collaborative",
-    "content": "Collaborative and skilled in Agile Scrum methodologies, I effectively gather requirements, design interfaces, and implement solutions that meet client and internal stakeholder needs."
+    "content": "Collaborative and skilled in Agile Scrum methodologies, I effectively gather requirements, design interfaces, and implement solutions that meet client and internal stakeholder needs.",
+    "iconName": "CollaborotiveIcon"
   }
 ]

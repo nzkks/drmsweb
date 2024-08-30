@@ -28,25 +28,23 @@ const CollapsibleWrapper = ({ title, content }: Props) => {
   }, [open, title]);
 
   return (
-    <div className="mb-4">
-      <Collapsible open={open} onOpenChange={setOpen} asChild>
-        <>
-          <CollapsibleTrigger>
-            <div className="mb-2 flex items-center">
-              <div className="IconButton">
-                {open ? <BsX /> : <BsArrowsExpand />}
-              </div>
-              <div className="ml-3 font-bold transition-all hover:text-accent">
-                {title}
-              </div>
+    <Collapsible open={open} onOpenChange={setOpen} asChild>
+      <>
+        <CollapsibleTrigger>
+          <div className="mb-2 flex items-center">
+            <div className="IconButton">
+              {open ? <BsX /> : <BsArrowsExpand />}
             </div>
-          </CollapsibleTrigger>
-          <CollapsibleContent className="overflow-hidden data-[state=closed]:animate-slide-up data-[state=open]:animate-slide-down">
-            {content}
-          </CollapsibleContent>
-        </>
-      </Collapsible>
-    </div>
+            <div className="ml-3 font-bold transition-all hover:text-accent">
+              {title}
+            </div>
+          </div>
+        </CollapsibleTrigger>
+        <CollapsibleContent className="overflow-hidden data-[state=closed]:animate-slide-up data-[state=open]:animate-slide-down">
+          {content}
+        </CollapsibleContent>
+      </>
+    </Collapsible>
   );
 };
 
