@@ -16,15 +16,16 @@ const Footer = () => {
         <div className="flex flex-col items-center justify-between md:flex-row">
           <div className="text-center text-sm md:text-left">
             <p>
-              © Developed by{' '}
+              Made with <span className="text-red-500">❤️</span> by{' '}
               <Link
                 href="https://www.linkedin.com/in/shanthoshk/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-heading hover:text-accent"
               >
-                Shanthosh Krishnakumar
+                me
               </Link>
+              . {new Date().getFullYear()}
             </p>
           </div>
           <div className="mt-2 flex items-center gap-5 md:mt-0">
