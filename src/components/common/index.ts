@@ -42,3 +42,6 @@ export * from './analytics';
 
 export { default as SectionBg } from './sectionBg';
 export * from './sectionBg';
+
+export { default as Section } from './section';
+export * from './section';

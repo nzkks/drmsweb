@@ -10,58 +10,47 @@ import 'swiper/css/pagination';
 import 'swiper/css/mousewheel';
 import { SiLinkedin } from 'react-icons/si';
 
-import { Container, SectionBg, TestimonialBlock } from '@/components';
+import { Section, TestimonialBlock } from '@/components';
 import recommendationsData from '@/data/recommendations.json';
 
 const Recommendations = () => {
   return (
-    <section
-      className="relative border-t border-[#25213b]"
-      id="recommendations"
-    >
-      <div className="flex -translate-y-px justify-center">
-        <div className="w-3/4">
-          <div className="h-px w-full bg-gradient-to-r from-transparent via-violet-500 to-transparent"></div>
-        </div>
-      </div>
-      <SectionBg />
-      <Container className="py-16">
-        <h2 className="text-center text-xl">
-          <Link
-            href="https://www.linkedin.com/in/shanthoshk/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group"
-          >
-            <span className="group-hover:text-accent">
-              LinkedIn Recommendations
-            </span>{' '}
-            <SiLinkedin className="inline-block size-6 group-hover:scale-125" />
-          </Link>
-        </h2>
-
-        <Swiper
-          modules={[Autoplay, Navigation, Pagination, Mousewheel]}
-          slidesPerView={1}
-          loop
-          autoplay={{ delay: 10000 }}
-          navigation
-          pagination={{ clickable: true }}
-          mousewheel={{ enabled: true }}
+    <Section id="recommendations">
+      <h2 className="text-center text-xl">
+        <Link
+          href="https://www.linkedin.com/in/shanthoshk/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="group"
         >
-          {recommendationsData.map((item) => (
-            <SwiperSlide key={item.name}>
-              <TestimonialBlock
-                imageFileName={item.imageFileName}
-                name={item.name}
-                about={item.about}
-                content={item.content}
-              />
-            </SwiperSlide>
-          ))}
-        </Swiper>
-      </Container>
-    </section>
+          <span className="group-hover:text-accent">
+            LinkedIn Recommendations
+          </span>{' '}
+          <SiLinkedin className="inline-block size-6 group-hover:scale-125" />
+        </Link>
+      </h2>
+
+      <Swiper
+        modules={[Autoplay, Navigation, Pagination, Mousewheel]}
+        slidesPerView={1}
+        loop
+        autoplay={{ delay: 10000 }}
+        navigation
+        pagination={{ clickable: true }}
+        mousewheel={{ enabled: true }}
+      >
+        {recommendationsData.map((item) => (
+          <SwiperSlide key={item.name}>
+            <TestimonialBlock
+              imageFileName={item.imageFileName}
+              name={item.name}
+              about={item.about}
+              content={item.content}
+            />
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </Section>
   );
 };
 
