@@ -23,15 +23,15 @@ const Hero = () => {
         </div>
 
         <h1 className="mt-6 text-5xl leading-tight">
-          Hello, This is
+          Hi! my name is
           <br />
           <LetterFontWeightAnimator
             word="Shanthosh"
             className="hidden text-right sm:inline-block"
           />
           <span className="inline-block sm:hidden">Shanthosh</span>{' '}
-          <span className="text-muted-foreground">Krishnakumar</span>,
-          <br />a{' '}
+          <span className="text-muted-foreground">Krishnakumar</span>.
+          <br />I am a{' '}
           <span className="bg-gradient-to-b from-background to-accent bg-clip-text font-bold text-transparent">
             Frontend Developer
           </span>
