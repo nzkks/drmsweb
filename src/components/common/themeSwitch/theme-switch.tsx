@@ -14,11 +14,12 @@ const ThemeSwitch = () => {
       variant="light"
       aria-label="theme mode"
       onPress={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+      className="group"
     >
       {theme === 'dark' ? (
-        <DarkModeIcon size={16} />
+        <LightModeIcon size={16} className="group-hover:animate-spin" />
       ) : (
-        <LightModeIcon size={16} />
+        <DarkModeIcon size={16} className="group-hover:animate-ping" />
       )}
     </Button>
   );
