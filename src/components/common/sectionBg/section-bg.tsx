@@ -1,5 +1,6 @@
 'use client';
 
+import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import { useTheme } from 'next-themes';
 
@@ -12,13 +13,18 @@ type Props = {
 
 const SectionBg = ({ top = '0px' }: Props) => {
   const { theme } = useTheme();
+  const [isLoaded, setIsLoaded] = useState(false);
+
+  useEffect(() => {
+    setIsLoaded(true);
+  }, [setIsLoaded]);
 
   let imageUrl = sectionBgImgDark;
   if (theme === 'light') {
     imageUrl = sectionBgImg;
   }
 
-  return (
+  return isLoaded ? (
     <Image
       src={imageUrl}
       alt="section background image"
@@ -27,6 +33,8 @@ const SectionBg = ({ top = '0px' }: Props) => {
       className={`absolute top-[${top}] -z-10`}
       priority
     />
+  ) : (
+    <div className={`absolute top-${top}] -z-10 h-[795px] w-[1572px]`}></div>
   );
 };
 
