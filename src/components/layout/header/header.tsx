@@ -55,20 +55,27 @@ const Header = () => {
       <Navbar
         isMenuOpen={isMenuOpen}
         onMenuOpenChange={setIsMenuOpen}
-        // shouldHideOnScroll
         maxWidth="xl"
         className="bg-transparent shadow-none"
       >
         <NavbarContent className="bg-transparent">
-          <NavbarMenuToggle
-            aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
-            className="sm:hidden"
-          />
-          <NavbarBrand>
-            <Link href="/" onPress={() => setActiveSection('/')}>
-              <div className="font-bold text-inherit">SK</div>
-            </Link>
-          </NavbarBrand>
+          <NavbarItem className="w-8">
+            <NavbarMenuToggle
+              aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
+              className="h-8 min-w-8 sm:hidden"
+            />
+          </NavbarItem>
+          <NavbarItem className="size-8">
+            <NavbarBrand>
+              <Link
+                href="/"
+                onPress={() => setActiveSection('/')}
+                className="size-8 rounded-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+              >
+                <div className="font-bold text-inherit">SK</div>
+              </Link>
+            </NavbarBrand>
+          </NavbarItem>
         </NavbarContent>
 
         <SlideMenu
