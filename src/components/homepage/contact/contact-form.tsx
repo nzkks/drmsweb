@@ -166,9 +166,14 @@ const ContactForm = () => {
             name="username"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Your full name</FormLabel>
+                <FormLabel id="fullNameFieldLabel">Your full name</FormLabel>
                 <FormControl>
-                  <Input placeholder="Name" autoComplete="false" {...field} />
+                  <Input
+                    placeholder="Name"
+                    autoComplete="false"
+                    aria-describedby="fullNameFieldLabel"
+                    {...field}
+                  />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -179,12 +184,13 @@ const ContactForm = () => {
             name="email"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Your email</FormLabel>
+                <FormLabel id="yourEmailFieldLabel">Your email</FormLabel>
                 <FormControl>
                   <Input
                     type="email"
                     placeholder="Email"
                     autoComplete="false"
+                    aria-describedby="yourEmailFieldLabel"
                     {...field}
                   />
                 </FormControl>
@@ -197,9 +203,13 @@ const ContactForm = () => {
             name="message"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Message</FormLabel>
+                <FormLabel id="messageFieldLabel">Message</FormLabel>
                 <FormControl>
-                  <Textarea placeholder="Message" {...field} />
+                  <Textarea
+                    placeholder="Message"
+                    aria-describedby="messageFieldLabel"
+                    {...field}
+                  />
                 </FormControl>
                 <FormMessage />
               </FormItem>
