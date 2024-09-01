@@ -16,7 +16,7 @@ const Footer = () => {
         <div className="flex flex-col items-center justify-between md:flex-row">
           <div className="text-center text-sm md:text-left">
             <p>
-              Made with <span className="text-red-500">❤️</span> by{' '}
+              Made with <span className="text-red-100">❤️</span> by{' '}
               <Link
                 href="https://www.linkedin.com/in/shanthoshk/"
                 target="_blank"
@@ -35,7 +35,7 @@ const Footer = () => {
               href="https://github.com/nzkks/drmsweb"
               rel="noopener noreferrer"
               className="flex items-center gap-2 uppercase hover:text-accent"
-              aria-label="give a star on GitHub for this project"
+              aria-label="give a star for this project on GitHub website"
             >
               <IoMdStar aria-hidden={true} />
               <span>Star</span>
