@@ -149,13 +149,17 @@ const ContactForm = () => {
             value="DRMSWeb contact form"
             {...register('from_name')}
           />
-          <input
-            type="checkbox"
-            id=""
-            className="hidden"
-            style={{ display: 'none' }}
-            {...register('botcheck')}
-          ></input>
+
+          <div className="hidden">
+            <input
+              type="checkbox"
+              id="botcheck"
+              aria-hidden="true"
+              {...register('botcheck')}
+              value="on"
+            />
+            <label htmlFor="botcheck">botcheck</label>
+          </div>
 
           <FormField
             control={control}
