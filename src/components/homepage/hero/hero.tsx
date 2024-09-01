@@ -30,42 +30,39 @@ const Hero = () => {
           Frontend Developer
         </span>
       </h1>
-      <div className="mt-10 text-center">
-        <div className="mx-auto mt-10 grid max-w-xl items-center justify-center gap-4 auto-fit-[170px]">
+      <div className="mx-auto mt-10 max-w-lg">
+        <div className="flex flex-col items-center justify-center gap-4 md:flex-row">
           <ShinyBtn
             href="/files/ShanthoshK_Frontend_Dev_cv.pdf"
             target="_blank"
             isExternal={true}
             downloadFileName="ShanthoshK_Frontend_Dev_cv.pdf"
-            aria-label="download cv"
-            width={180}
+            ariaLabel="download cv as a PDF document"
             buttonIdForGA="Hero-CV-PDF-Download-Link-Clicked"
             valueForGA="Download PDF cv"
           >
-            <PiFilePdfBold className="size-8" />
-            <div className="ml-2 inline-block">Download cv</div>
+            <PiFilePdfBold className="size-8" aria-hidden={true} />
+            <div className="ml-2 inline-block">CV (PDF, 140KB)</div>
           </ShinyBtn>
           <ShinyBtn
             href="/files/ShanthoshK_Frontend_Dev_cv.docx"
             target="_blank"
             isExternal={true}
             downloadFileName="ShanthoshK_Frontend_Dev_cv.docx"
-            aria-label="download cv"
-            width={180}
+            ariaLabel="download cv as a word document in DOCX format"
             buttonIdForGA="Hero-CV-DOCX-Download-Link-Clicked"
             valueForGA="Download DOCX cv"
           >
-            <TbFileTypeDocx className="size-8" />
-            <div className="ml-2 inline-block">Download cv</div>
+            <TbFileTypeDocx className="size-8" aria-hidden={true} />
+            <div className="ml-2 inline-block">CV (DOCX, 31KB)</div>
           </ShinyBtn>
           <ShinyBtn
             href="#contact"
-            ariaLabel="email me"
-            width={180}
+            ariaLabel="go to contact form section and email me"
             buttonIdForGA="Hero-Email-Link-Clicked"
             valueForGA="Email me"
           >
-            <MdOutlineAlternateEmail className="size-7" />
+            <MdOutlineAlternateEmail className="size-7" aria-hidden={true} />
             <div className="ml-2 inline-block">Email me</div>
           </ShinyBtn>
         </div>

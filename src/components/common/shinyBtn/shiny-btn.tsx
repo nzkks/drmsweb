@@ -10,8 +10,6 @@ type Props = {
   target?: '_blank' | '_self' | '_parent' | '_top';
   isExternal?: boolean;
   downloadFileName?: string;
-  width?: number;
-  height?: number;
   colour?: string;
   className?: string;
   ariaLabel?: string;
@@ -25,8 +23,6 @@ const ShinyBtn = ({
   href,
   target = '_self',
   isExternal = false,
-  width = 80,
-  height = 40,
   className = '',
   ariaLabel = '',
   downloadFileName = '',
@@ -41,11 +37,10 @@ const ShinyBtn = ({
       href={href}
       target={target}
       rel={isExternal ? 'noopener noreferrer' : undefined}
-      style={{ width: `${width}px`, height: `${height}px` }}
       download={downloadFileName ? downloadFileName : undefined}
       isIconOnly={isIconOnly}
       className={cn(
-        `hover:-tranneutral-y-px mx-auto flex h-full rounded-md bg-gradient-to-r from-blue-600 to-blue-500 px-3 py-2 text-center shadow-xl shadow-blue-200 transition-all hover:bg-gradient-to-b hover:shadow-2xl hover:shadow-blue-400 dark:shadow-blue-800 dark:hover:shadow-blue-700`,
+        `hover:-tranneutral-y-px mx-auto h-full rounded-md bg-gradient-to-r from-blue-600 to-blue-500 px-3 py-2 text-center shadow-xl shadow-blue-200 transition-all hover:bg-gradient-to-b hover:shadow-2xl hover:shadow-blue-400 dark:shadow-blue-800 dark:hover:shadow-blue-700`,
         className,
       )}
       aria-label={ariaLabel}

@@ -55,8 +55,9 @@ const CertificationBlock = ({
                 value: name,
               })
             }
+            aria-label={`Check this ${name} certificate from the ${providerName} website`}
           >
-            <FaExternalLinkAlt />
+            <FaExternalLinkAlt aria-hidden={true} />
           </Link>
         </CardContent>
         <CardFooter className="p-3">

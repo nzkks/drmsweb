@@ -33,7 +33,11 @@ const CollapsibleWrapper = ({ title, content }: Props) => {
         <CollapsibleTrigger>
           <div className="mb-2 flex items-center">
             <div className="IconButton flex size-6 items-center justify-center">
-              {open ? <BsX size={24} /> : <BsArrowsExpand size={16} />}
+              {open ? (
+                <BsX size={24} aria-hidden={true} />
+              ) : (
+                <BsArrowsExpand size={16} aria-hidden={true} />
+              )}
             </div>
             <div className="ml-3 font-bold transition-all group-hover/inner:text-accent">
               {title}

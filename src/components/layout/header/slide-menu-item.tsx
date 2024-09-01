@@ -47,7 +47,7 @@ const SlideMenuItem = ({
       }}
       className={clsx(
         'text-md group relative z-10 flex h-8 cursor-pointer items-center px-3 uppercase transition-all md:h-10 md:px-4',
-        activeSection === href ? 'rounded-xl bg-accent' : 'bg-transparent',
+        activeSection === href ? 'rounded-md bg-accent' : 'bg-transparent',
       )}
     >
       <Link
