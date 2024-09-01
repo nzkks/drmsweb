@@ -69,10 +69,6 @@ const config: Config = {
           foreground: 'hsl(var(--card-foreground))',
         },
       },
-      backgroundImage: {
-        'gradient-primary':
-          'linear-gradient(to right top, var(--bg-gradient-stops))',
-      },
       borderRadius: {
         xl: `calc(var(--radius) + 4px)`,
         lg: 'var(--radius)',
