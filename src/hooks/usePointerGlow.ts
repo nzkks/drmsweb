@@ -1,5 +1,6 @@
 'use client';
 import { useEffect, useState } from 'react';
+import { useWindowSize } from './useWindowSize';
 
 type StatusProps = {
   x: string;
@@ -9,6 +10,7 @@ type StatusProps = {
 };
 
 export const usePointerGlow = () => {
+  const { width } = useWindowSize();
   const [status, setStatus] = useState<StatusProps | null>();
 
   useEffect(() => {
@@ -29,11 +31,14 @@ export const usePointerGlow = () => {
       document.documentElement.style.setProperty('--yp', yp);
       setStatus({ x, y, xp, yp });
     }
-    document.body.addEventListener('pointermove', syncPointer);
+
+    if (width > 768) {
+      document.body.addEventListener('pointermove', syncPointer);
+    }
     return () => {
       document.body.removeEventListener('pointermove', syncPointer);
     };
-  }, []);
+  }, [width]);
 
   return [status];
 };

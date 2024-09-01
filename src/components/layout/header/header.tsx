@@ -70,10 +70,10 @@ const Header = () => {
               <Link
                 href="/"
                 onPress={() => setActiveSection('/')}
-                className="size-8 rounded-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+                className="size-8 justify-center rounded-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
                 aria-label="home"
               >
-                <div className="font-bold text-inherit">SK</div>
+                <div className="mx-auto font-bold text-inherit">SK</div>
               </Link>
             </NavbarBrand>
           </NavbarItem>
