@@ -12,8 +12,11 @@ import { SiLinkedin } from 'react-icons/si';
 
 import { Section, TestimonialBlock } from '@/components';
 import recommendationsData from '@/data/recommendations.json';
+import { useWindowSize } from '@/hooks';
 
 const Recommendations = () => {
+  const { width } = useWindowSize();
+
   return (
     <Section id="recommendations">
       <h2 className="text-center text-xl">
@@ -40,7 +43,7 @@ const Recommendations = () => {
         autoplay={{ delay: 10000 }}
         navigation
         pagination={{ clickable: true }}
-        mousewheel={{ enabled: true }}
+        mousewheel={{ enabled: width > 768 }}
       >
         {recommendationsData.map((item) => (
           <SwiperSlide key={item.name}>
