@@ -27,7 +27,7 @@ const Contact = () => {
           <div className="mb-2 font-semibold">Connect with me:</div>
           <ContactIcons align="start" />
           <div className="mt-6 flex font-semibold">
-            <MdOutlineAlternateEmail className="size-6" />{' '}
+            <MdOutlineAlternateEmail className="size-6" aria-hidden={true} />{' '}
             <span className="ml-1">Email:</span>
           </div>
           <div>
@@ -41,7 +41,7 @@ const Contact = () => {
             </Link>
           </div>
           <div className="mt-6 flex font-semibold">
-            <MdLocalPhone className="size-5" />
+            <MdLocalPhone className="size-5" aria-hidden={true} />
             <span className="ml-1">Phone:</span>
           </div>
           <div>
@@ -53,7 +53,7 @@ const Contact = () => {
             </Link>
           </div>
           <div className="mt-6 flex font-semibold">
-            <IoLocationSharp className="size-5" />
+            <IoLocationSharp className="size-5" aria-hidden={true} />
             <span className="ml-1">Location:</span>
           </div>
           <div>Auckland - 2024, New Zealand</div>

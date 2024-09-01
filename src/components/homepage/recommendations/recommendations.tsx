@@ -26,7 +26,10 @@ const Recommendations = () => {
           <span className="group-hover:text-accent">
             LinkedIn Recommendations
           </span>{' '}
-          <SiLinkedin className="inline-block size-6 group-hover:scale-125" />
+          <SiLinkedin
+            className="inline-block size-6 group-hover:scale-125"
+            aria-hidden={true}
+          />
         </Link>
       </h2>
 

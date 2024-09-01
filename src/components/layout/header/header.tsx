@@ -71,6 +71,7 @@ const Header = () => {
                 href="/"
                 onPress={() => setActiveSection('/')}
                 className="size-8 rounded-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+                aria-label="home"
               >
                 <div className="font-bold text-inherit">SK</div>
               </Link>
@@ -88,7 +89,7 @@ const Header = () => {
           <NavbarItem>
             <ShinyBtn
               href="#contact"
-              ariaLabel="contact"
+              ariaLabel="go to contact form section and email me"
               buttonIdForGA="Header-Contact-Link-clicked"
               valueForGA="Contact"
             >

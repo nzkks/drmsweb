@@ -22,8 +22,9 @@ const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-heading hover:text-accent"
+                aria-label="go to Shanthosh Krishnakumar's LinkedIn profile"
               >
-                me
+                Shanthosh Krishnakumar
               </Link>
               . {new Date().getFullYear()}
             </p>
@@ -34,8 +35,9 @@ const Footer = () => {
               href="https://github.com/nzkks/drmsweb"
               rel="noopener noreferrer"
               className="flex items-center gap-2 uppercase hover:text-accent"
+              aria-label="give a star on GitHub for this project"
             >
-              <IoMdStar />
+              <IoMdStar aria-hidden={true} />
               <span>Star</span>
             </Link>
           </div>

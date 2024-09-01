@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useForm, useWatch } from 'react-hook-form';
 import { z } from 'zod';
@@ -218,10 +218,13 @@ const ContactForm = () => {
             }
           >
             {isSubmitting ? (
-              <CgSpinner className="size-6 animate-spin" />
+              <CgSpinner className="size-6 animate-spin" aria-hidden={true} />
             ) : (
               <>
-                <RiMailSendLine className="group-hover:scale-125" />{' '}
+                <RiMailSendLine
+                  className="group-hover:scale-125"
+                  aria-hidden={true}
+                />{' '}
                 <span>SEND</span>
               </>
             )}

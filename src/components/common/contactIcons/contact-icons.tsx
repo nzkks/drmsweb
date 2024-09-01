@@ -25,7 +25,8 @@ const ContactIcons = ({ align = 'center', className }: Props) => {
             value: contact.name,
           })
         }
-        className="transition-all duration-300 hover:scale-125"
+        className="size-6 transition-all duration-300 hover:scale-125"
+        aria-label={`link to ${contact.name}`}
       >
         <DynamicIcon
           name={contact.iconName}
@@ -34,6 +35,7 @@ const ContactIcons = ({ align = 'center', className }: Props) => {
             color: 'hsl(var(--accent))',
             title: contact.iconTitle,
           }}
+          aria-hidden={true}
         />
       </Link>
     </div>

@@ -71,8 +71,12 @@ const Skills = () => {
                   isIconOnly
                   variant="flat"
                   className="group size-8 hover:bg-accent"
+                  aria-label="select view options"
                 >
-                  <BsThreeDotsVertical className="group-hover:animate-spin group-hover:transition-all" />
+                  <BsThreeDotsVertical
+                    className="group-hover:animate-spin group-hover:transition-all"
+                    aria-hidden={true}
+                  />
                 </Button>
               </DropdownTrigger>
 
