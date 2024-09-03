@@ -1,6 +1,6 @@
 ## DRMSWeb
 
-[Shanthosh Krishnakumar](http://www.drmsweb.com/)
+[Shanthosh Krishnakumar](https://drmsweb.com)
 
 - Nextjs
 - Typescript
