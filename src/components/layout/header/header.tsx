@@ -20,8 +20,10 @@ import SlideMenu from './slide-menu';
 
 const mainMenuItems = [
   { href: '#skills', label: 'Skills' },
-  { href: '#about', label: 'About' },
   { href: '#experience', label: 'Experience' },
+  { href: '#certifications', label: 'Certifications' },
+  { href: '#recommendations', label: 'Recommendations' },
+  { href: '#about', label: 'About' },
 ];
 
 const Header = () => {
