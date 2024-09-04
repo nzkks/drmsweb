@@ -17,7 +17,7 @@ const SkillsMarquee = ({ data }: Props) => {
         <Marquee
           key={rowId}
           direction={index % 2 === 0 ? 'left' : 'right'}
-          speed={20}
+          speed={10}
           pauseOnHover={true}
           pauseOnClick={true}
           delay={0}
@@ -29,7 +29,7 @@ const SkillsMarquee = ({ data }: Props) => {
             return (
               <Chip
                 key={skill.name}
-                className="block-glass1 shadow-3xl mx-2 border-1 transition-all hover:scale-110 dark:border-[#2f4250] dark:hover:border-[#2dd4bf]"
+                className="block-glass1 shadow-3xl mx-2 border-1 transition-all hover:scale-105 dark:border-[#2f4250] dark:hover:border-[#2dd4bf]"
               >
                 {skill.isHighlight ? (
                   <span className="font-bold text-accent">{skill.name}</span>
