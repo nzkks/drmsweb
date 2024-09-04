@@ -70,11 +70,11 @@ const Skills = () => {
                 <Button
                   isIconOnly
                   variant="flat"
-                  className="group size-8 hover:bg-accent"
+                  className="group size-8 bg-foreground hover:bg-accent"
                   aria-label="select view options"
                 >
                   <BsThreeDotsVertical
-                    className="group-hover:animate-spin group-hover:transition-all"
+                    className="text-white group-hover:animate-spin group-hover:transition-all"
                     aria-hidden={true}
                   />
                 </Button>
