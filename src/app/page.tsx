@@ -15,11 +15,11 @@ const Home = () => {
       <SectionBg />
       <Hero />
       <Skills />
-      <About />
       <Experience />
       <Certifications />
-      <Contact />
       <Recommendations />
+      <Contact />
+      <About />
     </main>
   );
 };
