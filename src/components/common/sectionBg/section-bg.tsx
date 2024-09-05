@@ -30,11 +30,11 @@ const SectionBg = ({ top = '0px' }: Props) => {
       alt="section background image"
       width={1572}
       height={795}
-      className={`absolute top-[${top}] -z-10`}
+      className={`absolute top-[${top}] z-0`}
       priority
     />
   ) : (
-    <div className={`absolute top-${top}] -z-10 h-[795px] w-[1572px]`}></div>
+    <div className={`absolute top-${top}] z-0 h-[795px] w-[1572px]`}></div>
   );
 };
 
