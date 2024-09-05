@@ -7,34 +7,25 @@ import { useTheme } from 'next-themes';
 import sectionBgImg from '../../../../public/images/bg-images/section-bg.svg';
 import sectionBgImgDark from '../../../../public/images/bg-images/section-bg--dark.svg';
 
-type Props = {
-  top?: string;
-};
-
-const SectionBg = ({ top = '0px' }: Props) => {
+const SectionBg = () => {
   const { theme } = useTheme();
-  const [isLoaded, setIsLoaded] = useState(false);
+  const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
-    setIsLoaded(true);
-  }, [setIsLoaded]);
+    setIsMounted(true);
+  }, []);
 
-  let imageUrl = sectionBgImgDark;
-  if (theme === 'light') {
-    imageUrl = sectionBgImg;
-  }
-
-  return isLoaded ? (
-    <Image
-      src={imageUrl}
-      alt="section background image"
-      width={1572}
-      height={795}
-      className={`absolute top-[${top}] z-0`}
-      priority
-    />
-  ) : (
-    <div className={`absolute top-${top}] z-0 h-[795px] w-[1572px]`}></div>
+  return (
+    isMounted && (
+      <Image
+        src={theme === 'light' ? sectionBgImg : sectionBgImgDark}
+        alt="section background image"
+        width={1572}
+        height={795}
+        className={`absolute top-0 z-0`}
+        priority
+      />
+    )
   );
 };
 
