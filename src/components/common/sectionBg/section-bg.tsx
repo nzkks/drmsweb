@@ -17,14 +17,15 @@ const SectionBg = () => {
 
   return (
     isMounted && (
-      <Image
-        src={theme === 'light' ? sectionBgImg : sectionBgImgDark}
-        alt="section background image"
-        width={1572}
-        height={795}
-        className={`absolute top-0 z-0`}
-        priority
-      />
+      <div className={`absolute left-1/2 top-0 -z-10 w-full -translate-x-1/2`}>
+        <Image
+          src={theme === 'light' ? sectionBgImg : sectionBgImgDark}
+          alt="section background image"
+          width={1572}
+          height={795}
+          priority
+        />
+      </div>
     )
   );
 };

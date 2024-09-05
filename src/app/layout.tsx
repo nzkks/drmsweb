@@ -72,10 +72,11 @@ const RootLayout = ({
       <Analytics />
       <body
         className={cn(
-          'relative min-h-svh bg-background font-sans text-foreground antialiased',
+          'relative min-h-svh font-sans text-foreground antialiased',
           fontSans.variable,
         )}
       >
+        <div className="absolute -z-50 size-full bg-background"></div>
         <Providers>
           <Header />
           {children}
