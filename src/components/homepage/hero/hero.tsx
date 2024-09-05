@@ -9,7 +9,10 @@ import { MdOutlineAlternateEmail } from 'react-icons/md';
 
 const Hero = () => {
   return (
-    <Section containerProps={{ containerClass: 'text-center' }}>
+    <Section
+      showSectionBg={false}
+      containerProps={{ containerClass: 'text-center' }}
+    >
       <div className="text-md">{renderCoreSkills}</div>
 
       <div className="mt-6">

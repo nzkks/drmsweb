@@ -8,11 +8,18 @@ type Props = {
   id?: string;
   className?: string;
   containerProps?: { containerClass?: string };
+  showSectionBg?: boolean;
   children: ReactNode;
 };
 
-const Section = ({ id = '', className, containerProps, children }: Props) => {
-  const { containerClass } = containerProps || {};
+const Section = ({
+  id = '',
+  className,
+  containerProps = {},
+  showSectionBg = true,
+  children,
+}: Props) => {
+  const { containerClass } = containerProps;
 
   return (
     <section
@@ -20,12 +27,12 @@ const Section = ({ id = '', className, containerProps, children }: Props) => {
       id={id}
       aria-labelledby={id}
     >
-      <div className="flex -translate-y-px justify-center">
+      {showSectionBg && <SectionBg />}
+      <div className="flex justify-center">
         <div className="w-3/4">
           <div className="h-px w-full bg-gradient-to-r from-transparent via-violet-500 to-transparent"></div>
         </div>
       </div>
-      <SectionBg />
       <Container className={cn('py-16', containerClass)}>{children}</Container>
     </section>
   );
