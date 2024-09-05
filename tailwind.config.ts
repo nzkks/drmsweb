@@ -8,10 +8,8 @@ import settingsFontSizes from './tailwind.settings.fontSizes';
 
 const config: Config = {
   content: [
-    './pages/**/*.{ts,tsx}',
-    './components/**/*.{ts,tsx}',
-    './app/**/*.{ts,tsx}',
     './src/**/*.{ts,tsx}',
+    './@/**/*.{ts,tsx}',
     './node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}',
   ],
   safelist: ['dark'],
@@ -127,29 +125,6 @@ const config: Config = {
     }),
     nextui({
       addCommonColors: true,
-      themes: {
-        light: {
-          colors: {
-            background: 'hsl(var(--background))',
-            foreground: 'hsl(var(--foreground))',
-            primary: {
-              DEFAULT: 'hsl(var(--primary))',
-              foreground: 'hsl(var(--primary-foreground))',
-            },
-            secondary: {
-              DEFAULT: 'hsl(var(--secondary))',
-              foreground: 'hsl(var(--secondary-foreground))',
-            },
-            focus: 'hsl(var(--primary))',
-          },
-        },
-        dark: {
-          colors: {
-            background: 'hsl(var(--foreground))',
-            foreground: 'hsl(var(--background))',
-          },
-        },
-      },
     }),
   ],
 };
