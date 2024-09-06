@@ -10,6 +10,7 @@ import { MdOutlineAlternateEmail } from 'react-icons/md';
 const Hero = () => {
   return (
     <Section
+      id="hero"
       showSectionBg={false}
       containerProps={{ containerClass: 'text-center' }}
     >

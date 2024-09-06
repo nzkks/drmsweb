@@ -23,9 +23,9 @@ const Section = ({
 
   return (
     <section
-      className={cn('relative border-t border-[#25213b]', className)}
       id={id}
-      aria-labelledby={id}
+      aria-label={`${id} section`}
+      className={cn('relative border-t border-[#25213b]', className)}
     >
       {showSectionBg && <SectionBg />}
       <div className="flex justify-center">

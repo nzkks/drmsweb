@@ -76,7 +76,11 @@ const RootLayout = ({
           fontSans.variable,
         )}
       >
-        <div className="absolute -z-50 size-full bg-background"></div>
+        <div
+          id="top"
+          aria-hidden={true}
+          className="absolute -z-50 size-full bg-background"
+        ></div>
         <Providers>
           <Header />
           {children}
