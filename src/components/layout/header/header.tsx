@@ -53,7 +53,11 @@ const Header = () => {
   };
 
   return (
-    <div id="top" className="sticky top-0 z-50">
+    <header
+      id="topHeader"
+      aria-label="header section"
+      className="sticky top-0 z-50"
+    >
       <Navbar
         isMenuOpen={isMenuOpen}
         onMenuOpenChange={setIsMenuOpen}
@@ -122,7 +126,7 @@ const Header = () => {
         </NavbarMenu>
       </Navbar>
       <PageReadingProgress />
-    </div>
+    </header>
   );
 };
 
