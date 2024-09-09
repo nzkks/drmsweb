@@ -6,7 +6,7 @@ import { MdOutlineAlternateEmail } from 'react-icons/md';
 import { MdLocalPhone } from 'react-icons/md';
 import { IoLocationSharp } from 'react-icons/io5';
 
-import { ContactIcons, Section } from '@/components/common';
+import { ContactIcons } from '@/components/common';
 import ContactForm from './contact-form';
 
 const Contact = () => {
@@ -19,7 +19,7 @@ const Contact = () => {
   }, []);
 
   return (
-    <Section id="contact">
+    <>
       <h2 className="text-center text-xl">Get in touch</h2>
 
       <div className="mx-auto mt-6 grid grid-cols-1 gap-4 lg:grid-cols-2">
@@ -68,7 +68,7 @@ const Contact = () => {
           <ContactForm />
         </div>
       </div>
-    </Section>
+    </>
   );
 };
 

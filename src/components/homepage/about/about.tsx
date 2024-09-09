@@ -1,10 +1,10 @@
-import { CollapsibleWrapper, DynamicIcon, Section } from '@/components';
+import { CollapsibleWrapper, DynamicIcon } from '@/components';
 
 import aboutData from '@/data/about.json';
 
 const About = () => {
   return (
-    <Section id="about">
+    <>
       <h2 className="text-center text-xl">About me</h2>
 
       <div className="group/about mt-10 grid grid-cols-1 gap-x-4 gap-y-6 md:grid-cols-2 md:gap-y-8 xl:grid-cols-3">
@@ -29,7 +29,7 @@ const About = () => {
           </div>
         ))}
       </div>
-    </Section>
+    </>
   );
 };
 

@@ -1,9 +1,9 @@
-import { CertificationBlock, Section } from '@/components';
+import { CertificationBlock } from '@/components';
 import certificationsData from '@/data/certifications.json';
 
 const Certifications = () => {
   return (
-    <Section id="certifications">
+    <>
       <h2 className="text-center text-xl">Certifications</h2>
 
       <div className="mx-auto mt-6">
@@ -13,7 +13,7 @@ const Certifications = () => {
           ))}
         </div>
       </div>
-    </Section>
+    </>
   );
 };
 

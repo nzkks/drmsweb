@@ -1,19 +1,15 @@
 import { Chip } from '@nextui-org/react';
 
-import { ContactIcons, Section, ShinyBtn } from '@/components';
+import { ContactIcons, ShinyBtn } from '@/components';
 import skillsData from '@/data/skills.json';
 import LetterFontWeightAnimator from './letter-font-weight-animator';
-import { PiFilePdfBold } from 'react-icons/pi';
-import { TbFileTypeDocx } from 'react-icons/tb';
+import { TbFileTypePdf as PdfIcon } from 'react-icons/tb';
+import { TbFileTypeDocx as WordIcon } from 'react-icons/tb';
 import { MdOutlineAlternateEmail } from 'react-icons/md';
 
 const Hero = () => {
   return (
-    <Section
-      id="hero"
-      showSectionBg={false}
-      containerProps={{ containerClass: 'text-center' }}
-    >
+    <>
       <div className="text-md">{renderCoreSkills}</div>
 
       <div className="mt-6">
@@ -45,7 +41,7 @@ const Hero = () => {
             buttonIdForGA="Hero-CV-PDF-Download-Link-Clicked"
             valueForGA="Download PDF cv"
           >
-            <PiFilePdfBold className="size-8" aria-hidden={true} />
+            <PdfIcon className="size-8" aria-hidden={true} />
             <div className="ml-2 inline-block">CV (PDF, 140KB)</div>
           </ShinyBtn>
           <ShinyBtn
@@ -57,7 +53,7 @@ const Hero = () => {
             buttonIdForGA="Hero-CV-DOCX-Download-Link-Clicked"
             valueForGA="Download DOCX cv"
           >
-            <TbFileTypeDocx className="size-8" aria-hidden={true} />
+            <WordIcon className="size-8" aria-hidden={true} />
             <div className="ml-2 inline-block">CV (DOCX, 31KB)</div>
           </ShinyBtn>
           <ShinyBtn
@@ -71,7 +67,7 @@ const Hero = () => {
           </ShinyBtn>
         </div>
       </div>
-    </Section>
+    </>
   );
 };
 

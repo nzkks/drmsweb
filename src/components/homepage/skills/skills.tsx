@@ -44,11 +44,7 @@ const Skills = () => {
   };
 
   return (
-    <section
-      id="skills"
-      aria-label="skills section"
-      className="section-gradient-bg1"
-    >
+    <>
       <div className="flex -translate-y-px justify-center">
         <div className="w-3/4">
           <div className="h-px w-full bg-gradient-to-r from-transparent via-accent to-transparent"></div>
@@ -114,7 +110,7 @@ const Skills = () => {
           </Container>
         )}
       </div>
-    </section>
+    </>
   );
 };
 

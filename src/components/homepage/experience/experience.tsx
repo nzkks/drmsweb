@@ -1,9 +1,9 @@
-import { Section, Timeline } from '@/components';
+import { Timeline } from '@/components';
 import experienceData from '@/data/experience.json';
 
 const Experience = () => {
   return (
-    <Section id="experience">
+    <>
       <h2 className="text-center text-xl">Experience</h2>
 
       <div className="mt-6">
@@ -20,7 +20,7 @@ const Experience = () => {
           />
         ))}
       </div>
-    </Section>
+    </>
   );
 };
 

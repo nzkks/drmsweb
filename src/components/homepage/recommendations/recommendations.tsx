@@ -10,7 +10,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/mousewheel';
 import { SiLinkedin } from 'react-icons/si';
 
-import { Section, TestimonialBlock } from '@/components';
+import { TestimonialBlock } from '@/components';
 import recommendationsData from '@/data/recommendations.json';
 import { useWindowSize } from '@/hooks';
 
@@ -18,7 +18,7 @@ const Recommendations = () => {
   const { width } = useWindowSize();
 
   return (
-    <Section id="recommendations">
+    <>
       <h2 className="text-center text-xl">
         <Link
           href="https://www.linkedin.com/in/shanthoshk/"
@@ -56,7 +56,7 @@ const Recommendations = () => {
           </SwiperSlide>
         ))}
       </Swiper>
-    </Section>
+    </>
   );
 };
 
