@@ -87,6 +87,16 @@
     border-radius: 14px;
     border: 3px solid hsl(var(--background));
   }
+
+  ::-moz-selection {
+    color: hsl(var(--background));
+    background: hsl(var(--accent));
+  }
+
+  ::selection {
+    color: hsl(var(--background));
+    background: hsl(var(--accent));
+  }
 }
 
 @layer components {
