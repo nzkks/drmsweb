@@ -1,6 +1,6 @@
 import { Chip } from '@nextui-org/react';
 
-import { ContactIcons, ShinyBtn } from '@/components';
+import { ContactIcons, Reveal, ShinyBtn } from '@/components';
 import skillsData from '@/data/skills.json';
 import LetterFontWeightAnimator from './letter-font-weight-animator';
 import { TbFileTypePdf as PdfIcon } from 'react-icons/tb';
@@ -16,19 +16,22 @@ const Hero = () => {
         <ContactIcons />
       </div>
 
-      <h1 className="mt-6 text-5xl leading-tight">
-        Hi! my name is
-        <br />
-        <LetterFontWeightAnimator
-          word="Shanthosh"
-          className="hidden text-right sm:inline-block"
-        />
-        <span className="inline-block sm:hidden">Shanthosh</span>{' '}
-        <span className="text-muted-foreground">Krishnakumar</span>.
-        <br />I am a{' '}
-        <span className="bg-gradient-to-b from-background to-accent bg-clip-text font-bold text-transparent">
-          Frontend Developer
-        </span>
+      <h1 className="mt-6 flex w-full flex-col items-center justify-center text-5xl leading-tight">
+        <Reveal>Hi! my name is</Reveal>
+        <Reveal>
+          <LetterFontWeightAnimator
+            word="Shanthosh"
+            className="hidden text-right sm:inline-block"
+          />
+          <span className="inline-block sm:hidden">Shanthosh</span>{' '}
+          <span className="text-muted-foreground">Krishnakumar</span>.
+        </Reveal>
+        <Reveal>
+          I am a{' '}
+          <span className="bg-gradient-to-b from-background to-accent bg-clip-text font-bold text-transparent">
+            Frontend Developer
+          </span>
+        </Reveal>
       </h1>
       <div className="mx-auto mt-10 max-w-lg">
         <div className="flex flex-col items-center justify-center gap-4 md:flex-row">

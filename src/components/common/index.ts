@@ -45,3 +45,6 @@ export * from './sectionBg';
 
 export { default as Section } from './section';
 export * from './section';
+
+export { default as Reveal } from './reveal';
+export * from './reveal';
