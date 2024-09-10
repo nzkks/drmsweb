@@ -8,8 +8,8 @@ const Certifications = () => {
 
       <div className="mx-auto mt-6">
         <div className="group/list mx-auto my-0 grid h-auto gap-3 justify-self-center transition-all auto-fill-[200px]">
-          {certificationsData.map((certification) => (
-            <CertificationBlock key={certification.name} {...certification} />
+          {certificationsData.map((certification, index) => (
+            <CertificationBlock key={index} index={index} {...certification} />
           ))}
         </div>
       </div>
