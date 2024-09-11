@@ -1,5 +1,16 @@
+import { motion } from 'framer-motion';
+
 import { usePointerGlow } from '@/hooks';
 import { Skill } from '@/types';
+
+const fadeInAnimationVariants = {
+  initial: { opacity: 0, y: 100 },
+  animate: (index: number) => ({
+    opacity: 1,
+    y: 0,
+    transition: { delay: 0.05 * index },
+  }),
+};
 
 type CategoryMap = {
   [category: string]: Skill[];
@@ -23,11 +34,16 @@ const SkillsCategorized = ({ data }: Props) => {
     });
   });
 
-  const renderCategory = Object.keys(categoryMap).map((category) => (
-    <div
-      key={category}
+  const renderCategory = Object.keys(categoryMap).map((category, index) => (
+    <motion.div
+      key={index}
       className="block-glass1 rounded-xl border-1 p-2 shadow-md dark:border-[#2f4250]"
       data-glow
+      variants={fadeInAnimationVariants}
+      initial="initial"
+      whileInView="animate"
+      viewport={{ once: true }}
+      custom={index}
     >
       <h3 className="block-glass1 mb-3 rounded-lg p-1 text-center font-semibold dark:text-white">
         {category}
@@ -39,7 +55,7 @@ const SkillsCategorized = ({ data }: Props) => {
           </li>
         ))}
       </ul>
-    </div>
+    </motion.div>
   ));
 
   return (

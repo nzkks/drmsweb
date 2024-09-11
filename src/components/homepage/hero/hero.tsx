@@ -1,38 +1,37 @@
 import { Chip } from '@nextui-org/react';
 
-import { ContactIcons, Section, ShinyBtn } from '@/components';
+import { ContactIcons, Reveal, ShinyBtn } from '@/components';
 import skillsData from '@/data/skills.json';
 import LetterFontWeightAnimator from './letter-font-weight-animator';
-import { PiFilePdfBold } from 'react-icons/pi';
-import { TbFileTypeDocx } from 'react-icons/tb';
+import { TbFileTypePdf as PdfIcon } from 'react-icons/tb';
+import { TbFileTypeDocx as WordIcon } from 'react-icons/tb';
 import { MdOutlineAlternateEmail } from 'react-icons/md';
 
 const Hero = () => {
   return (
-    <Section
-      id="hero"
-      showSectionBg={false}
-      containerProps={{ containerClass: 'text-center' }}
-    >
+    <>
       <div className="text-md">{renderCoreSkills}</div>
 
       <div className="mt-6">
         <ContactIcons />
       </div>
 
-      <h1 className="mt-6 text-5xl leading-tight">
-        Hi! my name is
-        <br />
-        <LetterFontWeightAnimator
-          word="Shanthosh"
-          className="hidden text-right sm:inline-block"
-        />
-        <span className="inline-block sm:hidden">Shanthosh</span>{' '}
-        <span className="text-muted-foreground">Krishnakumar</span>.
-        <br />I am a{' '}
-        <span className="bg-gradient-to-b from-background to-accent bg-clip-text font-bold text-transparent">
-          Frontend Developer
-        </span>
+      <h1 className="mt-6 flex w-full flex-col items-center justify-center text-5xl leading-tight">
+        <Reveal>Hi! my name is</Reveal>
+        <Reveal>
+          <LetterFontWeightAnimator
+            word="Shanthosh"
+            className="hidden text-right sm:inline-block"
+          />
+          <span className="inline-block sm:hidden">Shanthosh</span>{' '}
+          <span className="text-muted-foreground">Krishnakumar</span>.
+        </Reveal>
+        <Reveal>
+          I am a{' '}
+          <span className="bg-gradient-to-b from-background to-accent bg-clip-text font-bold text-transparent">
+            Frontend Developer
+          </span>
+        </Reveal>
       </h1>
       <div className="mx-auto mt-10 max-w-lg">
         <div className="flex flex-col items-center justify-center gap-4 md:flex-row">
@@ -45,7 +44,7 @@ const Hero = () => {
             buttonIdForGA="Hero-CV-PDF-Download-Link-Clicked"
             valueForGA="Download PDF cv"
           >
-            <PiFilePdfBold className="size-8" aria-hidden={true} />
+            <PdfIcon className="size-8" aria-hidden={true} />
             <div className="ml-2 inline-block">CV (PDF, 140KB)</div>
           </ShinyBtn>
           <ShinyBtn
@@ -57,7 +56,7 @@ const Hero = () => {
             buttonIdForGA="Hero-CV-DOCX-Download-Link-Clicked"
             valueForGA="Download DOCX cv"
           >
-            <TbFileTypeDocx className="size-8" aria-hidden={true} />
+            <WordIcon className="size-8" aria-hidden={true} />
             <div className="ml-2 inline-block">CV (DOCX, 31KB)</div>
           </ShinyBtn>
           <ShinyBtn
@@ -71,7 +70,7 @@ const Hero = () => {
           </ShinyBtn>
         </div>
       </div>
-    </Section>
+    </>
   );
 };
 

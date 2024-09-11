@@ -20,7 +20,14 @@ const ToTopLinkWithProgress = ({
   const halfSize = size / 2;
 
   return (
-    <Link href="#top" className="group fixed bottom-4 right-4 z-50">
+    <Link
+      href="#top"
+      onClick={(e) => {
+        e.preventDefault();
+        window.scroll({ top: 0, behavior: 'smooth' });
+      }}
+      className="group fixed bottom-4 right-4 z-50"
+    >
       <div className={`relative size-${size}`}>
         <svg width={size} height={size} viewBox={`0 0 ${size} ${size}`}>
           <circle

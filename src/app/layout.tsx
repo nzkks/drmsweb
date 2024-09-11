@@ -68,7 +68,7 @@ const RootLayout = ({
   children: ReactNode;
 }>) => {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" className="scroll-smooth" suppressHydrationWarning>
       <Analytics />
       <body
         className={cn(

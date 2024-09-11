@@ -3,6 +3,9 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { FaExternalLinkAlt } from 'react-icons/fa';
+import { sendGTMEvent } from '@next/third-parties/google';
+import { motion } from 'framer-motion';
+
 import {
   Card,
   CardContent,
@@ -11,10 +14,21 @@ import {
   CardHeader,
   CardTitle,
 } from '@/components/ui/card';
-import { sendGTMEvent } from '@next/third-parties/google';
 import { usePointerGlow } from '@/hooks';
 
+const CardWithMotion = motion(Card);
+
+const fadeInAnimationVariants = {
+  initial: { opacity: 0, y: 100 },
+  animate: (index: number) => ({
+    opacity: 1,
+    y: 0,
+    transition: { delay: 0.05 * index },
+  }),
+};
+
 type Props = {
+  index: number;
   name: string;
   providerLogoFilename: string;
   providerLogoFilenameDarkMode?: string;
@@ -25,6 +39,7 @@ type Props = {
 };
 
 const CertificationBlock = ({
+  index,
   name,
   providerLogoFilename,
   providerLogoFilenameDarkMode,
@@ -36,7 +51,16 @@ const CertificationBlock = ({
   const [status] = usePointerGlow();
 
   return (
-    <Card key={`${name}-${period}`} className="group flex flex-col" data-glow>
+    <CardWithMotion
+      key={index}
+      className="group flex flex-col"
+      data-glow
+      variants={fadeInAnimationVariants}
+      initial="initial"
+      whileInView="animate"
+      viewport={{ once: true }}
+      custom={index}
+    >
       <div className="flex h-full flex-col rounded-xl border dark:border-[#11203b]">
         <CardHeader className="p-3">
           <CardTitle className="text-md">{name}</CardTitle>
@@ -101,7 +125,7 @@ const CertificationBlock = ({
           </div>
         </CardFooter>
       </div>
-    </Card>
+    </CardWithMotion>
   );
 };
 
