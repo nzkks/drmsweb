@@ -86,7 +86,6 @@ const Header = () => {
         </NavbarContent>
 
         <SlideMenu
-          activeSection={activeSection}
           setActiveSection={setActiveSection}
           menuItems={mainMenuItems}
         />
