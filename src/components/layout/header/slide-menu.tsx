@@ -7,16 +7,11 @@ import SlideMenuItem from './slide-menu-item';
 import Cursor from './cursor';
 
 type SlideMenuProps = {
-  activeSection: string;
   setActiveSection: (section: string) => void;
   menuItems: HeaderMenu[];
 };
 
-const SlideMenu = ({
-  activeSection,
-  setActiveSection,
-  menuItems,
-}: SlideMenuProps) => {
+const SlideMenu = ({ setActiveSection, menuItems }: SlideMenuProps) => {
   const [position, setPosition] = useState({
     width: 0,
     left: 0,
@@ -34,7 +29,6 @@ const SlideMenu = ({
           label={label}
           href={href}
           setPosition={setPosition}
-          activeSection={activeSection}
           setActiveSection={setActiveSection}
         />
       ))}

@@ -2,13 +2,15 @@ import { Timeline } from '@/components';
 import experienceData from '@/data/experience.json';
 
 const Experience = () => {
+  const reversedArray = experienceData.toReversed();
+
   return (
     <>
       <h2 className="text-center text-xl">Experience</h2>
 
       <div className="grid-col-1 mt-6 grid lg:grid-cols-2">
         <div>
-          {experienceData.map((job, index) => (
+          {reversedArray.map((job, index) => (
             <Timeline
               key={`${job.company}-${index}`}
               jobTitle={job.jobTitle}
