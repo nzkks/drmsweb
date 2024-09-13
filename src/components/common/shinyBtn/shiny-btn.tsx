@@ -1,6 +1,7 @@
 'use client';
 
-import { Button, Link } from '@nextui-org/react';
+import Link from 'next/link';
+import { Button } from '@nextui-org/react';
 import { sendGTMEvent } from '@next/third-parties/google';
 
 import { cn } from '@/lib/utils';

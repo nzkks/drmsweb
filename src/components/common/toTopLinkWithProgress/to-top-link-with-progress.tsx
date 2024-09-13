@@ -1,6 +1,6 @@
 'use client';
 
-import { Link } from '@nextui-org/react';
+import Link from 'next/link';
 import { useLenis } from 'lenis/react';
 
 import { useReadingProgress } from '@/hooks';

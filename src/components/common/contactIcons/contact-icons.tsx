@@ -1,6 +1,6 @@
 'use client';
 
-import { Link } from '@nextui-org/react';
+import Link from 'next/link';
 import { sendGTMEvent } from '@next/third-parties/google';
 
 import contacts from '@/data/contacts.json';
@@ -19,7 +19,7 @@ const ContactIcons = ({ align = 'center', className }: Props) => {
         href={contact.link}
         target="_blank"
         rel="noopener noreferrer"
-        onPress={() =>
+        onClick={() =>
           sendGTMEvent({
             event: 'Contact-Icon-Clicked',
             value: contact.name,

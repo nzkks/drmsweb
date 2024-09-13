@@ -2,12 +2,12 @@
 
 import { useEffect, useState } from 'react';
 
+import Link from 'next/link';
 import {
   Navbar,
   NavbarBrand,
   NavbarContent,
   NavbarItem,
-  Link,
   NavbarMenuToggle,
   NavbarMenu,
   NavbarMenuItem,
@@ -75,7 +75,7 @@ const Header = () => {
             <NavbarBrand>
               <Link
                 href="/"
-                onPress={() => setActiveSection('/')}
+                onClick={() => setActiveSection('/')}
                 className="size-8 justify-center rounded-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
                 aria-label="home"
               >
@@ -115,8 +115,7 @@ const Header = () => {
                   activeSection === href ? 'text-primary' : 'text-foreground',
                 )}
                 href={href}
-                size="lg"
-                onPress={() => handleMobileMenuPress(href, label)}
+                onClick={() => handleMobileMenuPress(href, label)}
               >
                 {label}
               </Link>
