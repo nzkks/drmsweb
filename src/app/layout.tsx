@@ -7,6 +7,7 @@ import {
   Analytics,
   Footer,
   Header,
+  Lenis,
   Providers,
   ToTopLinkWithProgress,
 } from '@/components';
@@ -76,6 +77,7 @@ const RootLayout = ({
           fontSans.variable,
         )}
       >
+        <Lenis root options={{ lerp: 0.125, duration: 1 }} />
         <div
           id="top"
           aria-hidden={true}
