@@ -11,7 +11,7 @@ const About = () => {
         {aboutData.map((data) => (
           <div
             key={data.title}
-            className="group/inner flex flex-col items-center gap-4 transition-all md:flex-row md:items-start lg:hover:!opacity-100 lg:group-hover/about:opacity-50"
+            className="group/inner shadow-bshadow1 flex flex-col items-center gap-4 rounded-lg p-4 transition-all md:flex-row md:items-start lg:hover:!opacity-100 lg:group-hover/about:opacity-50"
           >
             <div className="w-10">
               <DynamicIcon

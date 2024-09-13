@@ -31,6 +31,7 @@
     --ring: 223 70% 67%;
     --radius: 0.5rem;
     --heading: 216 85% 8%;
+    --shadow1: 221.03 100% 50.39%;
   }
 
   :root[class~='dark'] {
@@ -61,6 +62,7 @@
     --ring: 223 70% 67%;
     --radius: 0.5rem;
     --heading: 225.71 70% 88.24%;
+    --shadow1: 221.03 100% 50.39%;
     --swiper-navigation-color: #2dd4bf;
     --swiper-pagination-color: #2dd4bf;
     --swiper-pagination-bullet-inactive-color: #ccc;
