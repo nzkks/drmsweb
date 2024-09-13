@@ -4,6 +4,7 @@ import { sendGTMEvent } from '@next/third-parties/google';
 
 import useScrollSpy from '@/hooks/useScrollSpy';
 import { Link } from '@/components';
+import { cn } from '@/lib/utils';
 
 const sectionIds = [
   'skills',
@@ -55,7 +56,7 @@ const SlideMenuItem = ({
         });
       }}
       className={clsx(
-        'text-md group relative z-10 flex h-8 cursor-pointer items-center px-3 uppercase transition-all md:h-10 md:px-4',
+        'group relative z-10 cursor-pointer transition-all',
         `#${scrolledSectionId}` === href
           ? 'rounded-md bg-accent'
           : 'bg-transparent',
@@ -64,11 +65,12 @@ const SlideMenuItem = ({
       <Link
         href={href}
         onClick={() => handleMenuItemClick(href, label)}
-        className={
+        className={cn(
+          'text-md flex h-8 items-center px-3 uppercase transition-all md:h-10 md:px-4',
           `#${scrolledSectionId}` === href
             ? 'text-white dark:text-black'
-            : 'text-heading transition-all group-hover:text-white group-hover:dark:text-black'
-        }
+            : 'text-heading group-hover:text-white group-hover:dark:text-black',
+        )}
       >
         {label}
       </Link>
