@@ -1,6 +1,7 @@
 'use client';
 
 import { Link } from '@nextui-org/react';
+import { useLenis } from 'lenis/react';
 
 import { useReadingProgress } from '@/hooks';
 
@@ -11,6 +12,8 @@ const ToTopLinkWithProgress = ({
   size?: number;
   strokeWidth?: number;
 }) => {
+  const lenis = useLenis();
+
   const completion = useReadingProgress();
   if (completion < 10 || completion > 95) return;
 
@@ -23,8 +26,10 @@ const ToTopLinkWithProgress = ({
     <Link
       href="#top"
       onClick={(e) => {
-        e.preventDefault();
-        window.scroll({ top: 0, behavior: 'smooth' });
+        if (lenis) {
+          e.preventDefault();
+          lenis.scrollTo('#top');
+        }
       }}
       className="group fixed bottom-4 right-4 z-50"
     >
