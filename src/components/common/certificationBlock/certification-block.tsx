@@ -61,7 +61,7 @@ const CertificationBlock = ({
       viewport={{ once: true }}
       custom={index}
     >
-      <div className="flex h-full flex-col rounded-xl border dark:border-[#11203b]">
+      <div className="flex h-full flex-col rounded-xl border shadow-md dark:border-[#11203b]">
         <CardHeader className="p-3">
           <CardTitle className="text-md">{name}</CardTitle>
           <CardDescription className="text-foreground">
