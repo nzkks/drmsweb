@@ -70,7 +70,7 @@ const Home = () => {
         id="skills"
         ref={skillsRef}
         aria-label="skills section"
-        className="section-gradient-bg1"
+        className="section-gradient-bg1 min-h-[500px]"
       >
         {isSkillsVisible && (
           <Suspense fallback={<Loader />}>
