@@ -8,11 +8,11 @@
     --border-width: 1;
     --backup-border: hsl(var(--backdrop)) / 12;
     --size: 200;
-    --background: 263 39% 94%;
+    --background: 198.46 86.67% 97.06%;
     --foreground: 234 20% 19%;
     --card: 227 29% 94%;
     --card-foreground: 234 20% 19%;
-    --popover: 263 39% 94%;
+    --popover: 198.46 86.67% 97.06%;
     --popover-foreground: 234 20% 19%;
     --primary: 223 70% 67%;
     --primary-foreground: 0 0% 100%;
