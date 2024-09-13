@@ -48,3 +48,6 @@ export * from './section';
 
 export { default as Reveal } from './reveal';
 export * from './reveal';
+
+export { default as Link } from './link';
+export * from './link';

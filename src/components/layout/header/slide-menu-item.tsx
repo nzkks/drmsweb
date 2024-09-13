@@ -1,9 +1,9 @@
 import { useRef } from 'react';
-import Link from 'next/link';
 import clsx from 'clsx';
 import { sendGTMEvent } from '@next/third-parties/google';
 
 import useScrollSpy from '@/hooks/useScrollSpy';
+import { Link } from '@/components';
 
 const sectionIds = [
   'skills',
