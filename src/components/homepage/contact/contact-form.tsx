@@ -88,7 +88,6 @@ const ContactForm = () => {
   }, [username, setValue]);
 
   const onSubmit = async (values: FormData) => {
-    console.log(values);
     await fetch('https://api.web3forms.com/submit', {
       method: 'POST',
       headers: {
@@ -130,7 +129,6 @@ const ContactForm = () => {
             'Apologies! Something went wrong. Please email me directly.',
           variant: 'destructive',
         });
-        console.log(error);
       });
   };
 
