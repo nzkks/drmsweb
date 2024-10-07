@@ -11,6 +11,16 @@
   },
   {
     "id": "2",
+    "jobTitle": "Web Developer",
+    "company": "Freelancing",
+    "industry": "Multiple",
+    "location": "Auckland, New Zealand",
+    "period": "Jul 2009 - Jul 2010",
+    "jobType": "Minor contracts",
+    "details": ""
+  },
+  {
+    "id": "3",
     "jobTitle": "Web Development Consultant",
     "company": "Zealmark Group Ltd.",
     "industry": "Education",
@@ -20,7 +30,7 @@
     "details": ""
   },
   {
-    "id": "3",
+    "id": "4",
     "jobTitle": "Solution Developer",
     "company": "Sandfield Information Systems",
     "industry": "IT",
@@ -30,7 +40,7 @@
     "details": ""
   },
   {
-    "id": "4",
+    "id": "5",
     "jobTitle": "Senior UX/UI Developer",
     "company": "Fashion Biz Ltd.",
     "industry": "Fashion/Manufacturing",
@@ -40,77 +50,17 @@
     "details": ""
   },
   {
-    "id": "5",
-    "jobTitle": "Web Developer",
-    "company": "Zoop IT Solutions Ltd",
-    "industry": "IT",
-    "location": "Auckland, New Zealand",
-    "period": "Apr 2016 - Jun 2016",
-    "jobType": "Short contract",
-    "details": ""
-  },
-  {
     "id": "6",
     "jobTitle": "Web Developer",
-    "company": "impactNPO",
-    "industry": "NPO",
+    "company": "Freelancing",
+    "industry": "Multiple",
     "location": "Auckland, New Zealand",
-    "period": "May 2016",
-    "jobType": "Volunteer Work",
-    "details": "Charity hackathon"
+    "period": "Oct 2015 - Mar 2017",
+    "jobType": "Minor contracts",
+    "details": ""
   },
   {
     "id": "7",
-    "jobTitle": "Web Animator",
-    "company": "BCG2",
-    "industry": "IT",
-    "location": "Auckland, New Zealand",
-    "period": "May 2016",
-    "jobType": "Short contract",
-    "details": ""
-  },
-  {
-    "id": "8",
-    "jobTitle": "Web Developer",
-    "company": "impactNPO",
-    "industry": "NPO",
-    "location": "Auckland, New Zealand",
-    "period": "Aug 2016",
-    "jobType": "Volunteer Work",
-    "details": "Charity hackathon"
-  },
-  {
-    "id": "9",
-    "jobTitle": "Web Developer",
-    "company": "Zoop IT Solutions Ltd",
-    "industry": "IT",
-    "location": "Auckland, New Zealand",
-    "period": "Sep 2016",
-    "jobType": "Short contract",
-    "details": ""
-  },
-  {
-    "id": "10",
-    "jobTitle": "Web Developer",
-    "company": "impactNPO",
-    "industry": "NPO",
-    "location": "Auckland, New Zealand",
-    "period": "Oct 2016",
-    "jobType": "Volunteer Work",
-    "details": "Charity hackathon"
-  },
-  {
-    "id": "11",
-    "jobTitle": "Web Developer",
-    "company": "impactNPO",
-    "industry": "NPO",
-    "location": "Auckland, New Zealand",
-    "period": "Feb 2017",
-    "jobType": "Volunteer Work",
-    "details": "Charity hackathon"
-  },
-  {
-    "id": "12",
     "jobTitle": "Frontend Developer",
     "company": "HainesAttract",
     "industry": "Media and Recruitment",
