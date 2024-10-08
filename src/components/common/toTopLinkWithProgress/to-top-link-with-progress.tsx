@@ -32,6 +32,7 @@ const ToTopLinkWithProgress = ({
         }
       }}
       className="group fixed bottom-4 right-4 z-50"
+      aria-label="Scroll to top"
     >
       <div className={`relative size-${size}`}>
         <svg width={size} height={size} viewBox={`0 0 ${size} ${size}`}>
