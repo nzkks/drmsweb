@@ -20,6 +20,16 @@
     "isCoreSkill": true
   },
   {
+    "name": "Vue.js",
+    "logo": "",
+    "categories": [
+      "Frameworks and Libraries"
+    ],
+    "rowId": "A",
+    "isHighlight": true,
+    "isCoreSkill": true
+  },
+  {
     "name": "Frontend Development",
     "logo": "",
     "categories": [
@@ -157,6 +167,16 @@
     ],
     "rowId": "B",
     "isHighlight": false,
+    "isCoreSkill": false
+  },
+  {
+    "name": "VueX",
+    "logo": "",
+    "categories": [
+      "State Management"
+    ],
+    "rowId": "B",
+    "isHighlight": true,
     "isCoreSkill": false
   },
   {
