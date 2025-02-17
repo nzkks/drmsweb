@@ -45,7 +45,7 @@ const Hero = () => {
             valueForGA="Download PDF cv"
           >
             <PdfIcon className="size-8" aria-hidden={true} />
-            <div className="ml-2 inline-block">CV (PDF, 140KB)</div>
+            <div className="ml-2 inline-block">CV (PDF, 120KB)</div>
           </ShinyBtn>
           <ShinyBtn
             href="/files/ShanthoshK_Frontend_Dev_cv.docx"
