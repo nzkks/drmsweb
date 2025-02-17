@@ -41,6 +41,16 @@
   },
   {
     "id": "5",
+    "name": "Vue - The Complete Guide (incl. Router & Composition API)",
+    "providerLogoFilename": "udemy_logo.svg",
+    "providerLogoFilenameDarkMode": "udemy_logo--dark.svg",
+    "providerName": "Udemy",
+    "certificateImageFileName": "udemy-vuejs-certificate.jpg",
+    "period": "Feb 2025",
+    "link": "https://www.udemy.com/certificate/UC-50f7305c-33b0-4f53-9c48-3519e41b207a/"
+  },
+  {
+    "id": "6",
     "name": "Getting Started with Git and GitHub",
     "providerLogoFilename": "ibm_logo.svg",
     "providerLogoFilenameDarkMode": "ibm_logo--dark.svg",
@@ -50,7 +60,7 @@
     "link": "https://www.coursera.org/account/accomplishments/records/Q9FQUUJXE6RG"
   },
   {
-    "id": "6",
+    "id": "7",
     "name": "JavaScript Programming Essentials",
     "providerLogoFilename": "ibm_logo.svg",
     "providerLogoFilenameDarkMode": "ibm_logo--dark.svg",
@@ -60,7 +70,7 @@
     "link": "https://www.coursera.org/account/accomplishments/records/87YM4VWXN9RT"
   },
   {
-    "id": "7",
+    "id": "8",
     "name": "Become a Software Developer",
     "providerLogoFilename": "linkedin-learning_logo.png",
     "providerLogoFilenameDarkMode": "linkedin-learning_logo--dark.png",
@@ -70,7 +80,7 @@
     "link": "https://www.linkedin.com/learning/certificates/554b78b2790abcda197cfd51dc501f899f1462e77e7dfaba7c41f72c19fb82c9?trk=backfilled_certificate&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3Bnrl60avWRAq6juJmeandfA%3D%3D"
   },
   {
-    "id": "8",
+    "id": "9",
     "name": "Advance Your Skills in JavaScript",
     "providerLogoFilename": "linkedin-learning_logo.png",
     "providerLogoFilenameDarkMode": "linkedin-learning_logo--dark.png",
@@ -80,7 +90,7 @@
     "link": "https://www.linkedin.com/learning/certificates/2971eebbd90acad8cd68ece806a724937bc3a27993d9ad265620abde4738ff67?trk=backfilled_certificate&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3Bnrl60avWRAq6juJmeandfA%3D%3D"
   },
   {
-    "id": "9",
+    "id": "10",
     "name": "Become a Front-End Web Developer",
     "providerLogoFilename": "linkedin-learning_logo.png",
     "providerLogoFilenameDarkMode": "linkedin-learning_logo--dark.png",
@@ -90,7 +100,7 @@
     "link": "https://www.linkedin.com/learning/certificates/edfc261c97aad742f47ffa891b9db66975b4d7c0c77711f00739033ea62b53b0?trk=backfilled_certificate&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3Bnrl60avWRAq6juJmeandfA%3D%3D"
   },
   {
-    "id": "10",
+    "id": "11",
     "name": "Become a Web Developer",
     "providerLogoFilename": "linkedin-learning_logo.png",
     "providerLogoFilenameDarkMode": "linkedin-learning_logo--dark.png",
@@ -100,7 +110,7 @@
     "link": "https://www.linkedin.com/learning/certificates/b91b399c7406e08614b6a8f3782fa107fbb7e29b4137ec63a4b0a893f0c8d72d?trk=backfilled_certificate&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3Bnrl60avWRAq6juJmeandfA%3D%3D"
   },
   {
-    "id": "11",
+    "id": "12",
     "name": "JavaScript Essential Training",
     "providerLogoFilename": "linkedin-learning_logo.png",
     "providerLogoFilenameDarkMode": "linkedin-learning_logo--dark.png",
@@ -110,7 +120,7 @@
     "link": "https://www.linkedin.com/learning/certificates/319ee08751b2655d79b9cbf0f52d25fa25e0e0bd5dcb39be1da6fa702018a6e7?trk=backfilled_certificate&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3Bnrl60avWRAq6juJmeandfA%3D%3D"
   },
   {
-    "id": "12",
+    "id": "13",
     "name": "Learning App Building with Vanilla JavaScript",
     "providerLogoFilename": "linkedin-learning_logo.png",
     "providerLogoFilenameDarkMode": "linkedin-learning_logo--dark.png",
@@ -120,7 +130,7 @@
     "link": "https://www.linkedin.com/learning/certificates/960de219c4b7bf83a0447a061e58fad2e770547503d529c4ffb6ea7fb36fbe50?trk=backfilled_certificate&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3Bnrl60avWRAq6juJmeandfA%3D%3D"
   },
   {
-    "id": "13",
+    "id": "14",
     "name": "Front End Engineer certificate",
     "providerLogoFilename": "pro5-ai_logo.png",
     "providerLogoFilenameDarkMode": "pro5-ai_logo--dark.png",
