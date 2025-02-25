@@ -170,13 +170,23 @@
     "isCoreSkill": false
   },
   {
-    "name": "VueX",
+    "name": "Pinia",
     "logo": "",
     "categories": [
       "State Management"
     ],
     "rowId": "B",
     "isHighlight": true,
+    "isCoreSkill": false
+  },
+  {
+    "name": "VueX",
+    "logo": "",
+    "categories": [
+      "State Management"
+    ],
+    "rowId": "B",
+    "isHighlight": false,
     "isCoreSkill": false
   },
   {
