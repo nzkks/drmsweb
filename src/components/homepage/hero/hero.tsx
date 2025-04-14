@@ -36,10 +36,10 @@ const Hero = () => {
       <div className="mx-auto mt-10 max-w-lg">
         <div className="flex flex-col items-center justify-center gap-4 md:flex-row">
           <ShinyBtn
-            href="/files/ShanthoshK_Frontend_Dev_cv.pdf"
+            href="/files/ShanthoshK_WebEngineer_cv.pdf"
             target="_blank"
             isExternal={true}
-            downloadFileName="ShanthoshK_Frontend_Dev_cv.pdf"
+            downloadFileName="ShanthoshK_WebEngineer_cv.pdf"
             ariaLabel="download cv as a PDF document"
             buttonIdForGA="Hero-CV-PDF-Download-Link-Clicked"
             valueForGA="Download PDF cv"
@@ -48,16 +48,16 @@ const Hero = () => {
             <div className="ml-2 inline-block">CV (PDF, 120KB)</div>
           </ShinyBtn>
           <ShinyBtn
-            href="/files/ShanthoshK_Frontend_Dev_cv.docx"
+            href="/files/ShanthoshK_WebEngineer_cv.docx"
             target="_blank"
             isExternal={true}
-            downloadFileName="ShanthoshK_Frontend_Dev_cv.docx"
+            downloadFileName="ShanthoshK_WebEngineer_cv.docx"
             ariaLabel="download cv as a word document in DOCX format"
             buttonIdForGA="Hero-CV-DOCX-Download-Link-Clicked"
             valueForGA="Download DOCX cv"
           >
             <WordIcon className="size-8" aria-hidden={true} />
-            <div className="ml-2 inline-block">CV (DOCX, 31KB)</div>
+            <div className="ml-2 inline-block">CV (DOCX, 33KB)</div>
           </ShinyBtn>
           <ShinyBtn
             href="#contact"
