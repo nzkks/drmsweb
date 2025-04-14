@@ -60,8 +60,7 @@ const Contact = () => {
         </div>
         <div className="mt-12 lg:mt-0">
           <p className="mb-2">
-            My inbox is always open. Whether you have a question or share about
-            any relevant job that suits my skills and experience or just want to
+            My inbox is always open. Whether you have a question or just want to
             say hello, feel free to email me. I&apos;ll try my best to get back
             to you as soon as I can.
           </p>
