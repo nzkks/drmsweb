@@ -10,9 +10,9 @@ const Experience = () => {
 
       <div className="grid-col-1 mt-6 grid lg:grid-cols-2">
         <div>
-          {reversedArray.map((job, index) => (
+          {reversedArray.map((job) => (
             <Timeline
-              key={`${job.company}-${index}`}
+              key={`${job.company}-${job.id}`}
               jobTitle={job.jobTitle}
               company={job.company}
               industry={job.industry}
