@@ -1,6 +1,26 @@
 [
   {
     "id": "1",
+    "jobTitle": "Web Developer",
+    "company": "Renovision Systems Private Limited",
+    "industry": "IT",
+    "location": "Bengaluru, Karnataka, India",
+    "period": "May 2000 - Aug 2001",
+    "jobType": "Full Time - Permanent",
+    "details": ""
+  },
+  {
+    "id": "2",
+    "jobTitle": "Web Developer",
+    "company": "Reliance Communications",
+    "industry": "Telecommunications",
+    "location": "Navi Mumbai, Maharashtra, India",
+    "period": "Sep 2001 - Jan 2007",
+    "jobType": "Full Time - Permanent",
+    "details": ""
+  },
+  {
+    "id": "3",
     "jobTitle": "Web Administrator",
     "company": "Innova Products Ltd.",
     "industry": "Manufacturing",
@@ -10,7 +30,7 @@
     "details": ""
   },
   {
-    "id": "2",
+    "id": "4",
     "jobTitle": "Web Developer",
     "company": "Freelancing",
     "industry": "Multiple",
@@ -20,7 +40,7 @@
     "details": ""
   },
   {
-    "id": "3",
+    "id": "5",
     "jobTitle": "Web Development Consultant",
     "company": "Zealmark Group Ltd.",
     "industry": "Education",
@@ -30,7 +50,7 @@
     "details": ""
   },
   {
-    "id": "4",
+    "id": "6",
     "jobTitle": "Solution Developer",
     "company": "Sandfield Information Systems",
     "industry": "IT",
@@ -40,7 +60,7 @@
     "details": ""
   },
   {
-    "id": "5",
+    "id": "7",
     "jobTitle": "Senior UX/UI Developer",
     "company": "Fashion Biz Ltd.",
     "industry": "Fashion/Manufacturing",
@@ -50,7 +70,7 @@
     "details": ""
   },
   {
-    "id": "6",
+    "id": "8",
     "jobTitle": "Web Developer",
     "company": "Freelancing",
     "industry": "Multiple",
@@ -60,7 +80,7 @@
     "details": ""
   },
   {
-    "id": "7",
+    "id": "9",
     "jobTitle": "Frontend Developer",
     "company": "HainesAttract",
     "industry": "Media and Recruitment",
@@ -70,7 +90,7 @@
     "details": ""
   },
   {
-    "id": "8",
+    "id": "10",
     "jobTitle": "Associate Consultant (Web Engineer)",
     "company": "Tata Consultancy Services",
     "industry": "IT",
