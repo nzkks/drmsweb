@@ -20,7 +20,7 @@ const Footer = () => {
         <div className="flex flex-col items-center justify-between md:flex-row">
           <div className="text-center text-sm md:text-left">
             <p>
-              Made with <span className="text-red-100">❤️</span> by{' '}
+              Made with care by{' '}
               <Link
                 href="https://www.linkedin.com/in/shanthoshk/"
                 target="_blank"
